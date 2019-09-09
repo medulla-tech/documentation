@@ -1,0 +1,368 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/usemedulla/imaging/index.rst:3
+msgid "Imaging"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:5
+msgid ""
+"Cette section concerne la partie imaging de l'outil Pulse, avec notamment"
+" le boot en iPXE, la page d'accueil et les différentes options."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:9
+msgid "Interface"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:11
+msgid ""
+"Lorsque nous arrivons sur le menu Imaging sur l’écran principal, nous "
+"allons nous retrouver sur la page de statut du serveur d'imaging."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:15
+msgid ""
+"Cette page permet de connaître l'état du serveur d'imaging, avec "
+"notamment l'espace disque disponible sur le serveur, la charge du serveur"
+" ou encore les statistiques entité."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:17
+msgid ""
+"Sur la gauche de l'écran, on retrouve un menu comportant différents sous-"
+"menus qui composent le menu Imaging :"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:21
+msgid "**Statut du serveur d'imaging** : Affiche le statut du serveur d'imaging ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:22
+msgid ""
+"**Gérer les masters** : Permet de gérer les différents masters des "
+"machines ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:23
+msgid ""
+"**Gérer les services de démarrage** : Permet de gérer les services "
+"présents dans \"Pulse Utilities\" lors du boot PXE ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:24
+msgid ""
+"**Menu de démarrage par défaut** : Permet de configurer quel est le menu "
+"de démarrage par défaut ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:25
+msgid ""
+"**Scripts de post-imaging** : Permet d’ajouter des scripts à exécuter "
+"après l'imaging ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:26
+msgid ""
+"**Configuration de l'imaging** : Permet la configuration du serveur "
+"d'imaging (par exemple, ajout de mot de passe PXE) ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:27
+msgid ""
+"**Gestionnaire de fichiers de réponse Sysprep** : Génère un fichier de "
+"réponse personnalisé pour Windows ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:28
+msgid ""
+"**Tous les groupes d'imaging** : Affiche les différents groupes d'imaging"
+" ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:29
+msgid ""
+"**Ajouter un groupe d'imaging** : Permet de créer un groupe de "
+"différentes machines pour leur attribuer un imaging."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:33
+msgid "Gérer les masters"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:37
+msgid "Sur ce menu, nous pouvons gérer les masters grâce à différentes actions :"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:39
+msgid ""
+"**Enlever du menu de démarrage** : Enlève le master du menu de démarrage "
+"des machines ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:40
+msgid "**Créer une ISO bootable** : Permet de créer une ISO du master ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:41
+msgid ""
+"**Editer le master** : Permet d'éditer le master : son libellé, sa "
+"description ou encore l'ordre des différentes actions ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:42
+msgid "**Clone master** : Permet de cloner le master ;"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:43
+msgid ""
+"**Afficher les cibles utilisant cette image** : Afficher les machines "
+"utilisant l'image."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:47
+msgid "Gérer les services de démarrage"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:51
+msgid ""
+"Cette section permet de gérer les services présents dans \"Pulse "
+"Utilities\" lors du boot PXE."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:52
+msgid ""
+"Pour ajouter un service, il faut cliquer sur l'action \"Ajouter le "
+"service au menu de démarrage par défaut\""
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:54
+msgid "Une pop-up apparaît avec différentes options :"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:58
+msgid ""
+"Il faut sélectionner les options qui nous intéressent et cliquer sur "
+"\"Valider\"."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:60
+msgid ""
+"Pour retirer un service, il faut cliquer sur l'action \"Enlever le "
+"service au menu de démarrage par défaut\""
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:63
+msgid "Menu de démarrage par défaut"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:67
+msgid ""
+"Cette page contient les différentes options du menu de démarrage par "
+"défaut."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:68
+msgid ""
+"On peut changer leur ordre ou encore les éditer (pour par exemple les "
+"afficher ou non)."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:71
+msgid "Scripts de post-imaging"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:76
+msgid ""
+"Les scripts de post-imaging sont les scripts qui seront lancés "
+"directement après l'imaging de la machine."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:77
+msgid ""
+"On peut par exemple mettre un script qui permet d'éteindre la machine une"
+" fois l'imaging effectué, ou encore un script permettant de copier le "
+"fichier de réponse Sysprep."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:80
+msgid "Configuration de l'imaging"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:85
+msgid "Cette page permet de modifier différentes options de l'imaging."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:86
+msgid ""
+"On peut notamment modifier la langue des menus, le login PXE, le mot de "
+"passe PXE, ou encore les paramètres de Clonezilla pour sauvegarder et "
+"restaurer les images."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:87
+msgid ""
+"**Attention !** Concernant les options Clonezilla, elles ne sont à "
+"modifier qu'en cas de réelle nécessité. Une mauvaise configuration "
+"rendrait l'imaging non fonctionnel."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:90
+msgid "Gestionnaire de fichiers de réponse Sysprep"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:95
+msgid "Cette page permet de générer et modifier des fichiers de réponse Sysprep."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:96
+msgid "Sysprep permet de généraliser une installation Windows."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:97
+msgid ""
+"La généralisation de l’image supprime des informations spécifiques à "
+"l’ordinateur, telles que les pilotes installés et l’identificateur de "
+"sécurité de l’ordinateur (SID)."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:98
+msgid ""
+"Sur ce générateur, on peut notamment mettre une clé produit, effacer ou "
+"non le disque, étendre la partition de l'OS, régler les paramètres de "
+"sécurité, etc."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:100
+msgid ""
+"Dans l'onglet \"Liste des Sysprep\", nous retrouvons les différents "
+"Sysprep que nous avons générés en amont."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:101
+msgid "On peut les afficher, les modifier ou les supprimer."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:104
+msgid "Tous les groupes d'imaging"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:109
+msgid "Cette page permet d'afficher les différents groupes d'imaging."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:112
+msgid "Ajouter un groupe d'imaging"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:117
+msgid ""
+"Dans ce menu, nous pouvons créer un groupe d'imaging en y ajoutant des "
+"machines."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:118
+msgid ""
+"Créer un groupe d'imaging permet d'appliquer la même configuration "
+"d'imaging (donc le même menu PXE) sur plusieurs machines et de lancer un "
+"déploiement d'image en multicast sur un groupe de machines."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:122
+msgid "Boot initial sur une machine (non enregistrée dans Pulse)"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:124
+msgid ""
+"Lors du lancement d'une machine en amorçage PXE (sigle de Pre-boot "
+"eXecution Environment, qui permet à une station de travail de démarrer "
+"depuis le réseau en récupérant une image de système d'exploitation qui se"
+" trouve sur un serveur) nous avons plusieurs choix qui s'offrent à nous."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:126
+msgid ""
+"Tout d'abord, quand la machine n'est pas enregistrée (*Reconnaissable "
+"grâce au message \"Host is NOT registered\"*) :"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:128
+msgid ""
+"- L'option par défaut est \"Continue Usual Startup\", qui permet de "
+"booter la machine normalement. Cette option par défaut sera "
+"automatiquement"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:129
+msgid "sélectionnée après un certain temps, sauf si l'on appuie sur une touche."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:134
+msgid ""
+"- La seconde option, \"Register as Pulse client\", permet d'enregistrer "
+"la machine en tant que client Pulse. Un inventaire de la machine va être "
+"fait et celle-ci"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:135
+msgid "sera intégrée à l'outil Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:140
+msgid ""
+"Une fois cette option sélectionnée, il est alors demandé d'entrer le nom "
+"de la machine :"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:145
+msgid ""
+"S'en suit un message demandant si le nom est correct, afin d'éviter une "
+"quelconque erreur (taper \"Y\" pour continuer ou \"N\" pour corriger le "
+"nom)"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:150
+msgid "Machine enregistrée dans Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:152
+msgid ""
+"Une fois la machine enregistrée (*Reconnaissable grâce au message \"Host "
+"_hostname_ registered!\"*), nous pouvons :"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:154
+msgid ""
+"- Booter la machine normalement, avec l'option \"Continue Usual Startup\""
+" (similaire à l'option du boot initial)"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:159
+msgid "- Créer une sauvegarde de la machine"
+msgstr ""
+
+#: ../../source/usemedulla/imaging/index.rst:164
+msgid ""
+"- Ou encore de restaurer une image créée en amont sur la machine "
+"nouvellement créée. Dans notre exemple, le master s'appelle \"master\""
+msgstr ""
+

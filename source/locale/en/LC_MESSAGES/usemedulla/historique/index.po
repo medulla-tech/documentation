@@ -1,0 +1,42 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/usemedulla/historique/index.rst:3
+msgid "Historique des actions effectuées"
+msgstr ""
+
+#: ../../source/usemedulla/historique/index.rst:5
+msgid "Cette section concerne la partie Historique de l'outil Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/historique/index.rst:8
+msgid ""
+"Dans le menu historique, nous pouvons retrouver l’ensemble des actions "
+"effectuées dans l’interface de Pulse pour chaque fonction."
+msgstr ""
+
+#: ../../source/usemedulla/historique/index.rst:12
+msgid ""
+"Dans le menu de gauche, on retrouvera les différents logs de chaque "
+"fonction :"
+msgstr ""
+

@@ -1,0 +1,112 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/usemedulla/deploy_agent/index.rst:3
+msgid "Déploiement de l'agent Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:5
+msgid "Cette section concerne la partie déploeiemnt de l'agent de l'outil Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:8
+msgid "L'agent Pulse peut être installé via différentes méthodes :"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:10
+msgid "-     GPO"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:11
+msgid "-     PsExec"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:12
+msgid "-     PXE"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:15
+msgid "Déploiement par GPO"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:17
+msgid ""
+"Il est possible de créer une GPO contenant l'agent Pulse et de la "
+"configurer pour que l'installation se lance au démarrage du poste."
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:19
+msgid "Une vidéo explicative est disponible à cette adresse :"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:20
+msgid "https://vimeo.com/97123295"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:23
+msgid "Déploiement via PsExec"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:25
+msgid ""
+"Un déploiement via PsExec est possible. Pour se faire, il faut utiliser "
+"la commande suivante :"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:26
+msgid "psexec \\\\ordi-cible -c agent-pulse.exe -u Administrateur -p password"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:28
+msgid ""
+"Il est à noter que cette méthode nécessite que les postes aient la clé "
+"suivante :"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:29
+msgid ""
+"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\system /v "
+"LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:32
+msgid "Déploiement via PXE"
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:34
+msgid "Il est également possible de déployer l'agent via PXE."
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:35
+msgid ""
+"Pour se faire, il faut transformer le script de post-imaging « Déployer "
+"les Agents Pulse » en un boot service et l'ajouter au menu par défaut de "
+"Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/deploy_agent/index.rst:37
+msgid ""
+"Il faut ensuite démarrer le poste en PXE, puis sélectionner « Déployer "
+"les Agents Pulse ». Lors du reboot du poste, l'agent Pulse s'installera "
+"automatiquement."
+msgstr ""
+

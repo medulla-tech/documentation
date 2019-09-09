@@ -1,0 +1,513 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../source/usemedulla/glpi/index.rst:3
+msgid "Corrélation avec l'outil de gestion de parc"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:5
+msgid "Cette section concerne la partie configuration GLPI de l'outil Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:9
+msgid "GLPI local"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:11
+msgid ""
+"Par défaut, Pulse comporte une configuration existante pour utiliser le "
+"GLPI local"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:12
+msgid "Il suffit de se connecter à l'adresse suivante : http://ippulse/glpi"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:14
+msgid "Pour s’identifier :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:15
+msgid "-     Login : root"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:16
+msgid "-     Mot de passe : celui de l’installation de Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:19
+msgid "GLPI existant"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:21
+msgid ""
+"Afin de connecter Pulse à un GLPI existant, il faut le configurer dans le"
+" fichier suivant :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:23
+msgid "# vi /etc/mmc/plugins/glpi.ini.local"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:25
+msgid "Les éléments principaux sont :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:27
+#: ../../source/usemedulla/glpi/index.rst:47
+msgid "[main]"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:28
+msgid "dbhost =              ← IP de base SQL de GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:29
+msgid "dbname =              ← nom de la bdd de GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:30
+msgid "dbuser =              ← utilisateur de la bdd de GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:31
+msgid "dbpasswd =            ← mot de passe bdd de GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:32
+msgid "glpi_computer_uri =   ← URL lien entre Pulse et GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:34
+msgid "[webservices]"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:35
+msgid "purge_machine =       ← suppression depuis Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:36
+msgid "glpi_base_url =       ← URL de base de GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:37
+msgid "glpi_username =       ← utilisateur admin de GL"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:38
+msgid "glpi_password =       ← mot de passe admin"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:40
+msgid "[authentication_glpi]"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:41
+msgid "baseurl =             ← URL pour l'identification"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:43
+msgid ""
+"Egalement, il faut faire en sorte que le serveur d'inventaire soit relayé"
+" au bon serveur GLPI. La configuration se fait dans le fichier suivant:"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:45
+msgid "# vi /etc/mmc/pulse2/inventory-server/inventory-server.ini.local"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:48
+msgid "url_to_forward ="
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:49
+msgid "http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:50
+msgid ".communication.php"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:53
+msgid "Affichage des machines"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:55
+msgid ""
+"Pulse permet un affichage sélectif des ordinateurs de GLPI suivant les "
+"filtres suivants :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:56
+msgid "-     state"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:57
+msgid "-     type"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:58
+msgid "-     entity"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:60
+msgid "Convention pour l'utilisation des filtres :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:61
+msgid "i.e. state=1 type=2|3|7 entity=2|5"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:62
+msgid "filter_on = state=3"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:65
+msgid "Entités et lieux"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:67
+msgid ""
+"Les entités de premier niveau sont réservées aux sites physiques où est "
+"installé Pulse, ou un Pulse multi-site."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:69
+msgid ""
+"GLPI permet d'assigner les ordinateurs à des entités et lieux en fonction"
+" de critères discriminants (adresse IP, masque de sous-réseau...). Il "
+"peut aussi utiliser le TAG de l'agent d'inventaire."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:70
+msgid ""
+"Ces différentes règles fonctionnent sous forme de pile. L’ordre de ces "
+"piles va du haut vers le bas et s’arrête dès qu’un critère correspond à "
+"une de ces règles."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:71
+msgid "Les règles se composent d’un ensemble de nom, critère(s) et action(s)."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:74
+msgid "Règle sur l'entité"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:76
+msgid "Les critères discriminants possibles sont les suivants :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:78
+msgid "-     Adresse IP"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:79
+msgid "- Domaine"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:80
+msgid "-     Nom de l’ordinateur"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:81
+msgid "-     Serial Number"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:82
+msgid "-     Sous-réseau"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:83
+msgid "-     Système d’exploitation / Comment"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:84
+msgid "-     Étiquette Fusioninventory"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:87
+#: ../../source/usemedulla/glpi/index.rst:109
+msgid "Exemple :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:91
+msgid "Les actions possibles sont les suivantes :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:92
+msgid "-     Entité"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:93
+msgid "-     Lieu"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:94
+msgid "-     Entité depuis TAG"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:95
+msgid "-     Ignorer lors de l’import"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:100
+msgid "Règles de lieu"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:102
+msgid ""
+"Identique aux entités, cette section permet de séparer des entités pour "
+"plus de détails."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:105
+msgid "Gestion des groupes"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:107
+msgid ""
+"La gestion des groupes permet de faire coïncider les groupes GLPI aux "
+"groupes Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:111
+msgid "-     Groupe GLPI-Hotliner minimum pour accès à Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:112
+msgid "- Assigne des droits dans GLPI en fonction du groupe."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:113
+msgid "- GLPI-Hotliner => accès au Bureau à distance"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:114
+msgid "- GLPI-Supervisor & GLPI-Technician => accès à Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:115
+msgid ""
+"- GLPI-Admin & GLPI-Super-Admin => accès à Pulse avec gestion des "
+"utilisateurs"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:118
+msgid "Création d'un groupe Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:120
+msgid "Il faut créer les groupes nécessaires à l'utilisation de Pulse."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:124
+msgid ""
+"Le groupe doit commencer par « GLPI- ». Il est conseillé de respecter la "
+"nomenclature de l'exemple."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:127
+msgid "Synchroniser les groupes GLPI"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:129
+msgid ""
+"Pour synchroniser les groupes GLPI, il faut aller dans l'onglet "
+"\"Administration\", \"Groupes\" puis \"Liaison annuaire LDAP\" pour enfin"
+" cliquer sur le bouton \"Importation de nouveaux groupes\"."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:130
+msgid "Il faut alors importer les nouveaux groupes."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:133
+msgid "Gestion des utilisateurs"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:136
+msgid "Règles d'affectation et profils"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:138
+msgid ""
+"Depuis GLPI, Administration >> Règles >> Règles d'affectation "
+"d'habilitations à un utilisateur, ajouter une nouvelle règle :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:142
+msgid "Puis ajouter un critère d'appartenance au nouveau groupe :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:146
+msgid ""
+"Et enfin ajouter une action qui assigne les utilisateurs à l'entité "
+"voulue ainsi qu'une action attribuant un profil de droits à ces "
+"utilisateurs :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:151
+msgid "Ajouter l'utilisateur au groupe dans Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:153
+msgid ""
+"Pour ajouter un utilisateur à un groupe dans Pulse, il faut éditer un "
+"utilisateur et ajouter son groupe :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:157
+msgid ""
+"Les groupes définis par défaut donnent un accès complet à l'ensemble des "
+"entités."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:159
+msgid ""
+"Lors de la connexion dans Pulse, cet utilisateur sera cantonné à l’entité"
+" correspondante, la même restriction s'applique dans GLPI."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:161
+msgid ""
+"Il est évidemment possible de réitérer l'opération avec un second groupe "
+"et une seconde entité."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:164
+msgid "Dictionnaire applicatif Pulse"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:166
+msgid ""
+"Dans le répertoire suivant, un ensemble de filtre permet le renommage et "
+"la standardisation de valeurs d’inventaire. Ces règles sont appliquées à "
+"la volée sur les inventaires."
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:168
+msgid "# cd etc/mmc/pulse2/inventory-server/xml-fix"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:169
+msgid "# ls"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:170
+msgid "00_Replace_bad_characters.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:171
+msgid "01_Dell_consistency.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:172
+msgid "02_ATI_consistency.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:173
+msgid "03_ASUS_consistency.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:174
+msgid "04_Adobe_consistency.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:175
+msgid "05_HP_consistency.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:176
+msgid "06_Laptop_type.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:177
+msgid "07_Virtual_machine_type.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:178
+msgid "08_Microsoft_consistency.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:179
+msgid "99_Strip_leading_trailing_spaces.py"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:181
+msgid "Exemple de standardisation du constructeur DELL :"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:183
+msgid "def xml_fix(xml):"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:184
+msgid "import xml.etree.cElementTree as ET"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:185
+msgid "xml = ET.fromstring(xml)"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:186
+msgid "tree = ET.ElementTree(xml)"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:187
+msgid "root = tree.getroot()"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:188
+msgid "for subelem1 in root:"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:189
+msgid "if subelem1.tag == 'CONTENT':"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:190
+msgid "for subelem2 in subelem1:"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:191
+msgid "for subelem3 in subelem2:"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:193
+msgid "# DELL vendor name should always be the same"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:194
+msgid ""
+"if subelem3.text in ['DELL', 'Dell Corp.', 'Dell Computer Corp.', 'Dell',"
+" 'Dell Computer Corporation']:"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:195
+msgid "subelem3.text = 'Dell Inc.'"
+msgstr ""
+
+#: ../../source/usemedulla/glpi/index.rst:197
+msgid "return ET.tostring(root)"
+msgstr ""
+

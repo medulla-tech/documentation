@@ -1,43 +1,41 @@
-=====================================
-IT infrastructure management software
-=====================================
+.. Medulla RMM documentation documentation master file, created by
+   sphinx-quickstart on Mon Apr  8 08:58:27 2024.
+   You can adapt this file completely to your liking, but it should at least
+   contain the root `toctree` directive.
 
-IT infrastructure management software is a framework used in Directory
-Server and Pulse projects that provides plugins for MMC.
+Documentation Medulla RMM
+=========================
 
-If you plan to install :doc:`MDS <mds/index>` plugins or Pulse 2 plugins you
-first need to install and configure MMC (see section :doc:`mmc/index`).
-
-Installation and configuration
-==============================
+	
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
+   :caption: Installer
 
-   mmc/index
-   pulse2/index
-
-User manual
-===================
-
-.. toctree::
-   :maxdepth: 2
-
-   manual/index
-
-Other documentation
-===================
+   installmedulla/index
+   installmedulla/installagent
+   installmedulla/gui
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 3
+   :caption: Découvrir
 
-   devel/index
-   specs/index
-   qa/index
-   mds/index
+   firststep/index
 
-.. Indices and tables
-.. ==================
-.. * :ref:`genindex`
-.. * :ref:`modindex`
-.. * :ref:`search`
+.. toctree::
+   :maxdepth: 3
+   :caption: Manuel utilisateur
+
+   usemedulla/index
+
+.. toctree::
+   :maxdepth: 3
+   :caption: Contributer
+
+   contributemedulla/index
+
+
+Recherche
+=========
+
+* :ref:`search`
