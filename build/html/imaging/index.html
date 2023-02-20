@@ -1,0 +1,294 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Imaging &#8212; IT Infrastructure Management Software 4.6.11 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/classic.css" />
+    
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/sphinx_highlight.js"></script>
+    
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Packages" href="../packages/index.html" />
+    <link rel="prev" title="Groupe de machines" href="../machine_group/index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../packages/index.html" title="Packages"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../machine_group/index.html" title="Groupe de machines"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">IT Infrastructure Management Software 4.6.11 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Imaging</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="imaging">
+<h1>Imaging<a class="headerlink" href="#imaging" title="Permalink to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie imaging de l’outil Pulse, avec notamment le boot en iPXE, la page d’accueil et les différentes options.</div>
+<div class="line"><br /></div>
+</div>
+<section id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Lorsque nous arrivons sur le menu Imaging sur l’écran principal, nous allons nous retrouver sur la page de statut du serveur d’imaging.</div>
+</div>
+<img alt="../_images/statutServeur.png" src="../_images/statutServeur.png" />
+<div class="line-block">
+<div class="line">Cette page permet de connaître l’état du serveur d’imaging, avec notamment l’espace disque disponible sur le serveur, la charge du serveur ou encore les statistiques entité.</div>
+<div class="line"><br /></div>
+<div class="line">Sur la gauche de l’écran, on retrouve un menu comportant différents sous-menus qui composent le menu Imaging :</div>
+</div>
+<img alt="../_images/menu1.png" src="../_images/menu1.png" />
+<div class="line-block">
+<div class="line"><strong>Statut du serveur d’imaging</strong> : Affiche le statut du serveur d’imaging ;</div>
+<div class="line"><strong>Gérer les masters</strong> : Permet de gérer les différents masters des machines ;</div>
+<div class="line"><strong>Gérer les services de démarrage</strong> : Permet de gérer les services présents dans “Pulse Utilities” lors du boot PXE ;</div>
+<div class="line"><strong>Menu de démarrage par défaut</strong> : Permet de configurer quel est le menu de démarrage par défaut ;</div>
+<div class="line"><strong>Scripts de post-imaging</strong> : Permet d’ajouter des scripts à exécuter après l’imaging ;</div>
+<div class="line"><strong>Configuration de l’imaging</strong> : Permet la configuration du serveur d’imaging (par exemple, ajout de mot de passe PXE) ;</div>
+<div class="line"><strong>Gestionnaire de fichiers de réponse Sysprep</strong> : Génère un fichier de réponse personnalisé pour Windows ;</div>
+<div class="line"><strong>Tous les groupes d’imaging</strong> : Affiche les différents groupes d’imaging ;</div>
+<div class="line"><strong>Ajouter un groupe d’imaging</strong> : Permet de créer un groupe de différentes machines pour leur attribuer un imaging.</div>
+<div class="line"><br /></div>
+</div>
+<section id="gerer-les-masters">
+<h3>Gérer les masters<a class="headerlink" href="#gerer-les-masters" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/gerermasters.png" src="../_images/gerermasters.png" />
+<div class="line-block">
+<div class="line">Sur ce menu, nous pouvons gérer les masters grâce à différentes actions :</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Enlever du menu de démarrage</strong> : Enlève le master du menu de démarrage des machines ;</div>
+<div class="line"><strong>Créer une ISO bootable</strong> : Permet de créer une ISO du master ;</div>
+<div class="line"><strong>Editer le master</strong> : Permet d’éditer le master : son libellé, sa description ou encore l’ordre des différentes actions ;</div>
+<div class="line"><strong>Clone master</strong> : Permet de cloner le master ;</div>
+<div class="line"><strong>Afficher les cibles utilisant cette image</strong> : Afficher les machines utilisant l’image.</div>
+<div class="line"><br /></div>
+</div>
+</section>
+<section id="gerer-les-services-de-demarrage">
+<h3>Gérer les services de démarrage<a class="headerlink" href="#gerer-les-services-de-demarrage" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/services.png" src="../_images/services.png" />
+<div class="line-block">
+<div class="line">Cette section permet de gérer les services présents dans “Pulse Utilities” lors du boot PXE.</div>
+<div class="line">Pour ajouter un service, il faut cliquer sur l’action “Ajouter le service au menu de démarrage par défaut”</div>
+<div class="line"><br /></div>
+<div class="line">Une pop-up apparaît avec différentes options :</div>
+</div>
+<img alt="../_images/ajoutservice.png" src="../_images/ajoutservice.png" />
+<div class="line-block">
+<div class="line">Il faut sélectionner les options qui nous intéressent et cliquer sur “Valider”.</div>
+<div class="line"><br /></div>
+<div class="line">Pour retirer un service, il faut cliquer sur l’action “Enlever le service au menu de démarrage par défaut”</div>
+</div>
+</section>
+<section id="menu-de-demarrage-par-defaut">
+<h3>Menu de démarrage par défaut<a class="headerlink" href="#menu-de-demarrage-par-defaut" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/demarrageParDefaut.png" src="../_images/demarrageParDefaut.png" />
+<div class="line-block">
+<div class="line">Cette page contient les différentes options du menu de démarrage par défaut.</div>
+<div class="line">On peut changer leur ordre ou encore les éditer (pour par exemple les afficher ou non).</div>
+</div>
+</section>
+<section id="scripts-de-post-imaging">
+<h3>Scripts de post-imaging<a class="headerlink" href="#scripts-de-post-imaging" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/scriptsPostImaging.png" src="../_images/scriptsPostImaging.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Les scripts de post-imaging sont les scripts qui seront lancés directement après l’imaging de la machine.</div>
+<div class="line">On peut par exemple mettre un script qui permet d’éteindre la machine une fois l’imaging effectué, ou encore un script permettant de copier le fichier de réponse Sysprep.</div>
+</div>
+</section>
+<section id="configuration-de-l-imaging">
+<h3>Configuration de l’imaging<a class="headerlink" href="#configuration-de-l-imaging" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/configuration.png" src="../_images/configuration.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Cette page permet de modifier différentes options de l’imaging.</div>
+<div class="line">On peut notamment modifier la langue des menus, le login PXE, le mot de passe PXE, ou encore les paramètres de Clonezilla pour sauvegarder et restaurer les images.</div>
+<div class="line"><strong>Attention !</strong> Concernant les options Clonezilla, elles ne sont à modifier qu’en cas de réelle nécessité. Une mauvaise configuration rendrait l’imaging non fonctionnel.</div>
+</div>
+</section>
+<section id="gestionnaire-de-fichiers-de-reponse-sysprep">
+<h3>Gestionnaire de fichiers de réponse Sysprep<a class="headerlink" href="#gestionnaire-de-fichiers-de-reponse-sysprep" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/sysprep.png" src="../_images/sysprep.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Cette page permet de générer et modifier des fichiers de réponse Sysprep.</div>
+<div class="line">Sysprep permet de généraliser une installation Windows.</div>
+<div class="line">La généralisation de l’image supprime des informations spécifiques à l’ordinateur, telles que les pilotes installés et l’identificateur de sécurité de l’ordinateur (SID).</div>
+<div class="line">Sur ce générateur, on peut notamment mettre une clé produit, effacer ou non le disque, étendre la partition de l’OS, régler les paramètres de sécurité, etc.</div>
+<div class="line"><br /></div>
+<div class="line">Dans l’onglet “Liste des Sysprep”, nous retrouvons les différents Sysprep que nous avons générés en amont.</div>
+<div class="line">On peut les afficher, les modifier ou les supprimer.</div>
+</div>
+</section>
+<section id="tous-les-groupes-d-imaging">
+<h3>Tous les groupes d’imaging<a class="headerlink" href="#tous-les-groupes-d-imaging" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/groups.png" src="../_images/groups.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Cette page permet d’afficher les différents groupes d’imaging.</div>
+</div>
+</section>
+<section id="ajouter-un-groupe-d-imaging">
+<h3>Ajouter un groupe d’imaging<a class="headerlink" href="#ajouter-un-groupe-d-imaging" title="Permalink to this heading">¶</a></h3>
+<img alt="../_images/createGroup.png" src="../_images/createGroup.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Dans ce menu, nous pouvons créer un groupe d’imaging en y ajoutant des machines.</div>
+<div class="line">Créer un groupe d’imaging permet d’appliquer la même configuration d’imaging (donc le même menu PXE) sur plusieurs machines et de lancer un déploiement d’image en multicast sur un groupe de machines.</div>
+</div>
+</section>
+</section>
+<section id="boot-initial-sur-une-machine-non-enregistree-dans-pulse">
+<h2>Boot initial sur une machine (non enregistrée dans Pulse)<a class="headerlink" href="#boot-initial-sur-une-machine-non-enregistree-dans-pulse" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Lors du lancement d’une machine en amorçage PXE (sigle de Pre-boot eXecution Environment, qui permet à une station de travail de démarrer depuis le réseau en récupérant une image de système d’exploitation qui se trouve sur un serveur) nous avons plusieurs choix qui s’offrent à nous.</div>
+<div class="line"><br /></div>
+<div class="line">Tout d’abord, quand la machine n’est pas enregistrée (<em>Reconnaissable grâce au message “Host is NOT registered”</em>) :</div>
+<div class="line"><br /></div>
+<div class="line">- L’option par défaut est “Continue Usual Startup”, qui permet de booter la machine normalement. Cette option par défaut sera automatiquement</div>
+<div class="line">sélectionnée après un certain temps, sauf si l’on appuie sur une touche.</div>
+</div>
+<img alt="../_images/continueUsual.png" src="../_images/continueUsual.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">- La seconde option, “Register as Pulse client”, permet d’enregistrer la machine en tant que client Pulse. Un inventaire de la machine va être fait et celle-ci</div>
+<div class="line">sera intégrée à l’outil Pulse.</div>
+</div>
+<img alt="../_images/register.png" src="../_images/register.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Une fois cette option sélectionnée, il est alors demandé d’entrer le nom de la machine :</div>
+</div>
+<img alt="../_images/askingHostname.png" src="../_images/askingHostname.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">S’en suit un message demandant si le nom est correct, afin d’éviter une quelconque erreur (taper “Y” pour continuer ou “N” pour corriger le nom)</div>
+</div>
+<img alt="../_images/correct.png" src="../_images/correct.png" />
+</section>
+<section id="machine-enregistree-dans-pulse">
+<h2>Machine enregistrée dans Pulse<a class="headerlink" href="#machine-enregistree-dans-pulse" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Une fois la machine enregistrée (<em>Reconnaissable grâce au message “Host _hostname_ registered!”</em>), nous pouvons :</div>
+<div class="line"><br /></div>
+<div class="line">- Booter la machine normalement, avec l’option “Continue Usual Startup” (similaire à l’option du boot initial)</div>
+</div>
+<img alt="../_images/continueUsualReg.png" src="../_images/continueUsualReg.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">- Créer une sauvegarde de la machine</div>
+</div>
+<img alt="../_images/createBackup.png" src="../_images/createBackup.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">- Ou encore de restaurer une image créée en amont sur la machine nouvellement créée. Dans notre exemple, le master s’appelle “master”</div>
+</div>
+<img alt="../_images/master.png" src="../_images/master.png" />
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Imaging</a><ul>
+<li><a class="reference internal" href="#interface">Interface</a><ul>
+<li><a class="reference internal" href="#gerer-les-masters">Gérer les masters</a></li>
+<li><a class="reference internal" href="#gerer-les-services-de-demarrage">Gérer les services de démarrage</a></li>
+<li><a class="reference internal" href="#menu-de-demarrage-par-defaut">Menu de démarrage par défaut</a></li>
+<li><a class="reference internal" href="#scripts-de-post-imaging">Scripts de post-imaging</a></li>
+<li><a class="reference internal" href="#configuration-de-l-imaging">Configuration de l’imaging</a></li>
+<li><a class="reference internal" href="#gestionnaire-de-fichiers-de-reponse-sysprep">Gestionnaire de fichiers de réponse Sysprep</a></li>
+<li><a class="reference internal" href="#tous-les-groupes-d-imaging">Tous les groupes d’imaging</a></li>
+<li><a class="reference internal" href="#ajouter-un-groupe-d-imaging">Ajouter un groupe d’imaging</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#boot-initial-sur-une-machine-non-enregistree-dans-pulse">Boot initial sur une machine (non enregistrée dans Pulse)</a></li>
+<li><a class="reference internal" href="#machine-enregistree-dans-pulse">Machine enregistrée dans Pulse</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../machine_group/index.html"
+                          title="previous chapter">Groupe de machines</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../packages/index.html"
+                          title="next chapter">Packages</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../_sources/imaging/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../packages/index.html" title="Packages"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../machine_group/index.html" title="Groupe de machines"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../index.html">IT Infrastructure Management Software 4.6.11 documentation</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Imaging</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011-2023, Siveo.
+      Last updated on Feb 20, 2023.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+    </div>
+  </body>
+</html>

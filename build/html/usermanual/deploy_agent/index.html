@@ -1,0 +1,149 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Déploiement de l’agent Pulse &#8212; IT Infrastructure Management Software 4.6.11 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/classic.css" />
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="prev" title="Agent Pulse" href="../pulse_agent/index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../pulse_agent/index.html" title="Agent Pulse"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">IT Infrastructure Management Software 4.6.11 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Manuel</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Déploiement de l’agent Pulse</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="deploiement-de-l-agent-pulse">
+<h1>Déploiement de l’agent Pulse<a class="headerlink" href="#deploiement-de-l-agent-pulse" title="Permalink to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie déploeiemnt de l’agent de l’outil Pulse.</div>
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line">L’agent Pulse peut être installé via différentes méthodes :</div>
+<div class="line"><br /></div>
+<div class="line">-     GPO</div>
+<div class="line">-     PsExec</div>
+<div class="line">-     PXE</div>
+</div>
+<section id="deploiement-par-gpo">
+<h2>Déploiement par GPO<a class="headerlink" href="#deploiement-par-gpo" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Il est possible de créer une GPO contenant l’agent Pulse et de la configurer pour que l’installation se lance au démarrage du poste.</div>
+<div class="line"><br /></div>
+<div class="line">Une vidéo explicative est disponible à cette adresse :</div>
+<div class="line"><a class="reference external" href="https://vimeo.com/97123295">https://vimeo.com/97123295</a></div>
+</div>
+</section>
+<section id="deploiement-via-psexec">
+<h2>Déploiement via PsExec<a class="headerlink" href="#deploiement-via-psexec" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Un déploiement via PsExec est possible. Pour se faire, il faut utiliser la commande suivante :</div>
+<div class="line">psexec \ordi-cible -c agent-pulse.exe -u Administrateur -p password</div>
+<div class="line"><br /></div>
+<div class="line">Il est à noter que cette méthode nécessite que les postes aient la clé suivante :</div>
+<div class="line">HKLMSOFTWAREMicrosoftWindowsCurrentVersionPoliciessystem /v LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f</div>
+</div>
+</section>
+<section id="deploiement-via-pxe">
+<h2>Déploiement via PXE<a class="headerlink" href="#deploiement-via-pxe" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Il est également possible de déployer l’agent via PXE.</div>
+<div class="line">Pour se faire, il faut transformer le script de post-imaging « Déployer les Agents Pulse » en un boot service et l’ajouter au menu par défaut de Pulse.</div>
+<div class="line"><br /></div>
+<div class="line">Il faut ensuite démarrer le poste en PXE, puis sélectionner « Déployer les Agents Pulse ». Lors du reboot du poste, l’agent Pulse s’installera automatiquement.</div>
+</div>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Déploiement de l’agent Pulse</a><ul>
+<li><a class="reference internal" href="#deploiement-par-gpo">Déploiement par GPO</a></li>
+<li><a class="reference internal" href="#deploiement-via-psexec">Déploiement via PsExec</a></li>
+<li><a class="reference internal" href="#deploiement-via-pxe">Déploiement via PXE</a></li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../pulse_agent/index.html"
+                          title="previous chapter">Agent Pulse</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/usermanual/deploy_agent/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../pulse_agent/index.html" title="Agent Pulse"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">IT Infrastructure Management Software 4.6.11 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Manuel</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Déploiement de l’agent Pulse</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011-2023, Siveo.
+      Last updated on Feb 20, 2023.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+    </div>
+  </body>
+</html>

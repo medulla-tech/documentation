@@ -1,0 +1,207 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Groupe de machines &#8212; IT Infrastructure Management Software 4.6.11 documentation</title>
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/classic.css" />
+    
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/sphinx_highlight.js"></script>
+    
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Imaging" href="../imaging/index.html" />
+    <link rel="prev" title="Menu Ordinateurs" href="../computers/index.html" /> 
+  </head><body>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li class="right" >
+          <a href="../imaging/index.html" title="Imaging"
+             accesskey="N">next</a> |</li>
+        <li class="right" >
+          <a href="../computers/index.html" title="Menu Ordinateurs"
+             accesskey="P">previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">IT Infrastructure Management Software 4.6.11 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" accesskey="U">Manuel</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Groupe de machines</a></li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body" role="main">
+            
+  <section id="groupe-de-machines">
+<h1>Groupe de machines<a class="headerlink" href="#groupe-de-machines" title="Permalink to this heading">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie Groupe de machines de l’outil Pulse.</div>
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line">Les groupes de machines permettent de constituer un ensemble de machines. Il existe trois types de groupes :</div>
+<div class="line">- Les groupes statiques ;</div>
+<div class="line">- Les groupes dynamiques ;</div>
+<div class="line">- Les groupes créés depuis un import.</div>
+</div>
+<section id="groupe-statique">
+<h2>Groupe statique<a class="headerlink" href="#groupe-statique" title="Permalink to this heading">¶</a></h2>
+<p>Dans le groupe statique, la sélection des machines membres de ce groupe est manuelle.</p>
+<img alt="../../_images/static.png" src="../../_images/static.png" />
+<div class="line-block">
+<div class="line">Il est possible d’éditer un groupe statique pour ajouter ou supprimer d’autres machines.</div>
+<div class="line">Il suffit d’utiliser les flèches pour ajouter ou supprimer les machines du groupe.</div>
+</div>
+</section>
+<section id="groupe-dynamique">
+<h2>Groupe dynamique<a class="headerlink" href="#groupe-dynamique" title="Permalink to this heading">¶</a></h2>
+<div class="line-block">
+<div class="line">Un groupe dynamique est un groupe basé sur une requête sur la base d’inventaire de machines en fonction de critère(s).</div>
+<div class="line">Il est possible de combiner plusieurs critères avec des opérateurs booléens.</div>
+<div class="line">Le résultat est stocké sous forme de requête (dynamique) ou de résultat (figé à l’instant T).</div>
+</div>
+<img alt="../../_images/dynamic.png" src="../../_images/dynamic.png" />
+<div class="line-block">
+<div class="line">Trois modules sont disponibles pour la création de groupe dynamique :</div>
+<div class="line">-     Module GLPI : permet d’utiliser les critères d’inventaire des machines ;</div>
+<div class="line">-     Module xmppmaster : permet d’utiliser l’Active Directory ou LDAP ;</div>
+<div class="line">-     Module dyngroup : permet d’utiliser des groupes dynamiques existants.</div>
+</div>
+<div class="line-block">
+<div class="line">Sauf cas particulier, il faut toujours choisir « GLPI ». En effet, la requête peut être effectuée sur différents champs, voir ci-dessous :</div>
+</div>
+<img alt="../../_images/glpi.png" src="../../_images/glpi.png" />
+<p>Par exemple, utiliser le champ “Entité” se présente comme ceci :</p>
+<img alt="../../_images/entity.png" src="../../_images/entity.png" />
+<p>L’auto-complétion propose les valeurs existantes après avoir renseigné trois caractères.</p>
+<section id="exemple-concret-de-groupe-dynamique">
+<h3>Exemple concret de groupe dynamique<a class="headerlink" href="#exemple-concret-de-groupe-dynamique" title="Permalink to this heading">¶</a></h3>
+<div class="line-block">
+<div class="line">Pour notre exemple, nous allons créer un groupe de machine sur lesquels une version obsolète de Firefox est présente.</div>
+<div class="line">Pour commencer, il faut ajouter un critère « Logiciel » avec la valeur « Mozilla Firefox * » pour tester la présence de Firefox (le caractère “*” peut être utilisé pour compléter le critère par n’importe quel caractère et donc trouver toutes les versions de Firefox);</div>
+<div class="line">Ensuite, il faut cliquer sur « glpi » à nouveau pour ajouter un second critère ;</div>
+<div class="line">Choisir « Version » puis renseigner « Mozilla Firefox * » puis « 47.0 » (ce critère sera inversé, plus d’informations juste après)</div>
+<div class="line"><em>(Le critère « Version » seul retournerait les machines avec Firefox obsolète OU n’ayant pas Firefox du tout)</em></div>
+</div>
+<img alt="../../_images/exemplegroupdyn.png" src="../../_images/exemplegroupdyn.png" />
+<div class="line-block">
+<div class="line">Il faut s’inspirer de la liste d’auto-complétions pour adapter au mieux le critère de recherche :</div>
+<div class="line">Par exemple, Firefox apparaît avec une entrée pour chaque version, d’où l’utilisation de « * ».</div>
+</div>
+<img alt="../../_images/firefox.png" src="../../_images/firefox.png" />
+<div class="line-block">
+<div class="line">Une fois la requête terminée, il faut la sauvegarder.</div>
+<div class="line">Il est donc possible de sauvegarder en tant que « requête » (dynamique) ou en tant que « résultat » (requête à l’instant T).</div>
+<div class="line">Si on ajoute le groupe aux groupes favoris, on peut retrouver le groupe dans le menu de gauche, onglet “Groupes favoris”.</div>
+</div>
+<section id="operateur-booleen">
+<h4>Opérateur booléen :<a class="headerlink" href="#operateur-booleen" title="Permalink to this heading">¶</a></h4>
+<div class="line-block">
+<div class="line">Les opérateurs disponibles sont  AND, OR, NOT ainsi que les ( ).</div>
+<div class="line">AND : Permet d’associer les requêtes : AND(1,2)</div>
+<div class="line">NOT : Permet d’inverser le résultat de la seconde requête : NOT(2)</div>
+<div class="line">OR : Permet d’utiliser l’une ou l’autre requête : OR(1,2)</div>
+</div>
+<div class="line-block">
+<div class="line">Pour notre requête, nous devons combiner les deux conditions AND et NOT : AND(1,NOT(2))</div>
+</div>
+<div class="line-block">
+<div class="line">Cela revient à demander les machines ayant le logiciel « Mozilla Firefox * » installé ET dont la version de</div>
+<div class="line">« Mozilla Firefox * » N’EST PAS « 47.0 »</div>
+<div class="line">Vous pouvez vérifier vos opérateurs en cliquant sur le bouton « Vérifier »</div>
+<div class="line">Il est aussi possible de visualiser le contenu du groupe avant de valider en cliquant sur le bouton « Voir le contenu »</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+            <div class="clearer"></div>
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+  <div>
+    <h3><a href="../../index.html">Table of Contents</a></h3>
+    <ul>
+<li><a class="reference internal" href="#">Groupe de machines</a><ul>
+<li><a class="reference internal" href="#groupe-statique">Groupe statique</a></li>
+<li><a class="reference internal" href="#groupe-dynamique">Groupe dynamique</a><ul>
+<li><a class="reference internal" href="#exemple-concret-de-groupe-dynamique">Exemple concret de groupe dynamique</a><ul>
+<li><a class="reference internal" href="#operateur-booleen">Opérateur booléen :</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+  </div>
+  <div>
+    <h4>Previous topic</h4>
+    <p class="topless"><a href="../computers/index.html"
+                          title="previous chapter">Menu Ordinateurs</a></p>
+  </div>
+  <div>
+    <h4>Next topic</h4>
+    <p class="topless"><a href="../imaging/index.html"
+                          title="next chapter">Imaging</a></p>
+  </div>
+  <div role="note" aria-label="source link">
+    <h3>This Page</h3>
+    <ul class="this-page-menu">
+      <li><a href="../../_sources/usermanual/machine_group/index.rst.txt"
+            rel="nofollow">Show Source</a></li>
+    </ul>
+   </div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Quick search</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related" role="navigation" aria-label="related navigation">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="../../genindex.html" title="General Index"
+             >index</a></li>
+        <li class="right" >
+          <a href="../imaging/index.html" title="Imaging"
+             >next</a> |</li>
+        <li class="right" >
+          <a href="../computers/index.html" title="Menu Ordinateurs"
+             >previous</a> |</li>
+        <li class="nav-item nav-item-0"><a href="../../index.html">IT Infrastructure Management Software 4.6.11 documentation</a> &#187;</li>
+          <li class="nav-item nav-item-1"><a href="../index.html" >Manuel</a> &#187;</li>
+        <li class="nav-item nav-item-this"><a href="">Groupe de machines</a></li> 
+      </ul>
+    </div>
+    <div class="footer" role="contentinfo">
+        &#169; Copyright 2011-2023, Siveo.
+      Last updated on Feb 20, 2023.
+      Created using <a href="https://www.sphinx-doc.org/">Sphinx</a> 6.1.3.
+    </div>
+  </body>
+</html>
