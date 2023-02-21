@@ -36,7 +36,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'IT Infrastructure Management Software'
+project = u'Medulla - Remote monitoring and management software'
 copyright = u'2011-2023, Siveo'
 
 # The version info for the project you're documenting, acts as replacement for
