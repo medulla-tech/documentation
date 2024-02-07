@@ -8,6 +8,7 @@ Manuel d'utilisation
 
    introduction/index
    interface/index
+   groupe/index
    computers/index
    machine_group/index
    imaging/index
