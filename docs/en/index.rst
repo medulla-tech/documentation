@@ -6,7 +6,7 @@ Manuel
    :maxdepth: 2
    :glob:
 
-   installmedulla/index
-   usemedulla/index
-   contributemedulla/index
+   installmedulla_en/index
+   usemedulla_en/index
+   contributemedulla_en/index
 

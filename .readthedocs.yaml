@@ -6,8 +6,5 @@ build:
     python: "3.10"
 
 sphinx:
-  configuration: conf.py  # Path to the base configuration file
-
-python:
-  install:
-    - requirements: docs/requirements.txt  # Common requirements for both languages
+  # Build each language in a separate directory (controlled by conf.py)
+  build_base: .  # Uncomment this line if not using conditional build base in conf.py
