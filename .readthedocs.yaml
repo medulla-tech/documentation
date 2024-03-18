@@ -6,9 +6,9 @@ build:
     python: "3.10"
 
 sphinx:
-    configuration: docs-fr/conf.py
-    configuration: docs-en/conf.py
+    configuration: docs/fr/conf.py
+    configuration: docs/en/conf.py
 
 python:
     install:
-    - requirements: docs-fr/requirements.txt
+    - requirements: docs/requirements.txt
