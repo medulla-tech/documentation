@@ -6,10 +6,7 @@ build:
     python: "3.10"
 
 sphinx:
-  configuration:
-    conf.py:  # Common configuration file
-      en: docs/en/conf.py
-      fr: docs/fr/conf.py
+  configuration: conf.py  # Path to the base configuration file
 
 python:
   install:

@@ -1,0 +1,32 @@
+# -- Common configurations ---------------------------------------------------
+
+# List of patterns, relative to source directory, that match files and
+# directories to exclude from the build.
+exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
+
+# The path for custom CSS files.
+html_static_path = ['_static']
+
+# -- Project information (placeholders, set in language-specific files) --------
+
+project = None
+copyright = None
+author = None
+release = None
+
+def get_source_suffix():
+  """Returns the source file suffix based on language."""
+  # Implement logic to determine source suffix based on language (e.g., from environment variable)
+  # For example, if language is 'en', return '.rst'. Otherwise, return a different suffix (if applicable).
+  return '.rst'
+
+source_suffix = get_source_suffix()
+
+def get_master_doc(language):
+  """Returns the master document name based on language."""
+  # Implement logic to determine the master document name based on language (e.g., 'index_en.rst' for English)
+  # You can use a dictionary or other logic to map languages to master doc names.
+  return 'index'  # Placeholder, replace with logic to return language-specific master doc name
+
+master_doc = get_master_doc(language)
+
