@@ -14,5 +14,4 @@ copyright = None
 author = None
 release = None
 
-# ... other functions like get_source_suffix can remain here (if needed)
-
+# ... functions to handle language-specific configurations can be added here (optional)

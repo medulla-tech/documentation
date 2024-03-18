@@ -1,23 +1,25 @@
-# Import the base configuration file
-from . import conf
+from .. import conf  # Import the base configuration
 
-# Language specific configuration for English documentation
-language = 'en'
-
-# Add or override configurations specific to English docs here
-# For example:
-# html_theme = 'custom_english_theme'  # Replace with your theme if different
-
-# Inherit configurations from the base file
-extensions = conf.extensions
-templates_path = conf.templates_path
-exclude_patterns = conf.exclude_patterns
-html_static_path = conf.html_static_path
-
-# Add project specific configurations here (common to both languages)
-project = 'Medulla'
+# Set language-specific information
+language = 'en'  # Or 'fr' for the French file
+project = 'Medulla (English)'  # Set project title for English
 copyright = '2024, Yvan Manon'
 author = 'Yvan Manon'
 release = '5.1'
 
-# ... rest of your project specific configurations ...
+# Sphinx extensions to load (can be language-specific)
+extensions = []  # Add language-specific extensions here if needed
+
+# The theme to use for HTML and HTML Help output (can be language-specific)
+html_theme = 'sphinx_rtd_theme'
+
+# Options for HTML output (can be language-specific)
+# pygments_style = 'sphinx'  # Add language-specific styling if needed
+
+# Grouping the doc source files (by topic) -------------------------------------
+
+# List of patterns, relative to source directory, that match files and
+# directories to group into doc trees.
+# For example, 'intro.rst' documents in the root directory will be part of
+# the 'intro' doc tree.
+# toctree_glob = []  # Add language-specific toctree configuration if needed
