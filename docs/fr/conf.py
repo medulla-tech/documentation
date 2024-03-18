@@ -23,3 +23,13 @@ html_theme = 'sphinx_rtd_theme'
 # For example, 'intro.rst' documents in the root directory will be part of
 # the 'intro' doc tree.
 # toctree_glob = []  # Add language-specific toctree configuration if needed
+
+# Use the language code 'fr' for French content
+toctree = {
+    'index': [
+        'intro_fr',  # Use separate source files for French content
+        'installation_fr',
+        'utilisation',  # Translate titles for French sections
+        'contribuer'
+    ]
+}

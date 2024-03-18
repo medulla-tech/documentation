@@ -1,0 +1,247 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Agent Pulse &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Déploiement de l’agent Pulse" href="../deploy_agent/index.html" />
+    <link rel="prev" title="Corrélation avec l’outil de gestion de parc" href="../glpi/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="agent-pulse">
+<h1>Agent Pulse<a class="headerlink" href="#agent-pulse" title="Lien permanent vers cette rubrique">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie Agent de l’outil Pulse.</div>
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line">L’agent Pulse est composé de 5 services :</div>
+<div class="line">-     FusionInventory : agent d’inventaire compatible « OCS »</div>
+<div class="line">-     OpenSSH : serveur d’accès à distance « SSH »</div>
+<div class="line">-     TightVNC : bureau à distance « VNC »</div>
+<div class="line">-     Pulseagent : le service de l’agent pulse.</div>
+<div class="line">-     Pulse Network Notify : Service qui permet de detecter des changements d’interfaces</div>
+<div class="line">L’agent est décliné pour Windows, Mac et Linux.</div>
+</div>
+<section id="agent-windows">
+<h2>Agent Windows<a class="headerlink" href="#agent-windows" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Par défaut lors de son installation, Pulse génère un ensemble d’agents :</div>
+<div class="line"><br /></div>
+<div class="line">-     Pulse-Agent-windows-Minimal-Latest.exe  ← Dernière version de l’agent interactif contenant le strict minimum. Lors de l’installation sur le serveur, l’agent va télécharger les dépendances et les composants nécessaires.</div>
+<div class="line">-     Pulse-Agent-windows-Minimal-x.x.x.exe   ← Agent interactif contenant le strict minimum tagué par version.</div>
+<div class="line">-     Pulse-Agent-windows-Full-Latest.exe     ← Dernière version de l’agent avec interaction et interface visible contenant l’ensemble des composants pour réaliser l’installation.</div>
+<div class="line">-     Pulse-Agent-windows-Full-x.x.x.exe      ← Agent avec interaction et interface visible tagué par version.</div>
+<div class="line"><br /></div>
+<div class="line">Les agents sont accessibles depuis l’url suivante :</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="http://ippulse/dowloads/clients/win/">http://ippulse/dowloads/clients/win/</a></div>
+</div>
+</div>
+<section id="generation-des-agents">
+<h3>Génération des agents<a class="headerlink" href="#generation-des-agents" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">Depuis la console Pulse se rendre :</div>
+<div class="line"># cd /var/lib/pulse2/clients/</div>
+<div class="line"># ./generate-pulse-agent.sh</div>
+<div class="line"><br /></div>
+<div class="line">Usage:</div>
+<div class="line">./generate-pulse-agent.sh [–conf-xmppserver=&lt;ip du serveur de configuration XMPP&gt;]</div>
+<div class="line-block">
+<div class="line">[–conf-xmppport=&lt;port du serveur de configuration XMPP&gt;]</div>
+<div class="line">[–conf-xmpppasswd=&lt;Mot de passe du serveur de configuration XMPP&gt;]</div>
+<div class="line">[–aes-key=&lt;32-character AES PSK&gt;]</div>
+<div class="line">[–xmpp-passwd=&lt;Mot de passe du serveur XMPP&gt;]</div>
+<div class="line">[–chat-domain=&lt;Domaine XMPP&gt;]</div>
+<div class="line">[–inventory-tag=&lt;Tag ajouté lors de l’inventaire&gt;]</div>
+<div class="line">[–minimal [–base-url=&lt;URL utilisée pour télécharger l’agent et ses dépendances&gt;]]</div>
+<div class="line">[–disable-vnc (Désactiver le support vnc)]</div>
+<div class="line">[–vnc-port=&lt;Port VNC, par défaut 5900&gt;]</div>
+<div class="line">[–ssh-port=&lt;Port SSH, par défaut 22&gt;]</div>
+<div class="line">[–disable-rdp (Désactiver le support RDP)]</div>
+<div class="line">[–disable-inventory (Désactiver le support de l’inventaire)]</div>
+<div class="line">[–linux-distros (Distributions linux utilisées)]</div>
+</div>
+</div>
+</section>
+<section id="agent-et-tag">
+<h3>Agent et TAG<a class="headerlink" href="#agent-et-tag" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">L’agent Pulse peut être tagué afin d’offrir un discriminant supplémentaire.</div>
+<div class="line"><br /></div>
+<div class="line">Il existe plusieurs façons de générer ce TAG :</div>
+<div class="line">-     Déployer un TAG sur un ordinateur possédant déjà un agent Pulse</div>
+<div class="line">-     Générer un agent Pulse avec un TAG</div>
+</div>
+</section>
+<section id="deployer-un-tag-sur-un-ordinateur-possedent-deja-un-agent-pulse">
+<h3>Déployer un TAG sur un ordinateur possédent déjà un agent Pulse<a class="headerlink" href="#deployer-un-tag-sur-un-ordinateur-possedent-deja-un-agent-pulse" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Il suffit de créer la clé de base de registre adéquate et utiliser Pulse pour la déployer.</p>
+</section>
+<section id="generer-un-agent-pulse-avec-un-tag">
+<h3>Générer un agent Pulse avec un TAG<a class="headerlink" href="#generer-un-agent-pulse-avec-un-tag" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">Il faut aller dans le dossier suivant :</div>
+<div class="line"># cd /var/lib/pulse2/clients</div>
+<div class="line"><br /></div>
+<div class="line">Et générer l’agent Pulse avec le tag voulu (Exemple : bureau101)</div>
+<div class="line"># ./generate-pulse-agent.sh –inventory-tag bureau101</div>
+</div>
+</section>
+</section>
+<section id="agent-mac">
+<h2>Agent Mac<a class="headerlink" href="#agent-mac" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">L’agent est accessible depuis l’url suivante :</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="http://ippulse/dowloads/clients/mac/Pulse2AgentsInstaller.tar">http://ippulse/dowloads/clients/mac/Pulse2AgentsInstaller.tar</a></div>
+<div class="line"><br /></div>
+</div>
+<div class="line">Il faudra autoriser l’installeur à s’exécuter dans les paramètres de sécurité.</div>
+<div class="line">Par ailleurs, en pré-requis avant d’installer le package Pulse, il faut que Xcode correspondant à votre version soit installé.</div>
+</div>
+<section id="id1">
+<h3>Générer un agent Pulse avec un TAG<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">Similaire à Windows, il faut aller dans le dossier suivant :</div>
+<div class="line"># cd /var/lib/pulse2/clients/</div>
+<div class="line"><br /></div>
+<div class="line">Puis lancer cette commande avec le TAG voulu (Exemple : bureau101)</div>
+<div class="line"># ./generate-agent.sh –tag=bureau101</div>
+</div>
+</section>
+</section>
+<section id="agent-linux">
+<h2>Agent Linux<a class="headerlink" href="#agent-linux" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">L’agent est accessible depuis l’url suivante :</div>
+<div class="line-block">
+<div class="line"><a class="reference external" href="http://ippulse/dowloads/linux/Pulse-Agent-linux-MINIMAL-latest.sh">http://ippulse/dowloads/linux/Pulse-Agent-linux-MINIMAL-latest.sh</a></div>
+</div>
+</div>
+<section id="id2">
+<h3>Générer un agent Pulse avec un TAG<a class="headerlink" href="#id2" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">La manipulation est la même que pour Mac :</div>
+<div class="line"><br /></div>
+<div class="line"># cd /var/lib/pulse2/clients/</div>
+<div class="line"># ./generate-agent.sh –tag=bureau101</div>
+</div>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Manuel d’utilisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">Manuel d’utilisation</a><ul>
+      <li>Previous: <a href="../glpi/index.html" title="Chapitre précédent">Corrélation avec l’outil de gestion de parc</a></li>
+      <li>Next: <a href="../deploy_agent/index.html" title="Chapitre suivant">Déploiement de l’agent Pulse</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/fr/usemedulla/usermanual/pulse_agent/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

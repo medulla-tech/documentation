@@ -1,0 +1,282 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Correlation with Asset Management Tool &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Agent Medulla" href="../pulse_agent/index.html" />
+    <link rel="prev" title="Medulla Admin" href="../admin/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="correlation-with-asset-management-tool">
+<h1>Correlation with Asset Management Tool<a class="headerlink" href="#correlation-with-asset-management-tool" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This section concerns the GLPI configuration part of the Pulse tool.</p>
+<section id="local-glpi">
+<h2>Local GLPI<a class="headerlink" href="#local-glpi" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>By default, Pulse has an existing configuration to use the local GLPI.
+Simply connect to the following address: <a class="reference external" href="http://ippulse/glpi">http://ippulse/glpi</a></p>
+<p>To log in:
+-       Login: root
+-       Password: the one used during Pulse installation</p>
+</section>
+<section id="existing-glpi">
+<h2>Existing GLPI<a class="headerlink" href="#existing-glpi" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>To connect Pulse to an existing GLPI, it needs to be configured in the following file:</p>
+<p># vi /etc/mmc/plugins/glpi.ini.local</p>
+<p>The main elements are:</p>
+<p>[main]
+dbhost =            ← IP of GLPI SQL base
+dbname =            ← GLPI database name
+dbuser =            ← GLPI database user
+dbpasswd =          ← GLPI database password
+glpi_computer_uri = ← URL link between Pulse and GLPI</p>
+<p>[webservices]
+purge_machine =     ← deletion from Pulse
+glpi_base_url =     ← GLPI base URL
+glpi_username =     ← GLPI admin user
+glpi_password =     ← admin password</p>
+<p>[authentication_glpi]
+baseurl =           ← URL for identification</p>
+<p>Also, ensure that the inventory server is relayed to the correct GLPI server. The configuration is done in the following file:</p>
+<p># vi /etc/mmc/pulse2/inventory-server/inventory-server.ini.local</p>
+<p>[main]
+url_to_forward =
+<a class="reference external" href="http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory">http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory</a>
+.communication.php</p>
+</section>
+<section id="displaying-machines">
+<h2>Displaying Machines<a class="headerlink" href="#displaying-machines" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Pulse allows selective display of GLPI computers based on the following filters:
+-       state
+-       type
+-       entity</p>
+<p>Convention for filter usage:
+i.e. state=1 type=2|3|7 entity=2|5
+filter_on = state=3</p>
+</section>
+<section id="entities-and-locations">
+<h2>Entities and Locations<a class="headerlink" href="#entities-and-locations" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Top-level entities are reserved for physical sites where Pulse is installed or a multi-site Pulse.</p>
+<p>GLPI allows assigning computers to entities and locations based on discriminant criteria (IP address, subnet mask…). It can also use the agent’s TAG.
+These rules work as a stack. The order of these stacks goes from top to bottom and stops as soon as a criterion matches one of these rules.
+Rules consist of a set of name, criterion(s), and action(s).</p>
+<section id="entity-rule">
+<h3>Entity Rule<a class="headerlink" href="#entity-rule" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Possible discriminant criteria include:</p>
+<ul class="simple">
+<li><p>IP address</p></li>
+<li><p>Domain</p></li>
+<li><p>Computer name</p></li>
+<li><p>Serial Number</p></li>
+<li><p>Subnet</p></li>
+<li><p>Operating system / Comment</p></li>
+<li><p>Fusioninventory label</p></li>
+</ul>
+<section id="example">
+<h4>Example :<a class="headerlink" href="#example" title="Lien permanent vers cette rubrique">¶</a></h4>
+<img alt="docs/en/usemedulla/usermanual/glpi/images/rules.png" src="docs/en/usemedulla/usermanual/glpi/images/rules.png" />
+<p>Possible actions include:
+-       Entity
+-       Location
+-       Entity from TAG
+-       Ignore during import</p>
+<img alt="../../../../../_images/actions.png" src="../../../../../_images/actions.png" />
+</section>
+</section>
+<section id="location-rules">
+<h3>Location Rules<a class="headerlink" href="#location-rules" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Identical to entities, this section allows separating entities for more details.</p>
+</section>
+</section>
+<section id="group-management">
+<h2>Group Management<a class="headerlink" href="#group-management" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Group management allows GLPI groups to match Pulse groups.</p>
+<p>Example :</p>
+<ul class="simple">
+<li><p>GLPI-Hotliner minimum group for access to Pulse</p></li>
+<li><p>Assigns rights in GLPI based on the group.</p></li>
+<li><p>GLPI-Hotliner =&gt; access to Remote Desktop</p></li>
+<li><p>GLPI-Supervisor &amp; GLPI-Technician =&gt; access to Pulse</p></li>
+<li><p>GLPI-Admin &amp; GLPI-Super-Admin =&gt; access to Pulse with user management</p></li>
+</ul>
+<section id="creating-a-pulse-group">
+<h3>Creating a Pulse Group<a class="headerlink" href="#creating-a-pulse-group" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>You need to create the necessary groups for using Pulse.</p>
+<img alt="docs/en/usemedulla/usermanual/glpi/images/group.png" src="docs/en/usemedulla/usermanual/glpi/images/group.png" />
+<p>The group must start with « GLPI- ». It is recommended to follow the nomenclature in the example.</p>
+</section>
+<section id="synchronize-glpi-groups">
+<h3>Synchronize GLPI Groups<a class="headerlink" href="#synchronize-glpi-groups" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>To synchronize GLPI groups, go to the « Administration » tab, « Groups » then « LDAP directory link » and click on the « Import new groups » button.
+Then import the new groups.</p>
+</section>
+</section>
+<section id="user-management">
+<h2>User Management<a class="headerlink" href="#user-management" title="Lien permanent vers cette rubrique">¶</a></h2>
+<section id="assignment-rules-and-profiles">
+<h3>Assignment Rules and Profiles<a class="headerlink" href="#assignment-rules-and-profiles" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>From GLPI, Administration &gt;&gt; Rules &gt;&gt; Rules for assigning user permissions, add a new rule:</p>
+<img alt="docs/en/usemedulla/usermanual/glpi/images/newrule.png" src="docs/en/usemedulla/usermanual/glpi/images/newrule.png" />
+<p>Then add a membership criterion to the new group:</p>
+<img alt="docs/en/usemedulla/usermanual/glpi/images/criteria.png" src="docs/en/usemedulla/usermanual/glpi/images/criteria.png" />
+<p>And finally, add an action that assigns users to the desired entity and assigns a rights profile to these users:</p>
+<img alt="docs/en/usemedulla/usermanual/glpi/images/assign.png" src="docs/en/usemedulla/usermanual/glpi/images/assign.png" />
+</section>
+<section id="adding-the-user-to-the-group-in-pulse">
+<h3>Adding the User to the Group in Pulse<a class="headerlink" href="#adding-the-user-to-the-group-in-pulse" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>To add a user to a group in Pulse, edit a user and add their group:</p>
+<img alt="docs/en/usemedulla/usermanual/glpi/images/addgroup.png" src="docs/en/usemedulla/usermanual/glpi/images/addgroup.png" />
+<p>Default groups provide full access to all entities.</p>
+<p>Upon logging into Pulse, this user will be confined to the corresponding entity, the same restriction applies in GLPI.</p>
+<p>It is obviously possible to repeat the operation with a second group and a second entity.</p>
+</section>
+</section>
+<section id="pulse-application-dictionary">
+<h2>Pulse Application Dictionary<a class="headerlink" href="#pulse-application-dictionary" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>In the following directory, a set of filters allows the renaming and standardization of inventory values. These rules are applied on-the-fly to inventories.</p>
+<p># cd etc/mmc/pulse2/inventory-server/xml-fix
+# ls
+00_Replace_bad_characters.py
+01_Dell_consistency.py
+02_ATI_consistency.py
+03_ASUS_consistency.py
+04_Adobe_consistency.py
+05_HP_consistency.py
+06_Laptop_type.py
+07_Virtual_machine_type.py
+08_Microsoft_consistency.py
+99_Strip_leading_trailing_spaces.py</p>
+<p>Example of Dell manufacturer standardization:</p>
+<div class="highlight-rst notranslate"><div class="highlight"><pre><span></span>def xml_fix(xml):
+  import xml.etree.cElementTree as ET
+  xml = ET.fromstring(xml)
+  tree = ET.ElementTree(xml)
+  root = tree.getroot()
+  for subelem1 in root:
+    if subelem1.tag == &#39;CONTENT&#39;:
+      for subelem2 in subelem1:
+          for subelem3 in subelem2:
+
+            # DELL vendor name should always be the same
+            if subelem3.text in [&#39;DELL&#39;, &#39;Dell Corp.&#39;, &#39;Dell Computer Corp.&#39;, &#39;Dell&#39;, &#39;Dell Computer Corporation&#39;]:
+              subelem3.text = &#39;Dell Inc.&#39;
+  return ET.tostring(root)
+</pre></div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">User manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">User manual</a><ul>
+      <li>Previous: <a href="../admin/index.html" title="Chapitre précédent">Medulla Admin</a></li>
+      <li>Next: <a href="../pulse_agent/index.html" title="Chapitre suivant">Agent Medulla</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/en/usemedulla/usermanual/glpi/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

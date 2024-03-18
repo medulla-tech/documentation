@@ -1,0 +1,221 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Agent Medulla &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Pulse Agent Deployment" href="../deploy_agent/index.html" />
+    <link rel="prev" title="Correlation with Asset Management Tool" href="../glpi/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="agent-medulla">
+<h1>Agent Medulla<a class="headerlink" href="#agent-medulla" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This section concerns the Agent part of the <strong>Medulla</strong> tool.</p>
+<p>The <strong>Medulla</strong> agent consists of 5 services:
+- FusionInventory: OCS-compatible inventory agent
+- OpenSSH: SSH remote access server
+- TightVNC: VNC remote desktop
+- Pulseagent: the <strong>Medulla</strong> agent service.
+- Pulse Network Notify: Service to detect interface changes
+The agent is available for Windows, Mac, and Linux.</p>
+</section>
+<section id="windows-agent">
+<h1>Windows Agent<a class="headerlink" href="#windows-agent" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>By default, during its installation, <strong>Medulla</strong> generates a set of agents:</p>
+<ul class="simple">
+<li><p>Pulse-Agent-windows-Minimal-Latest.exe        ← Latest version of the interactive agent containing the bare minimum. During installation on the server, the agent will download the dependencies and necessary components.</p></li>
+<li><p>Pulse-Agent-windows-Minimal-x.x.x.exe ← Interactive agent containing the bare minimum tagged by version.</p></li>
+<li><p>Pulse-Agent-windows-Full-Latest.exe   ← Latest version of the agent with interaction and visible interface containing all the components to perform the installation.</p></li>
+<li><p>Pulse-Agent-windows-Full-x.x.x.exe    ← Agent with interaction and visible interface tagged by version.</p></li>
+</ul>
+<p>The agents are accessible from the following URL:
+|       <a class="reference external" href="http://ippulse/dowloads/clients/win/">http://ippulse/dowloads/clients/win/</a></p>
+<section id="generating-agents">
+<h2>Generating Agents<a class="headerlink" href="#generating-agents" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>From the <strong>Medulla</strong> console, go to:
+# cd /var/lib/pulse2/clients/
+# ./generate-pulse-agent.sh</p>
+<p>Usage:
+.. code-block:: rst</p>
+<blockquote>
+<div><dl class="simple">
+<dt>./generate-pulse-agent.sh [–conf-xmppserver=&lt;XMPP configuration server IP&gt;]</dt><dd><p>[–conf-xmppport=&lt;XMPP configuration server port&gt;]
+[–conf-xmpppasswd=&lt;XMPP configuration server password&gt;]
+[–aes-key=&lt;32-character AES PSK&gt;]
+[–xmpp-passwd=&lt;XMPP server password&gt;]
+[–chat-domain=&lt;XMPP domain&gt;]
+[–inventory-tag=&lt;Tag added during inventory&gt;]
+[–minimal [–base-url=&lt;URL used to download the agent and its dependencies&gt;]]
+[–disable-vnc (Disable VNC support)]
+[–vnc-port=&lt;VNC port, default is 5900&gt;]
+[–ssh-port=&lt;SSH port, default is 22&gt;]
+[–disable-rdp (Disable RDP support)]
+[–disable-inventory (Disable inventory support)]
+[–linux-distros (Linux distributions used)]</p>
+</dd>
+</dl>
+</div></blockquote>
+</section>
+<section id="agent-and-tag">
+<h2>Agent and Tag<a class="headerlink" href="#agent-and-tag" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>The <strong>Medulla</strong> agent can be tagged to provide an additional discriminator.</p>
+<p>There are several ways to generate this tag:
+- Deploy a tag on a computer already possessing a <strong>Medulla</strong> agent
+- Generate a <strong>Medulla</strong> agent with a tag</p>
+</section>
+<section id="deploy-a-tag-on-a-computer-already-possessing-a-medulla-agent">
+<h2>Deploy a Tag on a Computer Already Possessing a <strong>Medulla</strong> Agent<a class="headerlink" href="#deploy-a-tag-on-a-computer-already-possessing-a-medulla-agent" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Simply create the appropriate registry key and use <strong>Medulla</strong> to deploy it.</p>
+</section>
+<section id="generate-a-medulla-agent-with-a-tag">
+<h2>Generate a <strong>Medulla</strong> Agent with a Tag<a class="headerlink" href="#generate-a-medulla-agent-with-a-tag" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Go to the following directory:
+# cd /var/lib/pulse2/clients</p>
+<p>And generate the <strong>Medulla</strong> agent with the desired tag (Example: desk101)
+# ./generate-pulse-agent.sh –inventory-tag desk101</p>
+</section>
+</section>
+<section id="mac-agent">
+<h1>Mac Agent<a class="headerlink" href="#mac-agent" title="Lien permanent vers cette rubrique">¶</a></h1>
+<dl class="simple">
+<dt>The agent is accessible from the following URL:</dt><dd><p><a class="reference external" href="http://ippulse/dowloads/clients/mac/Pulse2AgentsInstaller.tar">http://ippulse/dowloads/clients/mac/Pulse2AgentsInstaller.tar</a></p>
+</dd>
+</dl>
+<p>The installer must be authorized to run in security settings.
+Also, as a prerequisite before installing the Pulse package, Xcode corresponding to your version must be installed.</p>
+<section id="id1">
+<h2>Generate a <strong>Medulla</strong> Agent with a Tag<a class="headerlink" href="#id1" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Similar to Windows, go to the following directory:
+# cd /var/lib/pulse2/clients/</p>
+<p>Then run this command with the desired TAG (Example: desk101)
+# ./generate-agent.sh –tag=desk101</p>
+</section>
+</section>
+<section id="linux-agent">
+<h1>Linux Agent<a class="headerlink" href="#linux-agent" title="Lien permanent vers cette rubrique">¶</a></h1>
+<dl class="simple">
+<dt>The agent is accessible from the following URL:</dt><dd><p><a class="reference external" href="http://ippulse/dowloads/linux/Pulse-Agent-linux-MINIMAL-latest.sh">http://ippulse/dowloads/linux/Pulse-Agent-linux-MINIMAL-latest.sh</a></p>
+</dd>
+</dl>
+<section id="id2">
+<h2>Generate a <strong>Medulla</strong> Agent with a Tag<a class="headerlink" href="#id2" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>The procedure is the same as for Mac:</p>
+<p># cd /var/lib/pulse2/clients/
+# ./generate-agent.sh –tag=desk101</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">User manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">User manual</a><ul>
+      <li>Previous: <a href="../glpi/index.html" title="Chapitre précédent">Correlation with Asset Management Tool</a></li>
+      <li>Next: <a href="../deploy_agent/index.html" title="Chapitre suivant">Pulse Agent Deployment</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/en/usemedulla/usermanual/pulse_agent/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

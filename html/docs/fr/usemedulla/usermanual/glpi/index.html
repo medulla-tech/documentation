@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Corrélation avec l’outil de gestion de parc &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Agent Pulse" href="../pulse_agent/index.html" />
+    <link rel="prev" title="Admin" href="../admin/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="correlation-avec-l-outil-de-gestion-de-parc">
+<h1>Corrélation avec l’outil de gestion de parc<a class="headerlink" href="#correlation-avec-l-outil-de-gestion-de-parc" title="Lien permanent vers cette rubrique">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie configuration GLPI de l’outil Pulse.</div>
+<div class="line"><br /></div>
+</div>
+<section id="glpi-local">
+<h2>GLPI local<a class="headerlink" href="#glpi-local" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Par défaut, Pulse comporte une configuration existante pour utiliser le GLPI local</div>
+<div class="line">Il suffit de se connecter à l’adresse suivante : <a class="reference external" href="http://ippulse/glpi">http://ippulse/glpi</a></div>
+<div class="line"><br /></div>
+<div class="line">Pour s’identifier :</div>
+<div class="line">-     Login : root</div>
+<div class="line">-     Mot de passe : celui de l’installation de Pulse</div>
+</div>
+</section>
+<section id="glpi-existant">
+<h2>GLPI existant<a class="headerlink" href="#glpi-existant" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Afin de connecter Pulse à un GLPI existant, il faut le configurer dans le fichier suivant :</div>
+<div class="line"><br /></div>
+<div class="line"># vi /etc/mmc/plugins/glpi.ini.local</div>
+<div class="line"><br /></div>
+<div class="line">Les éléments principaux sont :</div>
+<div class="line"><br /></div>
+<div class="line">[main]</div>
+<div class="line">dbhost =              ← IP de base SQL de GLPI</div>
+<div class="line">dbname =              ← nom de la bdd de GLPI</div>
+<div class="line">dbuser =              ← utilisateur de la bdd de GLPI</div>
+<div class="line">dbpasswd =            ← mot de passe bdd de GLPI</div>
+<div class="line">glpi_computer_uri =   ← URL lien entre Pulse et GLPI</div>
+<div class="line"><br /></div>
+<div class="line">[webservices]</div>
+<div class="line">purge_machine =       ← suppression depuis Pulse</div>
+<div class="line">glpi_base_url =       ← URL de base de GLPI</div>
+<div class="line">glpi_username =       ← utilisateur admin de GL</div>
+<div class="line">glpi_password =       ← mot de passe admin</div>
+<div class="line"><br /></div>
+<div class="line">[authentication_glpi]</div>
+<div class="line">baseurl =             ← URL pour l’identification</div>
+<div class="line"><br /></div>
+<div class="line">Egalement, il faut faire en sorte que le serveur d’inventaire soit relayé au bon serveur GLPI. La configuration se fait dans le fichier suivant:</div>
+<div class="line"><br /></div>
+<div class="line"># vi /etc/mmc/pulse2/inventory-server/inventory-server.ini.local</div>
+<div class="line"><br /></div>
+<div class="line">[main]</div>
+<div class="line">url_to_forward =</div>
+<div class="line"><a class="reference external" href="http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory">http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory</a></div>
+<div class="line">.communication.php</div>
+</div>
+</section>
+<section id="affichage-des-machines">
+<h2>Affichage des machines<a class="headerlink" href="#affichage-des-machines" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Pulse permet un affichage sélectif des ordinateurs de GLPI suivant les filtres suivants :</div>
+<div class="line">-     state</div>
+<div class="line">-     type</div>
+<div class="line">-     entity</div>
+<div class="line"><br /></div>
+<div class="line">Convention pour l’utilisation des filtres :</div>
+<div class="line">i.e. state=1 type=2|3|7 entity=2|5</div>
+<div class="line">filter_on = state=3</div>
+</div>
+</section>
+<section id="entites-et-lieux">
+<h2>Entités et lieux<a class="headerlink" href="#entites-et-lieux" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Les entités de premier niveau sont réservées aux sites physiques où est installé Pulse, ou un Pulse multi-site.</div>
+<div class="line"><br /></div>
+<div class="line">GLPI permet d’assigner les ordinateurs à des entités et lieux en fonction de critères discriminants (adresse IP, masque de sous-réseau…). Il peut aussi utiliser le TAG de l’agent d’inventaire.</div>
+<div class="line">Ces différentes règles fonctionnent sous forme de pile. L’ordre de ces piles va du haut vers le bas et s’arrête dès qu’un critère correspond à une de ces règles.</div>
+<div class="line">Les règles se composent d’un ensemble de nom, critère(s) et action(s).</div>
+</div>
+<section id="regle-sur-l-entite">
+<h3>Règle sur l’entité<a class="headerlink" href="#regle-sur-l-entite" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">Les critères discriminants possibles sont les suivants :</div>
+<div class="line"><br /></div>
+<div class="line">-     Adresse IP</div>
+<div class="line">- Domaine</div>
+<div class="line">-     Nom de l’ordinateur</div>
+<div class="line">-     Serial Number</div>
+<div class="line">-     Sous-réseau</div>
+<div class="line">-     Système d’exploitation / Comment</div>
+<div class="line">-     Étiquette Fusioninventory</div>
+</div>
+<section id="exemple">
+<h4>Exemple :<a class="headerlink" href="#exemple" title="Lien permanent vers cette rubrique">¶</a></h4>
+<img alt="../../../../../_images/regles2.png" src="../../../../../_images/regles2.png" />
+<div class="line-block">
+<div class="line">Les actions possibles sont les suivantes :</div>
+<div class="line">-     Entité</div>
+<div class="line">-     Lieu</div>
+<div class="line">-     Entité depuis TAG</div>
+<div class="line">-     Ignorer lors de l’import</div>
+</div>
+<img alt="../../../../../_images/actions1.png" src="../../../../../_images/actions1.png" />
+</section>
+</section>
+<section id="regles-de-lieu">
+<h3>Règles de lieu<a class="headerlink" href="#regles-de-lieu" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Identique aux entités, cette section permet de séparer des entités pour plus de détails.</p>
+</section>
+</section>
+<section id="gestion-des-groupes">
+<h2>Gestion des groupes<a class="headerlink" href="#gestion-des-groupes" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>La gestion des groupes permet de faire coïncider les groupes GLPI aux groupes Pulse.</p>
+<div class="line-block">
+<div class="line">Exemple :</div>
+<div class="line"><br /></div>
+<div class="line">-     Groupe GLPI-Hotliner minimum pour accès à Pulse</div>
+<div class="line">- Assigne des droits dans GLPI en fonction du groupe.</div>
+<div class="line">- GLPI-Hotliner =&gt; accès au Bureau à distance</div>
+<div class="line">- GLPI-Supervisor &amp; GLPI-Technician =&gt; accès à Pulse</div>
+<div class="line">- GLPI-Admin &amp; GLPI-Super-Admin =&gt; accès à Pulse avec gestion des utilisateurs</div>
+</div>
+<section id="creation-d-un-groupe-pulse">
+<h3>Création d’un groupe Pulse<a class="headerlink" href="#creation-d-un-groupe-pulse" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Il faut créer les groupes nécessaires à l’utilisation de Pulse.</p>
+<img alt="../../../../../_images/groupe.png" src="../../../../../_images/groupe.png" />
+<p>Le groupe doit commencer par « GLPI- ». Il est conseillé de respecter la nomenclature de l’exemple.</p>
+</section>
+<section id="synchroniser-les-groupes-glpi">
+<h3>Synchroniser les groupes GLPI<a class="headerlink" href="#synchroniser-les-groupes-glpi" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">Pour synchroniser les groupes GLPI, il faut aller dans l’onglet « Administration », « Groupes » puis « Liaison annuaire LDAP » pour enfin cliquer sur le bouton « Importation de nouveaux groupes ».</div>
+<div class="line">Il faut alors importer les nouveaux groupes.</div>
+</div>
+</section>
+</section>
+<section id="gestion-des-utilisateurs">
+<h2>Gestion des utilisateurs<a class="headerlink" href="#gestion-des-utilisateurs" title="Lien permanent vers cette rubrique">¶</a></h2>
+<section id="regles-d-affectation-et-profils">
+<h3>Règles d’affectation et profils<a class="headerlink" href="#regles-d-affectation-et-profils" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Depuis GLPI, Administration &gt;&gt; Règles &gt;&gt; Règles d’affectation d’habilitations à un utilisateur, ajouter une nouvelle règle :</p>
+<img alt="../../../../../_images/nouvelleregle.png" src="../../../../../_images/nouvelleregle.png" />
+<p>Puis ajouter un critère d’appartenance au nouveau groupe :</p>
+<img alt="../../../../../_images/critere.png" src="../../../../../_images/critere.png" />
+<p>Et enfin ajouter une action qui assigne les utilisateurs à l’entité voulue ainsi qu’une action attribuant un profil de droits à ces utilisateurs :</p>
+<img alt="../../../../../_images/assigner.png" src="../../../../../_images/assigner.png" />
+</section>
+<section id="ajouter-l-utilisateur-au-groupe-dans-pulse">
+<h3>Ajouter l’utilisateur au groupe dans Pulse<a class="headerlink" href="#ajouter-l-utilisateur-au-groupe-dans-pulse" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Pour ajouter un utilisateur à un groupe dans Pulse, il faut éditer un utilisateur et ajouter son groupe :</p>
+<img alt="../../../../../_images/ajoutgroupe.png" src="../../../../../_images/ajoutgroupe.png" />
+<div class="line-block">
+<div class="line">Les groupes définis par défaut donnent un accès complet à l’ensemble des entités.</div>
+<div class="line"><br /></div>
+<div class="line">Lors de la connexion dans Pulse, cet utilisateur sera cantonné à l’entité correspondante, la même restriction s’applique dans GLPI.</div>
+<div class="line"><br /></div>
+<div class="line">Il est évidemment possible de réitérer l’opération avec un second groupe et une seconde entité.</div>
+</div>
+</section>
+</section>
+<section id="dictionnaire-applicatif-pulse">
+<h2>Dictionnaire applicatif Pulse<a class="headerlink" href="#dictionnaire-applicatif-pulse" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Dans le répertoire suivant, un ensemble de filtre permet le renommage et la standardisation de valeurs d’inventaire. Ces règles sont appliquées à la volée sur les inventaires.</div>
+<div class="line"><br /></div>
+<div class="line"># cd etc/mmc/pulse2/inventory-server/xml-fix</div>
+<div class="line"># ls</div>
+<div class="line">00_Replace_bad_characters.py</div>
+<div class="line">01_Dell_consistency.py</div>
+<div class="line">02_ATI_consistency.py</div>
+<div class="line">03_ASUS_consistency.py</div>
+<div class="line">04_Adobe_consistency.py</div>
+<div class="line">05_HP_consistency.py</div>
+<div class="line">06_Laptop_type.py</div>
+<div class="line">07_Virtual_machine_type.py</div>
+<div class="line">08_Microsoft_consistency.py</div>
+<div class="line">99_Strip_leading_trailing_spaces.py</div>
+<div class="line"><br /></div>
+<div class="line">Exemple de standardisation du constructeur DELL :</div>
+<div class="line"><br /></div>
+<div class="line">def xml_fix(xml):</div>
+<div class="line-block">
+<div class="line">import xml.etree.cElementTree as ET</div>
+<div class="line">xml = ET.fromstring(xml)</div>
+<div class="line">tree = ET.ElementTree(xml)</div>
+<div class="line">root = tree.getroot()</div>
+<div class="line">for subelem1 in root:</div>
+<div class="line-block">
+<div class="line">if subelem1.tag == “CONTENT”:</div>
+<div class="line-block">
+<div class="line">for subelem2 in subelem1:</div>
+<div class="line-block">
+<div class="line">for subelem3 in subelem2:</div>
+<div class="line"><br /></div>
+<div class="line-block">
+<div class="line"># DELL vendor name should always be the same</div>
+<div class="line">if subelem3.text in [“DELL”, “Dell Corp.”, “Dell Computer Corp.”, “Dell”, “Dell Computer Corporation”]:</div>
+<div class="line-block">
+<div class="line">subelem3.text = “Dell Inc.”</div>
+<div class="line"><br /></div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="line">return ET.tostring(root)</div>
+</div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Manuel d’utilisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">Manuel d’utilisation</a><ul>
+      <li>Previous: <a href="../admin/index.html" title="Chapitre précédent">Admin</a></li>
+      <li>Next: <a href="../pulse_agent/index.html" title="Chapitre suivant">Agent Pulse</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/fr/usemedulla/usermanual/glpi/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

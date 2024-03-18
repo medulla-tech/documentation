@@ -1,0 +1,239 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Imaging &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Packages" href="../packages/index.html" />
+    <link rel="prev" title="Machine Group" href="../computer_group/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="imaging">
+<h1>Imaging<a class="headerlink" href="#imaging" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This section concerns the imaging part of the Pulse tool, including iPXE boot, the home page, and various options.</p>
+<section id="interface">
+<h2>Interface<a class="headerlink" href="#interface" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>When we arrive at the Imaging menu on the main screen, we find ourselves on the imaging server status page.</p>
+<img alt="docs/en/usemedulla/usermanual/imaging/images/statusServer.png" src="docs/en/usemedulla/usermanual/imaging/images/statusServer.png" />
+<p>This page provides information about the imaging server’s status, including available disk space, server load, and entity statistics.</p>
+<p>On the left side of the screen, there is a menu with different sub-menus that make up the Imaging menu:</p>
+<img alt="../../../../../_images/menu1.png" src="../../../../../_images/menu1.png" />
+<p><strong>Imaging server status</strong>: Displays the status of the imaging server;
+<strong>Manage masters</strong>: Allows managing different machine masters;
+<strong>Manage boot services</strong>: Manages services present in « Pulse Utilities » during PXE boot;
+<strong>Default startup menu</strong>: Configures the default startup menu;
+<strong>Post-imaging scripts</strong>: Adds scripts to execute after imaging;
+<strong>Imaging configuration</strong>: Configures the imaging server (e.g., adding PXE password);
+<strong>Sysprep answer file manager</strong>: Generates a custom Sysprep answer file for Windows;
+<strong>All imaging groups</strong>: Displays different imaging groups;
+<strong>Add imaging group</strong>: Creates a group of different machines to assign imaging to them.</p>
+<section id="manage-masters">
+<h3>Manage masters<a class="headerlink" href="#manage-masters" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="docs/en/usemedulla/usermanual/imaging/images/manageMasters.png" src="docs/en/usemedulla/usermanual/imaging/images/manageMasters.png" />
+<p>In this menu, we can manage masters using different actions:</p>
+<p><strong>Remove from startup menu</strong>: Removes the master from the machine’s startup menu;
+<strong>Create a bootable ISO</strong>: Creates an ISO of the master;
+<strong>Edit master</strong>: Edits the master: its label, description, or the order of different actions;
+<strong>Clone master</strong>: Clones the master;
+<strong>Display targets using this image</strong>: Displays machines using the image.</p>
+</section>
+<section id="manage-boot-services">
+<h3>Manage boot services<a class="headerlink" href="#manage-boot-services" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="docs/en/usemedulla/usermanual/imaging/images/bootServices.png" src="docs/en/usemedulla/usermanual/imaging/images/bootServices.png" />
+<p>This section manages services present in « Pulse Utilities » during PXE boot.
+To add a service, click on the « Add service to default startup menu » action.</p>
+<p>A pop-up appears with different options:</p>
+<img alt="docs/en/usemedulla/usermanual/imaging/images/addService.png" src="docs/en/usemedulla/usermanual/imaging/images/addService.png" />
+<p>Select the desired options and click « Validate ».</p>
+<p>To remove a service, click on the « Remove service from default startup menu » action.</p>
+</section>
+<section id="default-startup-menu">
+<h3>Default startup menu<a class="headerlink" href="#default-startup-menu" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="docs/en/usemedulla/usermanual/imaging/images/defaultStartupMenu.png" src="docs/en/usemedulla/usermanual/imaging/images/defaultStartupMenu.png" />
+<p>This page contains different options of the default startup menu.
+You can change their order or edit them (e.g., display or hide them).</p>
+</section>
+<section id="post-imaging-scripts">
+<h3>Post-imaging scripts<a class="headerlink" href="#post-imaging-scripts" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="docs/en/usemedulla/usermanual/imaging/images/postImagingScripts.png" src="docs/en/usemedulla/usermanual/imaging/images/postImagingScripts.png" />
+<p>Post-imaging scripts are scripts that will be executed directly after machine imaging.
+For example, you can put a script that shuts down the machine once imaging is done, or a script to copy the Sysprep answer file.</p>
+</section>
+<section id="imaging-configuration">
+<h3>Imaging configuration<a class="headerlink" href="#imaging-configuration" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="../../../../../_images/configuration.png" src="../../../../../_images/configuration.png" />
+<p>This page allows modifying different imaging options.
+You can change menu language, PXE login, PXE password, or Clonezilla settings for image backup and restore.
+<strong>Attention!</strong> Regarding Clonezilla options, only modify them if absolutely necessary. Incorrect configuration would render imaging non-functional.</p>
+</section>
+<section id="sysprep-answer-file-manager">
+<h3>Sysprep answer file manager<a class="headerlink" href="#sysprep-answer-file-manager" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="../../../../../_images/sysprep.png" src="../../../../../_images/sysprep.png" />
+<p>This page generates and modifies Sysprep answer files.
+Sysprep allows generalizing a Windows installation.
+Generalizing the image removes computer-specific information, such as installed drivers and the computer’s security identifier (SID).
+In this generator, you can specify a product key, whether to wipe the disk or not, extend the OS partition, adjust security settings, etc.</p>
+<p>In the « Sysprep List » tab, you’ll find the different Sysprep files we’ve generated.
+You can view, modify, or delete them.</p>
+</section>
+<section id="all-imaging-groups">
+<h3>All imaging groups<a class="headerlink" href="#all-imaging-groups" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="../../../../../_images/groups.png" src="../../../../../_images/groups.png" />
+<p>This page displays different imaging groups.</p>
+</section>
+<section id="add-imaging-group">
+<h3>Add imaging group<a class="headerlink" href="#add-imaging-group" title="Lien permanent vers cette rubrique">¶</a></h3>
+<img alt="../../../../../_images/createGroup.png" src="../../../../../_images/createGroup.png" />
+<p>In this menu, we can create an imaging group by adding machines to it.
+Creating an imaging group allows applying the same imaging configuration (thus the same PXE menu) to several machines and launching an image deployment in multicast to a group of machines.</p>
+</section>
+</section>
+<section id="initial-boot-on-an-unregistered-machine-in-pulse">
+<h2>Initial Boot on an Unregistered Machine in Pulse<a class="headerlink" href="#initial-boot-on-an-unregistered-machine-in-pulse" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>When booting a machine via PXE boot (Pre-boot eXecution Environment, which allows a workstation to boot from the network by retrieving an operating system image from a server), we have several options available.</p>
+<p>First, when the machine is not registered (<em>Identified by the message « Host is NOT registered »</em>):</p>
+<ul class="simple">
+<li><p>The default option is « Continue Usual Startup », which boots the machine normally. This default option will be automatically selected after a certain time unless a key is pressed.</p></li>
+</ul>
+<img alt="../../../../../_images/continueUsual.png" src="../../../../../_images/continueUsual.png" />
+<ul class="simple">
+<li><p>The second option, « Register as Pulse client », allows registering the machine as a Pulse client. An inventory of the machine will be performed, and it will be integrated into the Pulse tool.</p></li>
+</ul>
+<img alt="../../../../../_images/register.png" src="../../../../../_images/register.png" />
+<p>Once this option is selected, you’ll be prompted to enter the machine’s name:</p>
+<img alt="../../../../../_images/askingHostname.png" src="../../../../../_images/askingHostname.png" />
+<p>A message follows asking if the name is correct, to avoid any mistakes (type « Y » to continue or « N » to correct the name)</p>
+<img alt="../../../../../_images/correct.png" src="../../../../../_images/correct.png" />
+</section>
+<section id="machine-registered-in-pulse">
+<h2>Machine Registered in Pulse<a class="headerlink" href="#machine-registered-in-pulse" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Once the machine is registered (<em>Identified by the message « Host _hostname_ registered! »</em>), we can:</p>
+<ul class="simple">
+<li><p>Boot the machine normally, with the option « Continue Usual Startup » (similar to the initial boot option)</p></li>
+</ul>
+<img alt="../../../../../_images/continueUsualReg.png" src="../../../../../_images/continueUsualReg.png" />
+<ul class="simple">
+<li><p>Create a backup of the machine</p></li>
+</ul>
+<img alt="../../../../../_images/createBackup.png" src="../../../../../_images/createBackup.png" />
+<ul class="simple">
+<li><p>Or restore an image previously created to the newly created machine. In our example, the master is called « master »</p></li>
+</ul>
+<img alt="../../../../../_images/master.png" src="../../../../../_images/master.png" />
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">User manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">User manual</a><ul>
+      <li>Previous: <a href="../computer_group/index.html" title="Chapitre précédent">Machine Group</a></li>
+      <li>Next: <a href="../packages/index.html" title="Chapitre suivant">Packages</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/en/usemedulla/usermanual/imaging/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

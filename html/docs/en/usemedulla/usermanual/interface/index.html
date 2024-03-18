@@ -1,0 +1,232 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Medulla Interface &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Computers Menu" href="../computers/index.html" />
+    <link rel="prev" title="Introduction to Medulla Tool" href="../introduction/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="medulla-interface">
+<h1>Medulla Interface<a class="headerlink" href="#medulla-interface" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This section covers the interface part of the Medulla tool, including access to the interface, the homepage,</p>
+<section id="web-browser">
+<h2>Web Browser<a class="headerlink" href="#web-browser" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Medulla’s user interface is a web interface.
+The following browsers are compatible:
+- Microsoft Internet Explorer version 10 minimum
+- Safari version 6.2 minimum
+- Mozilla Firefox version 31 minimum
+- Google Chrome version 32.0 minimum</p>
+</section>
+<section id="accessing-the-interface">
+<h2>Accessing the Interface<a class="headerlink" href="#accessing-the-interface" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>To access the interface, the user must enter the following address in the browser’s address bar: <a class="reference external" href="http://medulla-server/mmc/">http://medulla-server/mmc/</a></p>
+<p>Once the user arrives at the Medulla graphical interface, a username/password entry form is accessible, along with a drop-down menu to choose the language used.</p>
+<p>![Connection](images/connexion.png)</p>
+</section>
+<section id="homepage">
+<h2>Homepage<a class="headerlink" href="#homepage" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Once logged in to the interface, you will have access to the Medulla homepage.
+This homepage consists of 3 zones.</p>
+<section id="menu-bar">
+<h3>Menu Bar<a class="headerlink" href="#menu-bar" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>The first zone is the top of the pages: the main menu.
+It provides navigation between all Medulla modules.
+The menus adapt according to the profile and rights of the user profile (cf ACL).</p>
+<p>![Banner](images/bandeau.png)</p>
+<p>In the case of this menu (in the screenshot above), the user has access to all functionalities.
+In this screenshot, the profile is that of an administrator.</p>
+<p>In this menu, you will find buttons to access the following functions:</p>
+<ul class="simple">
+<li><p>Dashboard</p></li>
+<li><p>Users</p></li>
+<li><p>Groups</p></li>
+<li><p>Computers</p></li>
+<li><p>Backup</p></li>
+<li><p>Imaging</p></li>
+<li><p>Packages</p></li>
+<li><p>Audit</p></li>
+<li><p>Services</p></li>
+<li><p>History</p></li>
+<li><p>Admin</p></li>
+</ul>
+</section>
+<section id="information-widget">
+<h3>Information Widget<a class="headerlink" href="#information-widget" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>On the homepage, you will find a number of widgets that provide information easily.</p>
+<p>![Dashboard](images/dashboard.png)</p>
+<p>These widgets can be broken down into 2 categories:</p>
+<ul>
+<li><p>Information about the Medulla server itself:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Disk usage rate;</p></li>
+<li><p>General server information: uptime (how long the server has been online), server RAM usage;</p></li>
+<li><p>Available updates;</p></li>
+<li><p>Extraction of logs and log files, and configuration files of the software;</p></li>
+<li><p>The ability to restart/stop the Medulla server directly.</p></li>
+</ul>
+</div></blockquote>
+</li>
+<li><p>Information about your park:</p>
+<blockquote>
+<div><ul class="simple">
+<li><p>Computers with antivirus;</p></li>
+<li><p>The number of machines online and offline;</p></li>
+<li><p>The number of machines with the « Backup » function configuration active;</p></li>
+<li><p>The number of computers that are up-to-date in the inventory, not inventoried, or out of inventory;</p></li>
+<li><p>The various operating systems used on your computer park.</p></li>
+</ul>
+</div></blockquote>
+</li>
+</ul>
+<p>Widgets related to your park are in the form of pie charts. By clicking on the areas of the pie charts, you can create groups of machines corresponding to the areas.
+For example, if you click on the « Windows 10 (2009) » area in Operating Systems, you will have machines with Windows 10 version 2009 as the operating system.</p>
+</section>
+<section id="location-and-options-banner">
+<h3>Location and Options Banner<a class="headerlink" href="#location-and-options-banner" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>Under the banner containing the menu of Medulla functions, you will find a banner that allows you to know
+the location of the software’s pages, to be able to log out or switch to expert mode (more information on this mode in the following chapters).</p>
+<p>![Location](images/localisation.png)</p>
+</section>
+</section>
+<section id="interface-organization-by-zone">
+<h2>Interface Organization by Zone<a class="headerlink" href="#interface-organization-by-zone" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>![Zones](images/zones.png)</p>
+<p>The interface is organized by zone:
+For each module, there is a « Menu » zone located on the left.
+Depending on the choice of the left menu, in the « Presentation » zone, you have either a list of results or an input form.
+For the result type, there are different zones in the presentation panel:</p>
+<ul class="simple">
+<li><p>The « Filter » zone allows you to reduce the list of results presented according to a criterion.</p></li>
+<li><p>The « Action » zone allows, for the element of the line, to launch an action.</p></li>
+</ul>
+</section>
+<section id="actions-on-elements">
+<h2>Actions on Elements<a class="headerlink" href="#actions-on-elements" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>![Machines](images/machines.png)</p>
+<p>In our example, List of machines from the « Computers » module,
+we will find the following actions that can be performed for each machine:</p>
+<p>![Machine Actions](images/actionsMachines.png)</p>
+<p>Actions are represented by icons.
+<em>Access to these different actions is configurable by user profile.</em>
+You will find an explanation of the different icons in the corresponding chapters.</p>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">User manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">User manual</a><ul>
+      <li>Previous: <a href="../introduction/index.html" title="Chapitre précédent">Introduction to Medulla Tool</a></li>
+      <li>Next: <a href="../computers/index.html" title="Chapitre suivant">Computers Menu</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/en/usemedulla/usermanual/interface/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

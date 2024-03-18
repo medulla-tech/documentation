@@ -1,0 +1,183 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Medulla Admin &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Correlation with Asset Management Tool" href="../glpi/index.html" />
+    <link rel="prev" title="Action History" href="../history/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="medulla-admin">
+<h1>Medulla Admin<a class="headerlink" href="#medulla-admin" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This section concerns the Admin part of the Medulla tool.
+The Admin menu gathers information about the list of relays.</p>
+<img alt="../../../../../_images/principal.png" src="../../../../../_images/principal.png" />
+<p>When clicking on the Admin menu, we directly find the list of our various relays.
+The default page is « List of relays », which is the list of relays.</p>
+</section>
+<section id="list-of-relays">
+<h1>List of relays<a class="headerlink" href="#list-of-relays" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>On this page, we can find all the information about the relays:
+- the name of the relay,
+- its JabberID,
+- the name of the cluster in which the relay is contained,
+- the description of the cluster,
+- the number of machines on the relay,
+- the online non-inventoried machines present on the relay,
+- its class,
+- the MAC address of the relay,
+- its IP address,
+- the possible actions to be launched on the relay.</p>
+<p>Regarding the last point, the different actions are as follows:</p>
+<p><strong>Package list</strong>: Displays the list of packages present on the relay,
+<strong>Reconfigure machines</strong>: Allows launching the Quick Action for reconfiguring machines on all machines present on the relay,
+<strong>Switch</strong>: Allows turning off the relay,
+<strong>Edit configuration files</strong>: Allows editing the configuration files of the relay,
+<strong>Launched QA</strong>: Displays the list of launched Quick Actions,
+<strong>Actions</strong>: Allows launching an action on the relay (Reboot, Process, Disk Usage…),
+<strong>Ban</strong>: Bans the relay. It will be considered offline,
+<strong>Unban</strong>: Unbans the relay. It can be used again,
+<strong>Remote control</strong>: Allows remote control of the relay via VNC, RDP, or SSH,
+<strong>Relay rules</strong>: Displays the list of rules on the relay and also allows adding new ones.</p>
+</section>
+<section id="list-of-clusters">
+<h1>List of clusters<a class="headerlink" href="#list-of-clusters" title="Lien permanent vers cette rubrique">¶</a></h1>
+<img alt="../../../../../_images/listeCluster.png" src="../../../../../_images/listeCluster.png" />
+<p>The list of clusters corresponds to a list of groups of relays.
+A cluster can therefore contain one or more relays.
+For example, we can create a cluster of several relays so that the machines that connect to this cluster can choose any relay present in the cluster.
+This notably allows relieving a relay and having load balancing on the relays.</p>
+<p>We can modify a cluster by clicking on the appropriate button. This allows changing the name and/or description of the cluster, or adding and/or removing relays from the cluster.</p>
+</section>
+<section id="new-cluster">
+<h1>New cluster<a class="headerlink" href="#new-cluster" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This page allows creating a new cluster.
+We can define a name, a description, and add relays to the cluster.
+Cluster modification is done on the « List of clusters » page, as seen previously.</p>
+</section>
+<section id="rules">
+<h1>Rules<a class="headerlink" href="#rules" title="Lien permanent vers cette rubrique">¶</a></h1>
+<img alt="../../../../../_images/regles.png" src="../../../../../_images/regles.png" />
+<p>This page contains the list of different rules for relays.
+These rules determine which relay the machine should connect to.
+Each rule has its level, which determines the order in which the rules should be applied:
+For example, when assigning a relay to a station, if at level 1 the rule is « hostname », then we will check the hostname of the machine to link it to the relay.
+If it doesn’t match, we move on to level 2 (for example « subnet »), which will check the subnet of the machine to link it to the correct relay.
+And so on until a rule matches. If nothing matches, the machine will use the default relay (the « default » rule).</p>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">User manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">User manual</a><ul>
+      <li>Previous: <a href="../history/index.html" title="Chapitre précédent">Action History</a></li>
+      <li>Next: <a href="../glpi/index.html" title="Chapitre suivant">Correlation with Asset Management Tool</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/en/usemedulla/usermanual/admin/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

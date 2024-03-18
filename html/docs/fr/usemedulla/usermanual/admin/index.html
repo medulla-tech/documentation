@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Admin &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Corrélation avec l’outil de gestion de parc" href="../glpi/index.html" />
+    <link rel="prev" title="Historique des actions effectuées" href="../historique/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="admin">
+<h1>Admin<a class="headerlink" href="#admin" title="Lien permanent vers cette rubrique">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie Admin de l’outil Pulse.</div>
+<div class="line">Le menu Admin regroupe les informations sur la liste des relais.</div>
+<div class="line"><br /></div>
+</div>
+<img alt="../../../../../_images/principal1.png" src="../../../../../_images/principal1.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">Lorsqu’on clique sur le menu Admin, on retrouve directement la liste de nos différents relais.</div>
+<div class="line">La page par défaut est « List of relays », soit la liste des relais.</div>
+</div>
+<section id="liste-des-relais">
+<h2>Liste des relais<a class="headerlink" href="#liste-des-relais" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Sur cette page, on peut retrouver toutes les infos des relais :</div>
+<div class="line">- le nom du relais,</div>
+<div class="line">- son JabberID,</div>
+<div class="line">- le nom du cluster dans lequel est contenu le relais,</div>
+<div class="line">- la description du cluster,</div>
+<div class="line">- le nombre de machines sur le relais,</div>
+<div class="line">- les machines non-inventoriées en ligne présentes sur le relais,</div>
+<div class="line">- sa classe,</div>
+<div class="line">- l’adresse MAC du relais,</div>
+<div class="line">- son adresse IP,</div>
+<div class="line">- les actions possibles à lancer sur le relais.</div>
+<div class="line"><br /></div>
+<div class="line">Concernant le dernier point, les différentes actions sont les suivantes :</div>
+<div class="line"><br /></div>
+<div class="line"><strong>Liste de packages</strong> : Affiche la liste des paquets présents sur le relais,</div>
+<div class="line"><strong>Reconfigurer les machines</strong> : Permet de lancer la Quick Action de reconfiguration des machine sur toutes les machines présentes sur le relais,</div>
+<div class="line"><strong>Switch</strong> : Permet d’éteindre le relais,</div>
+<div class="line"><strong>Editer les fichiers de configuration</strong> : Permet d’éditer les fichiers de configuration du relais,</div>
+<div class="line"><strong>QA lancées</strong> : Affiche la liste des Quick Actions lancées,</div>
+<div class="line"><strong>Actions</strong> : Permet de lancer une action sur le relais (Reboot, Process, Disk Usage…),</div>
+<div class="line"><strong>Bannir</strong> : Banni le relais. Celui-ci sera considéré comme hors-ligne,</div>
+<div class="line"><strong>Débannir</strong> : Débanni le relais. Il pourra à nouveau être utilisé,</div>
+<div class="line"><strong>Prise en main à distance</strong> : Permet de prendre en main à distance le relais au travers VNC, RDP ou SSH,</div>
+<div class="line"><strong>Règles des relais</strong> : Affiche la liste des règles sur le relais et permet également d’en ajouter.</div>
+</div>
+</section>
+<section id="liste-des-clusters">
+<h2>Liste des clusters<a class="headerlink" href="#liste-des-clusters" title="Lien permanent vers cette rubrique">¶</a></h2>
+<img alt="../../../../../_images/listeCluster1.png" src="../../../../../_images/listeCluster1.png" />
+<div class="line-block">
+<div class="line"><br /></div>
+<div class="line">La liste des clusters correspond à une liste de groupements de relais.</div>
+<div class="line">Un cluster peut donc contenir un ou plusieurs relais.</div>
+<div class="line">On peut par exemple faire un cluster de plusieurs relais afin de faire en sorte que les machines qui se connectent à ce cluster puissent choisir n’importe quel relais présent dans le cluster.</div>
+<div class="line">Cela permet notamment de désengorger un relais et d’avoir un load balancing sur les relais.</div>
+<div class="line"><br /></div>
+<div class="line">On peut modifier un cluster en cliquant sur le bouton approprié. Cela permet de changer le nom et/ou la description du cluster, ou encore d’ajouter et/ou retirer des relais au cluster.</div>
+</div>
+</section>
+<section id="nouveau-cluster">
+<h2>Nouveau cluster<a class="headerlink" href="#nouveau-cluster" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Cette page permet de créer un nouveau cluster.</div>
+<div class="line">Nous pouvons notamment y définir un nom, une description et d’ajouter des relais dans le cluster.</div>
+<div class="line">La modification de clusters se fait sur la page « Liste des clusters », comme vu précédemment.</div>
+</div>
+</section>
+<section id="regles">
+<h2>Règles<a class="headerlink" href="#regles" title="Lien permanent vers cette rubrique">¶</a></h2>
+<img alt="../../../../../_images/regles1.png" src="../../../../../_images/regles1.png" />
+<div class="line-block">
+<div class="line">Cette page contient la liste des différentes règles pour les relais.</div>
+<div class="line">Ces règles permettent de déterminer sur quel relais la machine doit se connecter.</div>
+<div class="line">Chaque règle a son niveau, qui permet de donner l’ordre dans lequel les règles doivent être appliquées :</div>
+<div class="line">Par exemple, lors de l’attribution d’un relais à un poste, si au niveau 1 la règle est « hostname », alors nous allons vérifier le hostname de la machine pour le lier au relais.</div>
+<div class="line">Si ça ne match pas, on passe au niveau 2 (par exemple « subnet »), qui quant à lui va vérifier le subnet de la machine pour la lier au bon relais.</div>
+<div class="line">Et ainsi de suite jusqu’à ce qu’une règle match. Si rien ne match, la machine utilisera le relais par défaut (la règle « default »).</div>
+</div>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Manuel d’utilisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">Manuel d’utilisation</a><ul>
+      <li>Previous: <a href="../historique/index.html" title="Chapitre précédent">Historique des actions effectuées</a></li>
+      <li>Next: <a href="../glpi/index.html" title="Chapitre suivant">Corrélation avec l’outil de gestion de parc</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/fr/usemedulla/usermanual/admin/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

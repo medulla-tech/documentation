@@ -1,0 +1,208 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Groupe de machines &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Imaging" href="../imaging/index.html" />
+    <link rel="prev" title="Menu Ordinateurs" href="../computers/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="groupe-de-machines">
+<h1>Groupe de machines<a class="headerlink" href="#groupe-de-machines" title="Lien permanent vers cette rubrique">¶</a></h1>
+<div class="line-block">
+<div class="line">Cette section concerne la partie Groupe de machines de l’outil Pulse.</div>
+<div class="line"><br /></div>
+</div>
+<div class="line-block">
+<div class="line">Les groupes de machines permettent de constituer un ensemble de machines. Il existe trois types de groupes :</div>
+<div class="line">- Les groupes statiques ;</div>
+<div class="line">- Les groupes dynamiques ;</div>
+<div class="line">- Les groupes créés depuis un import.</div>
+</div>
+<section id="groupe-statique">
+<h2>Groupe statique<a class="headerlink" href="#groupe-statique" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>Dans le groupe statique, la sélection des machines membres de ce groupe est manuelle.</p>
+<img alt="../../../../../_images/static1.png" src="../../../../../_images/static1.png" />
+<div class="line-block">
+<div class="line">Il est possible d’éditer un groupe statique pour ajouter ou supprimer d’autres machines.</div>
+<div class="line">Il suffit d’utiliser les flèches pour ajouter ou supprimer les machines du groupe.</div>
+</div>
+</section>
+<section id="groupe-dynamique">
+<h2>Groupe dynamique<a class="headerlink" href="#groupe-dynamique" title="Lien permanent vers cette rubrique">¶</a></h2>
+<div class="line-block">
+<div class="line">Un groupe dynamique est un groupe basé sur une requête sur la base d’inventaire de machines en fonction de critère(s).</div>
+<div class="line">Il est possible de combiner plusieurs critères avec des opérateurs booléens.</div>
+<div class="line">Le résultat est stocké sous forme de requête (dynamique) ou de résultat (figé à l’instant T).</div>
+</div>
+<img alt="../../../../../_images/dynamic1.png" src="../../../../../_images/dynamic1.png" />
+<div class="line-block">
+<div class="line">Trois modules sont disponibles pour la création de groupe dynamique :</div>
+<div class="line">-     Module GLPI : permet d’utiliser les critères d’inventaire des machines ;</div>
+<div class="line">-     Module xmppmaster : permet d’utiliser l’Active Directory ou LDAP ;</div>
+<div class="line">-     Module dyngroup : permet d’utiliser des groupes dynamiques existants.</div>
+</div>
+<div class="line-block">
+<div class="line">Sauf cas particulier, il faut toujours choisir « GLPI ». En effet, la requête peut être effectuée sur différents champs, voir ci-dessous :</div>
+</div>
+<img alt="../../../../../_images/glpi1.png" src="../../../../../_images/glpi1.png" />
+<p>Par exemple, utiliser le champ « Entité » se présente comme ceci :</p>
+<img alt="../../../../../_images/entity1.png" src="../../../../../_images/entity1.png" />
+<p>L’auto-complétion propose les valeurs existantes après avoir renseigné trois caractères.</p>
+<section id="exemple-concret-de-groupe-dynamique">
+<h3>Exemple concret de groupe dynamique<a class="headerlink" href="#exemple-concret-de-groupe-dynamique" title="Lien permanent vers cette rubrique">¶</a></h3>
+<div class="line-block">
+<div class="line">Pour notre exemple, nous allons créer un groupe de machine sur lesquels une version obsolète de Firefox est présente.</div>
+<div class="line">Pour commencer, il faut ajouter un critère « Logiciel » avec la valeur « Mozilla Firefox * » pour tester la présence de Firefox (le caractère « * » peut être utilisé pour compléter le critère par n’importe quel caractère et donc trouver toutes les versions de Firefox);</div>
+<div class="line">Ensuite, il faut cliquer sur « glpi » à nouveau pour ajouter un second critère ;</div>
+<div class="line">Choisir « Version » puis renseigner « Mozilla Firefox * » puis « 47.0 » (ce critère sera inversé, plus d’informations juste après)</div>
+<div class="line"><em>(Le critère « Version » seul retournerait les machines avec Firefox obsolète OU n’ayant pas Firefox du tout)</em></div>
+</div>
+<img alt="../../../../../_images/exemplegroupdyn1.png" src="../../../../../_images/exemplegroupdyn1.png" />
+<div class="line-block">
+<div class="line">Il faut s’inspirer de la liste d’auto-complétions pour adapter au mieux le critère de recherche :</div>
+<div class="line">Par exemple, Firefox apparaît avec une entrée pour chaque version, d’où l’utilisation de « * ».</div>
+</div>
+<img alt="../../../../../_images/firefox1.png" src="../../../../../_images/firefox1.png" />
+<div class="line-block">
+<div class="line">Une fois la requête terminée, il faut la sauvegarder.</div>
+<div class="line">Il est donc possible de sauvegarder en tant que « requête » (dynamique) ou en tant que « résultat » (requête à l’instant T).</div>
+<div class="line">Si on ajoute le groupe aux groupes favoris, on peut retrouver le groupe dans le menu de gauche, onglet « Groupes favoris ».</div>
+</div>
+<section id="operateur-booleen">
+<h4>Opérateur booléen :<a class="headerlink" href="#operateur-booleen" title="Lien permanent vers cette rubrique">¶</a></h4>
+<div class="line-block">
+<div class="line">Les opérateurs disponibles sont  AND, OR, NOT ainsi que les ( ).</div>
+<div class="line">AND : Permet d’associer les requêtes : AND(1,2)</div>
+<div class="line">NOT : Permet d’inverser le résultat de la seconde requête : NOT(2)</div>
+<div class="line">OR : Permet d’utiliser l’une ou l’autre requête : OR(1,2)</div>
+</div>
+<div class="line-block">
+<div class="line">Pour notre requête, nous devons combiner les deux conditions AND et NOT : AND(1,NOT(2))</div>
+</div>
+<div class="line-block">
+<div class="line">Cela revient à demander les machines ayant le logiciel « Mozilla Firefox * » installé ET dont la version de</div>
+<div class="line">« Mozilla Firefox * » N’EST PAS « 47.0 »</div>
+<div class="line">Vous pouvez vérifier vos opérateurs en cliquant sur le bouton « Vérifier »</div>
+<div class="line">Il est aussi possible de visualiser le contenu du groupe avant de valider en cliquant sur le bouton « Voir le contenu »</div>
+</div>
+</section>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">Manuel d’utilisation</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../en/contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">Manuel d’utilisation</a><ul>
+      <li>Previous: <a href="../computers/index.html" title="Chapitre précédent">Menu Ordinateurs</a></li>
+      <li>Next: <a href="../imaging/index.html" title="Chapitre suivant">Imaging</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/fr/usemedulla/usermanual/machine_group/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>

@@ -1,0 +1,187 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.19: https://docutils.sourceforge.io/" />
+
+    <title>Audit &#8212; Documentation Medulla (English) 5.1</title>
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../../../../../_static/alabaster.css" />
+    <script data-url_root="../../../../../" id="documentation_options" src="../../../../../_static/documentation_options.js"></script>
+    <script src="../../../../../_static/jquery.js"></script>
+    <script src="../../../../../_static/underscore.js"></script>
+    <script src="../../../../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../../../../_static/doctools.js"></script>
+    <script src="../../../../../_static/sphinx_highlight.js"></script>
+    <script src="../../../../../_static/translations.js"></script>
+    <link rel="index" title="Index" href="../../../../../genindex.html" />
+    <link rel="search" title="Recherche" href="../../../../../search.html" />
+    <link rel="next" title="Action History" href="../history/index.html" />
+    <link rel="prev" title="Packages" href="../packages/index.html" />
+   
+  <link rel="stylesheet" href="../../../../../_static/custom.css" type="text/css" />
+  
+  
+  <meta name="viewport" content="width=device-width, initial-scale=0.9, maximum-scale=0.9" />
+
+  </head><body>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          
+
+          <div class="body" role="main">
+            
+  <section id="audit">
+<h1>Audit<a class="headerlink" href="#audit" title="Lien permanent vers cette rubrique">¶</a></h1>
+<p>This section concerns the Audit part of the Medulla tool.</p>
+<p>The audit menu gathers all deployment actions.
+When clicked, it leads to the « My tasks » page, which displays various ongoing deployments and scheduled tasks.</p>
+<img alt="../../../../../_images/tachesencours.png" src="../../../../../_images/tachesencours.png" />
+<p>In the left menu, we find a submenu with:</p>
+<img alt="../../../../../_images/sousmenu.png" src="../../../../../_images/sousmenu.png" />
+<p><em>Note that the display differs depending on the user profile. In this case, I am using an administrator profile.</em></p>
+<p>At the top of the page, we can also set automatic page refresh.</p>
+<p>Also, on each page, we can click on the « Deployment details » icon in the <strong>Actions</strong> of the deployment.</p>
+<section id="tasks-of-all-users">
+<h2>Tasks of all users<a class="headerlink" href="#tasks-of-all-users" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>This page gathers tasks from all users using Medulla. Only tasks from the last 24 hours and ongoing are shown.</p>
+<img alt="../../../../../_images/allUsers.png" src="../../../../../_images/allUsers.png" />
+</section>
+<section id="tasks-of-my-team">
+<h2>Tasks of my team<a class="headerlink" href="#tasks-of-my-team" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>This page gathers tasks from users who are part of the connected user’s team. Only tasks from the last 24 hours and ongoing are shown.</p>
+<img alt="../../../../../_images/team.png" src="../../../../../_images/team.png" />
+</section>
+<section id="my-past-tasks">
+<h2>My past tasks<a class="headerlink" href="#my-past-tasks" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>This page gathers past tasks of the connected user, within the last 3 months.</p>
+<img alt="../../../../../_images/myPastTasks.png" src="../../../../../_images/myPastTasks.png" />
+</section>
+<section id="past-tasks-of-all-users">
+<h2>Past tasks of all users<a class="headerlink" href="#past-tasks-of-all-users" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>This page gathers tasks from all users using Medulla. The displayed tasks are those completed within the last 3 months.</p>
+<img alt="../../../../../_images/allUsersPastTasks.png" src="../../../../../_images/allUsersPastTasks.png" />
+</section>
+<section id="past-tasks-of-my-team">
+<h2>Past tasks of my team<a class="headerlink" href="#past-tasks-of-my-team" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>This page gathers tasks from users who are part of the connected user’s team. The displayed tasks are those completed within the last 3 months.</p>
+<img alt="../../../../../_images/teamPastTasks.png" src="../../../../../_images/teamPastTasks.png" />
+</section>
+<section id="deployment-group-audit-page">
+<h2>Deployment Group Audit Page<a class="headerlink" href="#deployment-group-audit-page" title="Lien permanent vers cette rubrique">¶</a></h2>
+<p>In the Audit menu, it’s possible to click on a deployment to see its details.
+For a group deployment, for example, we will find information presented differently.</p>
+<img alt="../../../../../_images/auditgroupe.png" src="../../../../../_images/auditgroupe.png" />
+<p>In the first part of this page, we will have a view of the deployment progress, in our case at 100%.
+In the second part, a pie chart is present (similar to dashboard widgets).
+In the third part of the page, we will have the machines with information about the deployment status and the action log, as for a deployment per machine.</p>
+<section id="filters">
+<h3>Filters<a class="headerlink" href="#filters" title="Lien permanent vers cette rubrique">¶</a></h3>
+<p>There are different ways to filter computers in the deployment audit.
+Firstly, the first way is to filter computers by <strong>Deployment Status</strong>, <strong>Inventory Criteria</strong>, or <strong>Relay</strong>.
+These three filters are located at the top right of the group deployment window, in the dropdown menu.</p>
+<p><strong>Deployment Status</strong>: Filters computers based on the deployment status. For example, we can search for computers with successful deployment using the « SUCCESS » filter.
+<strong>Inventory Criteria</strong>: Filters computers based on their inventory criteria. With this filter, we can, for example, filter based on the machine name.
+<strong>Relay</strong>: Filters computers based on the relay they are attached to.</p>
+<img alt="../../../../../_images/filtres.png" src="../../../../../_images/filtres.png" />
+<p>Also, we can use the pie chart on the deployment page to create groups on which we can act.</p>
+<img alt="../../../../../_images/camembert.png" src="../../../../../_images/camembert.png" />
+<p>If we click on the green part of the pie chart above, we will have a group of machines containing machines with successful deployment.
+This filter is very useful for correcting errors on stations.
+For example, if we have a group deployment with a 30% failure rate, then by clicking on the corresponding part of the pie chart, we will automatically create
+a group allowing us to check errors and potentially relaunch a deployment process after correcting the error.</p>
+</section>
+</section>
+</section>
+
+
+          </div>
+          
+        </div>
+      </div>
+      <div class="sphinxsidebar" role="navigation" aria-label="main navigation">
+        <div class="sphinxsidebarwrapper">
+<h1 class="logo"><a href="../../../../../index.html">Medulla (English)</a></h1>
+
+
+
+
+
+
+
+
+<h3>Navigation</h3>
+<ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html">Installer Medulla (à partir du lien de téléchargement)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#installer-l-agent-medulla">Installer l’agent Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/installmedulla/index.html#premiere-etape">Première étape</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html">Install Medulla (from download link)</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#install-medulla-agent">Install Medulla agent</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../installmedulla/index.html#first-step">First step</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/usemedulla/index.html">Use Medulla</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="../../index.html">Use Medulla</a><ul class="current">
+<li class="toctree-l2 current"><a class="reference internal" href="../index.html">User manual</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../technicaloperations/index.html">Technical operations manual</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../../../../fr/contributemedulla/index.html">Contribute to Medulla</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../../contributemedulla/index.html">Contribute to Medulla</a></li>
+</ul>
+
+<div class="relations">
+<h3>Related Topics</h3>
+<ul>
+  <li><a href="../../../../../index.html">Documentation overview</a><ul>
+  <li><a href="../../index.html">Use Medulla</a><ul>
+  <li><a href="../index.html">User manual</a><ul>
+      <li>Previous: <a href="../packages/index.html" title="Chapitre précédent">Packages</a></li>
+      <li>Next: <a href="../history/index.html" title="Chapitre suivant">Action History</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
+</ul>
+</div>
+<div id="searchbox" style="display: none" role="search">
+  <h3 id="searchlabel">Recherche rapide</h3>
+    <div class="searchformwrapper">
+    <form class="search" action="../../../../../search.html" method="get">
+      <input type="text" name="q" aria-labelledby="searchlabel" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false"/>
+      <input type="submit" value="Go" />
+    </form>
+    </div>
+</div>
+<script>document.getElementById('searchbox').style.display = "block"</script>
+
+
+
+
+
+
+
+
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="footer">
+      &copy;2024, Yvan Manon.
+      
+      |
+      Powered by <a href="http://sphinx-doc.org/">Sphinx 5.3.0</a>
+      &amp; <a href="https://github.com/bitprophet/alabaster">Alabaster 0.7.12</a>
+      
+      |
+      <a href="../../../../../_sources/docs/en/usemedulla/usermanual/audit/index.rst.txt"
+          rel="nofollow">Page source</a>
+    </div>
+
+    
+
+    
+  </body>
+</html>
