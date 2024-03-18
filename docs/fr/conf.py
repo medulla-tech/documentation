@@ -1,12 +1,12 @@
 from .. import conf  # Import the base configuration
-ilanguage = 'fr'
+language = 'fr'
 project = 'Medulla (Français)'
 copyright = '2024, Yvan Manon'
 author = 'Yvan Manon'
 release = '5.1'
 
-# Build base directory (optional, set here or uncomment in conf.py)
-# build_base = 'fr'  # Uncomment to use a separate directory for French build
+# Build base directory (set based on language)
+build_base = language  # 'fr' for French build directory
 
 # The `toctree` structure for French content
 toctree = {

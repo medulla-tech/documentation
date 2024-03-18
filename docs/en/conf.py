@@ -6,8 +6,8 @@ copyright = '2024, Yvan Manon'
 author = 'Yvan Manon'
 release = '5.1'
 
-# Build base directory (optional, set here or uncomment in conf.py)
-# build_base = 'en'  # Uncomment to use a separate directory for English build
+# Build base directory (set based on language)
+build_base = language  # 'en' for English build directory
 
 # The `toctree` structure for English content
 toctree = {
