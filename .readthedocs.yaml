@@ -6,9 +6,11 @@ build:
     python: "3.10"
 
 sphinx:
-  configuration: 
-    en: docs/en/conf.py  # English configuration file
-    fr: docs/fr/conf.py  # French configuration file
+  configuration:
+    en:
+      configuration: docs/en/conf.py  # English configuration file
+    fr:
+      configuration: docs/fr/conf.py  # French configuration file
 
 python:
   install:
