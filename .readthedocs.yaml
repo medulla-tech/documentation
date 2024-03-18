@@ -7,8 +7,9 @@ build:
 
 sphinx:
   configuration:
-    en: docs/en/conf.py  # English configuration file
-    fr: docs/fr/conf.py  # French configuration file
+    conf.py:  # Common configuration file
+      en: docs/en/conf.py
+      fr: docs/fr/conf.py
 
 python:
   install:
