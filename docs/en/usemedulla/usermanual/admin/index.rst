@@ -1,6 +1,5 @@
-==========
 Medulla Admin
-==========
+=============
 
 This section concerns the Admin part of the Medulla tool.
 The Admin menu gathers information about the list of relays.

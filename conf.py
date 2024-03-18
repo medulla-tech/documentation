@@ -7,11 +7,11 @@ exclude_patterns = ['_build', 'Thumbs.db', '.DS_Store']
 # The path for custom CSS files.
 html_static_path = ['_static']
 
-# -- Project information (placeholders, set in language-specific files) --------
+# In docs/en/conf.py and docs/fr/conf.py
+project = 'Medulla (English)'  # Or 'Medulla (Français)' for French
+copyright = '2024, Yvan Manon'
+author = 'Yvan Manon'
+release = '5.1'
 
-project = None
-copyright = None
-author = None
-release = None
 
 # ... functions to handle language-specific configurations can be added here (optional)
