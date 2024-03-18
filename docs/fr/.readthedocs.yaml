@@ -7,7 +7,6 @@ build:
 
 sphinx:
     configuration: docs/fr/conf.py
-    configuration: docs/en/conf.py
 
 python:
     install:
