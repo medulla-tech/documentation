@@ -7,4 +7,4 @@ build:
 
 sphinx:
   # Build each language in a separate directory (controlled by conf.py)
-  build_base: .  # Uncomment this line if not using conditional build base in conf.py
+#  build_base: .  # Uncomment this line if not using conditional build base in conf.py
