@@ -1,4 +1,3 @@
-from .. import conf  # Import the base configuration
 language = 'fr'
 project = 'Medulla (Français)'
 copyright = '2024, Yvan Manon'

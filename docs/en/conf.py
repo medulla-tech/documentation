@@ -1,4 +1,3 @@
-from .. import conf  # Import the base configuration
 # Language-specific information
 language = 'en'
 project = 'Medulla (English)'
