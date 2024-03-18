@@ -1,6 +1,5 @@
-======
 Technical operations manual
-======
+===========================
 
 .. toctree::
    :maxdepth: 3

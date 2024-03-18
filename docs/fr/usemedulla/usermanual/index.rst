@@ -1,6 +1,5 @@
-======
 Manuel d'utilisation
-======
+====================
 
 .. toctree::
    :maxdepth: 3

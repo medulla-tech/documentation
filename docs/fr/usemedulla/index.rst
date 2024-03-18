@@ -1,6 +1,5 @@
-======
 Use Medulla
-======
+===========
 
 .. toctree::
    :maxdepth: 2

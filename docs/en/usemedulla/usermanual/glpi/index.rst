@@ -50,7 +50,7 @@ http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory
 .communication.php
 
 Displaying Machines
-=======================
+===================
 
 Pulse allows selective display of GLPI computers based on the following filters:
 -	state
@@ -62,7 +62,7 @@ i.e. state=1 type=2|3|7 entity=2|5
 filter_on = state=3
 
 Entities and Locations
-=================
+======================
 
 Top-level entities are reserved for physical sites where Pulse is installed or a multi-site Pulse.
 
@@ -180,18 +180,20 @@ In the following directory, a set of filters allows the renaming and standardiza
 
 Example of Dell manufacturer standardization:
 
-def xml_fix(xml):
-  import xml.etree.cElementTree as ET
-  xml = ET.fromstring(xml)
-  tree = ET.ElementTree(xml)
-  root = tree.getroot()
-  for subelem1 in root:
-    if subelem1.tag == 'CONTENT':
-      for subelem2 in subelem1:
-          for subelem3 in subelem2:
 
-            # DELL vendor name should always be the same
-            if subelem3.text in ['DELL', 'Dell Corp.', 'Dell Computer Corp.', 'Dell', 'Dell Computer Corporation']:
-              subelem3.text = 'Dell Inc.'
+.. code-block:: rst
 
-  return ET.tostring(root)
+   def xml_fix(xml):
+     import xml.etree.cElementTree as ET
+     xml = ET.fromstring(xml)
+     tree = ET.ElementTree(xml)
+     root = tree.getroot()
+     for subelem1 in root:
+       if subelem1.tag == 'CONTENT':
+         for subelem2 in subelem1:
+             for subelem3 in subelem2:
+   
+               # DELL vendor name should always be the same
+               if subelem3.text in ['DELL', 'Dell Corp.', 'Dell Computer Corp.', 'Dell', 'Dell Computer Corporation']:
+                 subelem3.text = 'Dell Inc.'
+     return ET.tostring(root)

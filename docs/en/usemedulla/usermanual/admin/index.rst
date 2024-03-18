@@ -13,7 +13,7 @@ When clicking on the Admin menu, we directly find the list of our various relays
 The default page is "List of relays", which is the list of relays.
 
 List of relays
-=================
+==============
 
 On this page, we can find all the information about the relays:
 - the name of the relay,
@@ -41,7 +41,7 @@ Regarding the last point, the different actions are as follows:
 **Relay rules**: Displays the list of rules on the relay and also allows adding new ones.
 
 List of clusters
-===================
+================
 
 .. image:: images/listeCluster.png
 
@@ -54,14 +54,14 @@ This notably allows relieving a relay and having load balancing on the relays.
 We can modify a cluster by clicking on the appropriate button. This allows changing the name and/or description of the cluster, or adding and/or removing relays from the cluster.
 
 New cluster
-===================
+===========
 
 This page allows creating a new cluster.
 We can define a name, a description, and add relays to the cluster.
 Cluster modification is done on the "List of clusters" page, as seen previously.
 
 Rules
-========
+=====
 
 .. image:: images/regles.png
 
@@ -71,4 +71,3 @@ Each rule has its level, which determines the order in which the rules should be
 For example, when assigning a relay to a station, if at level 1 the rule is "hostname", then we will check the hostname of the machine to link it to the relay.
 If it doesn't match, we move on to level 2 (for example "subnet"), which will check the subnet of the machine to link it to the correct relay.
 And so on until a rule matches. If nothing matches, the machine will use the default relay (the "default" rule).
-```

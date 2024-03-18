@@ -1,5 +1,4 @@
-=============
-Agent **Medulla**
+Agent Medulla
 =============
 
 This section concerns the Agent part of the **Medulla** tool.
@@ -14,7 +13,7 @@ The **Medulla** agent consists of 5 services:
 The agent is available for Windows, Mac, and Linux.
 
 Windows Agent
-==============
+=============
 
 By default, during its installation, **Medulla** generates a set of agents:
 
@@ -27,27 +26,29 @@ The agents are accessible from the following URL:
 |	http://ippulse/dowloads/clients/win/
 
 Generating Agents
-----------------------
+-----------------
 
 From the **Medulla** console, go to:
 # cd /var/lib/pulse2/clients/
 # ./generate-pulse-agent.sh
 
 Usage: 
-./generate-pulse-agent.sh [--conf-xmppserver=<XMPP configuration server IP>] 
-        [--conf-xmppport=<XMPP configuration server port>] 
-        [--conf-xmpppasswd=<XMPP configuration server password>] 
-        [--aes-key=<32-character AES PSK>] 
-        [--xmpp-passwd=<XMPP server password>] 
-        [--chat-domain=<XMPP domain>] 
-        [--inventory-tag=<Tag added during inventory>] 
-        [--minimal [--base-url=<URL used to download the agent and its dependencies>]] 
-        [--disable-vnc (Disable VNC support)] 
-        [--vnc-port=<VNC port, default is 5900>] 
-        [--ssh-port=<SSH port, default is 22>] 
-        [--disable-rdp (Disable RDP support)] 
-        [--disable-inventory (Disable inventory support)] 
-        [--linux-distros (Linux distributions used)]
+.. code-block:: rst
+
+   ./generate-pulse-agent.sh [--conf-xmppserver=<XMPP configuration server IP>] 
+           [--conf-xmppport=<XMPP configuration server port>] 
+           [--conf-xmpppasswd=<XMPP configuration server password>] 
+           [--aes-key=<32-character AES PSK>] 
+           [--xmpp-passwd=<XMPP server password>] 
+           [--chat-domain=<XMPP domain>] 
+           [--inventory-tag=<Tag added during inventory>] 
+           [--minimal [--base-url=<URL used to download the agent and its dependencies>]] 
+           [--disable-vnc (Disable VNC support)] 
+           [--vnc-port=<VNC port, default is 5900>] 
+           [--ssh-port=<SSH port, default is 22>] 
+           [--disable-rdp (Disable RDP support)] 
+           [--disable-inventory (Disable inventory support)] 
+           [--linux-distros (Linux distributions used)]
 
 Agent and Tag
 -------------
@@ -59,13 +60,13 @@ There are several ways to generate this tag:
 - Generate a **Medulla** agent with a tag
 
 Deploy a Tag on a Computer Already Possessing a **Medulla** Agent
-----------------------------------------------------------------
+-----------------------------------------------------------------
 
 Simply create the appropriate registry key and use **Medulla** to deploy it.
 
 
 Generate a **Medulla** Agent with a Tag
------------------------------------------
+---------------------------------------
 
 Go to the following directory:
 # cd /var/lib/pulse2/clients
@@ -74,7 +75,7 @@ And generate the **Medulla** agent with the desired tag (Example: desk101)
 # ./generate-pulse-agent.sh --inventory-tag desk101
 
 Mac Agent
-==========
+=========
 
 The agent is accessible from the following URL:
 	http://ippulse/dowloads/clients/mac/Pulse2AgentsInstaller.tar
@@ -83,7 +84,7 @@ The installer must be authorized to run in security settings.
 Also, as a prerequisite before installing the Pulse package, Xcode corresponding to your version must be installed.
 
 Generate a **Medulla** Agent with a Tag
------------------------------------
+---------------------------------------
 
 Similar to Windows, go to the following directory:
 # cd /var/lib/pulse2/clients/
@@ -92,13 +93,13 @@ Then run this command with the desired TAG (Example: desk101)
 # ./generate-agent.sh --tag=desk101
 
 Linux Agent
-============
+===========
 
 The agent is accessible from the following URL:
 	http://ippulse/dowloads/linux/Pulse-Agent-linux-MINIMAL-latest.sh
 
 Generate a **Medulla** Agent with a Tag 
------------------------------------
+---------------------------------------
 
 The procedure is the same as for Mac:
 

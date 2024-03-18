@@ -1,0 +1,11 @@
+--- docs-en/usemedulla/usermanual/admin/index.rst
++++ docs/en/usemedulla/usermanual/admin/index.rst
+@@ -1,7 +1,5 @@
+-```markdown
+-==========
+ Medulla Admin
+-==========
++=============
+ 
+ This section concerns the Admin part of the Medulla tool.
+ The Admin menu gathers information about the list of relays.

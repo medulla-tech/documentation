@@ -1,13 +1,13 @@
 Installer Medulla (à partir du lien de téléchargement)
-======
+======================================================
 
 Exigences
------
+---------
 
 Medulla doit être installé sur un serveur Debian Linux, Debian 12 (Partitionnement suggéré / 20Go ext4 et /var 400Go XFS).
 
 Installer le serveur Medulla
------
+----------------------------
 
 Une fois téléchargé, exécutez le script suivant :
 
@@ -18,11 +18,13 @@ Attendez que le processus d'installation se termine, un résumé affichera tous 
 Pour accéder à l'interface Medulla
 
  http://dns-serveur/mmc
+
 ou
+
  http://ip-serveur/mmc
 
 Installer l'agent Medulla
-======
+=========================
 
 L'agent Medulla est téléchargeable depuis
 
@@ -39,14 +41,14 @@ Il se termine lorsque l'ordinateur apparaît dans Medulla.
 .. image:: img/computer-up.png
 
 Première étape
-=====
+==============
 
 À la connexion, découvrez le menu principal.
 
 .. image:: img/main-menu.png
 
 Exemple de bureau à distance
------
+----------------------------
 
 Faites un contrôle à distance, trouvez votre ordinateur, cliquez sur "Contrôle à distance"
 
