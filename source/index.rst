@@ -12,7 +12,7 @@ Documentation Medulla RMM
    :maxdepth: 3
    :caption: Installer
 
-   installmedulla/index
+   installmedulla/installmedulla
    installmedulla/installagent
    installmedulla/gui
 
@@ -20,19 +20,19 @@ Documentation Medulla RMM
    :maxdepth: 3
    :caption: Découvrir
 
-   firststep/index
+   firststep/firststep
 
 .. toctree::
    :maxdepth: 3
    :caption: Manuel utilisateur
 
-   usemedulla/index
+   usemedulla/usemedulla
 
 .. toctree::
    :maxdepth: 3
    :caption: Contributer
 
-   contributemedulla/index
+   contributemedulla/contribute
 
 
 Recherche

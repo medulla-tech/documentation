@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,25 +20,25 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/installmedulla/index.rst:3
-msgid "Install Medulla"
+#: ../../installmedulla/installmedulla.rst:2
+msgid "Medulla serveur"
 msgstr ""
 
-#: ../../source/installmedulla/index.rst:6
-msgid "Medulla server"
-msgstr ""
-
-#: ../../source/installmedulla/index.rst:8
-msgid "To easly install and try Medulla there is three way :"
-msgstr ""
-
-#: ../../source/installmedulla/index.rst:17
+#: ../../installmedulla/installmedulla.rst:4
 msgid ""
-"And for a complete installation process chekout the ansible directory for"
-" complete parameters."
+"Pour installer Medulla, télécharger le `script d'installation <https"
+"://medulla-tech.io/telecharger-medulla>`_."
 msgstr ""
 
-#: ../../source/installmedulla/index.rst:19
-msgid "`Github sources`_"
+#: ../../installmedulla/installmedulla.rst:13
+msgid ""
+"Et pour un processus d’installation complet, consultez le répertoire "
+"ansible pour connaître l’ensemble des paramètres."
+msgstr ""
+
+#: ../../installmedulla/installmedulla.rst:15
+msgid ""
+"`Sources Github <https://github.com/medulla-"
+"tech/integration/tree/main/ansible>`_"
 msgstr ""
 

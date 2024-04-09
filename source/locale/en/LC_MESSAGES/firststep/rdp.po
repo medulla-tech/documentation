@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,23 +20,37 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/firststep/rdp.rst:2
-msgid "Remote desktop example"
+#: ../../firststep/rdp.rst:2
+msgid "Prise en main à distance"
 msgstr ""
 
-#: ../../source/firststep/rdp.rst:4
-msgid "Do a remote control, find your computer, click on \"Remote control\""
+#: ../../firststep/rdp.rst:4
+msgid ""
+"Pour accéder aux différents mode de prise en main à distance, cliquer sur"
+" \"Remote control\""
 msgstr ""
 
-#: ../../source/firststep/rdp.rst:8
-msgid "Select the remote desktop type to use."
+#: ../../firststep/rdp.rst:8
+msgid "Selectionner le type de PMAD:"
 msgstr ""
 
-#: ../../source/firststep/rdp.rst:12
-msgid "A new tab will be open with remote desktop."
+#: ../../firststep/rdp.rst:10
+msgid "VNC pour assister l'utilisateur"
 msgstr ""
 
-#: ../../source/firststep/rdp.rst:15
-msgid "Don't forget to accept popup on your browser"
+#: ../../firststep/rdp.rst:11
+msgid "RDP pour ouvrir session distante"
+msgstr ""
+
+#: ../../firststep/rdp.rst:12
+msgid "CMD pour ouvrir une console (batch ou powershell) distante"
+msgstr ""
+
+#: ../../firststep/rdp.rst:16
+msgid "Un onglet du navigateur s'ouvre avec la PMAD"
+msgstr ""
+
+#: ../../firststep/rdp.rst:18
+msgid "Ne pas oublier d'accepter l'ouverture de fenêtre venant de Medulla"
 msgstr ""
 

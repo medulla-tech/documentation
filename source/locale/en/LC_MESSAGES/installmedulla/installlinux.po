@@ -1,0 +1,58 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../installmedulla/installlinux.rst:3
+msgid "Installer Medulla sur linux"
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:6
+msgid "Pré-requis"
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:8
+msgid ""
+"Medulla supporte les disctribution Redhat (RHEL 8), CentOS (8) et Debian "
+"(Bookworm)."
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:10
+msgid "Le Partitionnement suggéré est / 20Go ext4 et /var 400Go XFS."
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:13
+msgid "Installation du serveur Medulla"
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:15
+msgid "Exécuter le script d'installation suivant :"
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:17
+msgid "source install_from_ansible.sh"
+msgstr ""
+
+#: ../../installmedulla/installlinux.rst:19
+msgid ""
+"Attendez que le processus d'installation se termine, un résumé affichera "
+"tous les mots de passe nécessaires (copiez-les dans un endroit sûr)."
+msgstr ""
+

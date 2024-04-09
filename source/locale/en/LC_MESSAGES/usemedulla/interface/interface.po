@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,313 +20,313 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/usemedulla/interface/index.rst:3
-msgid "Interface de Pulse"
+#: ../../usemedulla/interface/interface.rst:3
+msgid "Interface de Medulla"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:5
+#: ../../usemedulla/interface/interface.rst:5
 msgid ""
-"Cette section concerne la partie interface de l'outil Pulse, avec "
+"Cette section concerne la partie interface de l'outil Medulla, avec "
 "notamment l'accès à l'interface, la page d'accueil,"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:9
+#: ../../usemedulla/interface/interface.rst:9
 msgid "Navigateur web"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:11
-msgid "L'interface utilisateur de Pulse est une interface web."
+#: ../../usemedulla/interface/interface.rst:11
+msgid "L'interface utilisateur de Medulla est une interface web."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:12
+#: ../../usemedulla/interface/interface.rst:12
 msgid "Les navigateurs suivants sont compatibles :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:13
+#: ../../usemedulla/interface/interface.rst:13
 msgid "-     Microsoft Internet Explorer version 10 minimum"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:14
+#: ../../usemedulla/interface/interface.rst:14
 msgid "-     Safari version 6.2 minimum"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:15
+#: ../../usemedulla/interface/interface.rst:15
 msgid "-     Mozilla Firefox version 31 minimum"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:16
+#: ../../usemedulla/interface/interface.rst:16
 msgid "-     Google Chrome version 32.0 minimum"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:19
+#: ../../usemedulla/interface/interface.rst:19
 msgid "Accès à l'interface"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:21
+#: ../../usemedulla/interface/interface.rst:21
 msgid ""
 "Pour accéder à l'interface, l’utilisateur doit saisir dans la barre "
 "d’adresse du navigateur : http://serveurpulse/mmc/"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:23
+#: ../../usemedulla/interface/interface.rst:23
 msgid ""
-"Une fois l'utilisateur arrivé sur l’interface graphique de Pulse, un "
+"Une fois l'utilisateur arrivé sur l’interface graphique de Medulla, un "
 "formulaire de saisie d'identifiant/mot de passe lui est accessible, ainsi"
 " qu'une une liste déroulante pour choisir la langue utilisée."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:29
+#: ../../usemedulla/interface/interface.rst:29
 msgid "Page d'accueil"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:31
+#: ../../usemedulla/interface/interface.rst:31
 msgid ""
 "Une fois connecté sur l'interface, vous aurez accès à la page d’accueil "
-"de Pulse."
+"de Medulla."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:32
+#: ../../usemedulla/interface/interface.rst:32
 msgid "Cette page d’accueil est composée de 3 zones."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:35
+#: ../../usemedulla/interface/interface.rst:35
 msgid "Bandeau de menu"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:37
+#: ../../usemedulla/interface/interface.rst:37
 msgid "La première zone est celle sur le haut des pages : le menu principal."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:38
-msgid "Il assure la navigation entre tous les modules de Pulse."
+#: ../../usemedulla/interface/interface.rst:38
+msgid "Il assure la navigation entre tous les modules de Medulla."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:39
+#: ../../usemedulla/interface/interface.rst:39
 msgid ""
 "Les menus s'adaptent suivant le profil et les droits du profil "
 "utilisateur (cf ACL)."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:44
+#: ../../usemedulla/interface/interface.rst:44
 msgid ""
 "Dans le cas de ce menu (sur la capture d'écran ci-dessus), l'utilisateur "
 "a accès à toutes les fonctionnalités."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:45
+#: ../../usemedulla/interface/interface.rst:45
 msgid "Sur cette capture d'écran, le profil est celui d'un d'administrateur."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:47
+#: ../../usemedulla/interface/interface.rst:47
 msgid ""
 "Dans ce menu, on retrouve les boutons pour accéder aux fonctions "
 "suivantes :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:49
+#: ../../usemedulla/interface/interface.rst:49
 msgid "Dashboard"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:50
+#: ../../usemedulla/interface/interface.rst:50
 msgid "Utilisateurs"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:51
+#: ../../usemedulla/interface/interface.rst:51
 msgid "Groupes"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:52
+#: ../../usemedulla/interface/interface.rst:52
 msgid "Ordinateurs"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:53
+#: ../../usemedulla/interface/interface.rst:53
 msgid "Sauvegarde"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:54
+#: ../../usemedulla/interface/interface.rst:54
 msgid "Imaging"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:55
+#: ../../usemedulla/interface/interface.rst:55
 msgid "Packages"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:56
+#: ../../usemedulla/interface/interface.rst:56
 msgid "Audit"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:57
+#: ../../usemedulla/interface/interface.rst:57
 msgid "Services"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:58
+#: ../../usemedulla/interface/interface.rst:58
 msgid "Historique"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:59
+#: ../../usemedulla/interface/interface.rst:59
 msgid "Admin"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:62
+#: ../../usemedulla/interface/interface.rst:62
 msgid "Widget d'information"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:64
+#: ../../usemedulla/interface/interface.rst:64
 msgid ""
 "Sur la page d’accueil, vous retrouverez un certain nombre de widgets qui "
 "vont permettre d’obtenir des informations facilement."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:68
+#: ../../usemedulla/interface/interface.rst:68
 msgid "On peut décomposer ces widgets en 2 catégories :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:71
-msgid "Informations du serveur Pulse en lui-même :"
+#: ../../usemedulla/interface/interface.rst:71
+msgid "Informations du serveur Medulla en lui-même :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:73
+#: ../../usemedulla/interface/interface.rst:73
 msgid "Taux d’utilisation des disques ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:74
+#: ../../usemedulla/interface/interface.rst:74
 msgid ""
 "Informations générales du serveur : uptime (depuis combien de temps le "
 "serveur est en ligne), utilisation de la RAM du server ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:75
+#: ../../usemedulla/interface/interface.rst:75
 msgid "Les mises à jour disponibles ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:76
+#: ../../usemedulla/interface/interface.rst:76
 msgid ""
 "L’extraction des journaux et logs, et les fichiers de configuration du "
 "logiciel ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:77
-msgid "La possibilité de redémarrer/arrêter directement le serveur Pulse."
+#: ../../usemedulla/interface/interface.rst:77
+msgid "La possibilité de redémarrer/arrêter directement le serveur Medulla."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:79
+#: ../../usemedulla/interface/interface.rst:79
 msgid "Informations sur votre parc :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:81
+#: ../../usemedulla/interface/interface.rst:81
 msgid "Les postes avec antivirus ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:82
+#: ../../usemedulla/interface/interface.rst:82
 msgid "Le nombre de machines en ligne et hors ligne ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:83
+#: ../../usemedulla/interface/interface.rst:83
 msgid ""
 "Le nombre de machines dont la configuration de la fonction \"Sauvegarde\""
 " est active ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:84
+#: ../../usemedulla/interface/interface.rst:84
 msgid ""
 "Le nombre de postes qui sont à jour de l’inventaire, qui ne sont pas "
 "inventoriés ou hors inventaire ;"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:85
+#: ../../usemedulla/interface/interface.rst:85
 msgid "Les divers systèmes d’exploitation utilisés sur votre parc informatique."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:87
+#: ../../usemedulla/interface/interface.rst:87
 msgid ""
 "Les widgets concernant votre parc sont sous formes de camemberts. En "
 "cliquant sur les zones des camemberts, on peut créer des groupes de "
 "machines correspondantes aux zones."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:88
+#: ../../usemedulla/interface/interface.rst:88
 msgid ""
 "Par exemple, si l'on clique sur la zone \"Windows 10 (2009)\" dans "
 "Systèmes d'exploitation, nous aurons les machines ayant comme système "
 "d'exploitation Windows 10 version 2009."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:91
+#: ../../usemedulla/interface/interface.rst:91
 msgid "Bandeau de localisation et options"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:93
+#: ../../usemedulla/interface/interface.rst:93
 msgid ""
-"Sous le bandeau contenant le menu des fonctions de Pulse, vous trouverez "
-"un bandeau qui permet de connaître"
+"Sous le bandeau contenant le menu des fonctions de Medulla, vous "
+"trouverez un bandeau qui permet de connaître"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:94
+#: ../../usemedulla/interface/interface.rst:94
 msgid ""
 "la localisation des pages du logiciel, de pouvoir se déconnecter ou bien "
 "de passer en mode expert (plus d'informations sur ce mode dans les "
 "chapitres suivants)."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:99
+#: ../../usemedulla/interface/interface.rst:99
 msgid "Organisation de l'interface par zone"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:103
+#: ../../usemedulla/interface/interface.rst:103
 msgid "L'interface est organisée par zone :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:104
+#: ../../usemedulla/interface/interface.rst:104
 msgid "Pour chaque module, on distingue une zone « Menu » située à gauche."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:105
+#: ../../usemedulla/interface/interface.rst:105
 msgid ""
 "Suivant le choix du menu de gauche, on a dans la zone « Présentation » "
 "soit une liste de résultats, soit un formulaire de saisie."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:106
+#: ../../usemedulla/interface/interface.rst:106
 msgid ""
 "Pour le type résultat, on retrouve différentes zones dans le panel "
 "présentation :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:108
+#: ../../usemedulla/interface/interface.rst:108
 msgid ""
 "La zone « Filtre » permet de réduire la liste de résultats présentés "
 "suivant un critère."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:109
+#: ../../usemedulla/interface/interface.rst:109
 msgid ""
 "La zone « Action » permet, pour l'élément de la ligne, de lancer une "
 "action."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:112
+#: ../../usemedulla/interface/interface.rst:112
 msgid "Les actions sur les éléments"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:117
+#: ../../usemedulla/interface/interface.rst:117
 msgid "Dans notre exemple, Liste des machines depuis le module \"Ordinateurs\","
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:118
+#: ../../usemedulla/interface/interface.rst:118
 msgid "nous retrouverons les actions suivantes réalisable pour chaque machine :"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:123
+#: ../../usemedulla/interface/interface.rst:123
 msgid "Les actions sont représentées par des icônes."
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:124
+#: ../../usemedulla/interface/interface.rst:124
 msgid ""
 "*L'accès à ces différentes actions est configurable par profil "
 "d'utilisateur.*"
 msgstr ""
 
-#: ../../source/usemedulla/interface/index.rst:125
+#: ../../usemedulla/interface/interface.rst:125
 msgid ""
 "Vous retrouverez une explication des différentes icônes dans les "
 "chapitres correspondants."

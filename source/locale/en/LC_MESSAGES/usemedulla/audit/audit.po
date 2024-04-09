@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,196 +20,196 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/usemedulla/audit/index.rst:3
+#: ../../usemedulla/audit/audit.rst:3
 msgid "Audit"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:5
-msgid "Cette section concerne la partie Audit de l'outil Pulse."
+#: ../../usemedulla/audit/audit.rst:5
+msgid "Cette section concerne la partie Audit de l'outil Medulla."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:8
+#: ../../usemedulla/audit/audit.rst:8
 msgid "Le menu audit regroupe l’ensemble des actions de déploiements."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:9
+#: ../../usemedulla/audit/audit.rst:9
 msgid ""
 "Lorsque l’on clique dessus, on retrouve la page \"Mes tâches\" qui "
 "correspond aux différents déploiements en cours de réalisation et "
 "également les tâches planifiées."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:13
+#: ../../usemedulla/audit/audit.rst:13
 msgid "Dans le menu de gauche, on retrouvera un sous-menu avec :"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:17
+#: ../../usemedulla/audit/audit.rst:17
 msgid ""
 "*A noter que l'affichage diffère en fonction du profil utilisé. En "
 "l'occurence, j'utilise un profil d'administrateur.*"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:19
+#: ../../usemedulla/audit/audit.rst:19
 msgid ""
 "En haut de la page, nous pouvons également paramétrer le rafraichissement"
 " automatique de la page."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:21
+#: ../../usemedulla/audit/audit.rst:21
 msgid ""
 "Egalement, sur chaque page, nous pouvons cliquer sur l'icône \"Détail du "
 "déploiement\" dans les **Actions** du déploiement."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:24
+#: ../../usemedulla/audit/audit.rst:24
 msgid "Les tâches de tous les utilisateurs"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:26
+#: ../../usemedulla/audit/audit.rst:26
 msgid ""
-"Cette page regroupe les tâches de tous les utilisateurs utilisant Pulse. "
-"Seules les tâches des dernières 24h et en cours sont montrées."
+"Cette page regroupe les tâches de tous les utilisateurs utilisant "
+"Medulla. Seules les tâches des dernières 24h et en cours sont montrées."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:32
+#: ../../usemedulla/audit/audit.rst:32
 msgid "Les tâches de mon équipe"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:34
+#: ../../usemedulla/audit/audit.rst:34
 msgid ""
 "Cette page regroupe les tâches des utilisateurs faisant partie de "
 "l'équipe de l'utilisateur connecté. Seules les tâches des dernières 24h "
 "et en cours sont montrées."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:40
+#: ../../usemedulla/audit/audit.rst:40
 msgid "Mes tâches passées"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:42
+#: ../../usemedulla/audit/audit.rst:42
 msgid ""
 "Cette page regroupe les tâches passées de l'utilisateur connecté, et ce "
 "au cours des 3 derniers mois."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:48
+#: ../../usemedulla/audit/audit.rst:48
 msgid "Les tâches passées de tous les utilisateurs"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:50
+#: ../../usemedulla/audit/audit.rst:50
 msgid ""
-"Cette page regroupe les tâches de tous les utilisateurs utilisant Pulse. "
-"Les tâches présentes sont celles terminées des 3 derniers mois."
+"Cette page regroupe les tâches de tous les utilisateurs utilisant "
+"Medulla. Les tâches présentes sont celles terminées des 3 derniers mois."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:56
+#: ../../usemedulla/audit/audit.rst:56
 msgid "Les tâches passées de mon équipe"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:58
+#: ../../usemedulla/audit/audit.rst:58
 msgid ""
 "Cette page regroupe les tâches des utilisateurs faisant partie de "
 "l'équipe de l'utilisateur connecté. Les tâches présentes sont celles "
 "terminées des 3 derniers mois."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:64
+#: ../../usemedulla/audit/audit.rst:64
 msgid "Page Audit sur déploiement de groupes"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:66
+#: ../../usemedulla/audit/audit.rst:66
 msgid ""
 "Dans le menu Audit, il est possible de cliquer sur un déploiement pour en"
 " voir le détail."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:67
+#: ../../usemedulla/audit/audit.rst:67
 msgid ""
 "Pour un déploiement de groupe par exemple, on va retrouver des "
 "informations avec une présentation différente."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:71
+#: ../../usemedulla/audit/audit.rst:71
 msgid ""
 "Dans la première partie de cette page, nous allons avoir la vue sur la "
 "progression du déploiement, dans notre cas à 100%."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:72
+#: ../../usemedulla/audit/audit.rst:72
 msgid ""
 "Dans la deuxième partie, un camembert est présent (comme sur les widgets "
 "de dashboard)."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:73
+#: ../../usemedulla/audit/audit.rst:73
 msgid ""
 "Dans la troisième partie de la page, nous aurons les machines avec les "
 "informations sur l’état du déploiement ainsi que le log des actions, "
 "comme pour un déploiement par machine."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:76
+#: ../../usemedulla/audit/audit.rst:76
 msgid "Filtres"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:78
+#: ../../usemedulla/audit/audit.rst:78
 msgid ""
 "Il y a différentes façons de filtrer des ordinateurs dans l'audit de "
 "déploiement."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:79
+#: ../../usemedulla/audit/audit.rst:79
 msgid ""
 "Tout d'abord, la première façon consiste à filtrer les ordinateurs par "
 "**Statut de déploiement**, **Critère d'inventaire**, ou encore "
 "**Relais**."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:80
+#: ../../usemedulla/audit/audit.rst:80
 msgid ""
 "Ces trois filtres sont situés en haut à droite de la fenêtre de "
 "déploiement de groupe, dans le menu déroulant."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:82
+#: ../../usemedulla/audit/audit.rst:82
 msgid ""
 "**Statut de déploiement** : Filtre les ordinateurs en fonction du statut "
 "de déploiement. Par exemple, on peut chercher les ordinateurs dont le "
 "déploiement est en succès avec le filtre \"SUCCESS\"."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:83
+#: ../../usemedulla/audit/audit.rst:83
 msgid ""
 "**Critère d'inventaire** : Filtre les ordinateurs en fonction de leurs "
 "critères d'inventaire. C'est avec ce filtre que l'on peut, par exemple, "
 "filtrer en fonction de nom de la machine."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:84
+#: ../../usemedulla/audit/audit.rst:84
 msgid ""
 "**Relais** : Filtre les ordinateurs en fonction du relais auquels ils "
 "sont rattachés."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:90
+#: ../../usemedulla/audit/audit.rst:90
 msgid ""
 "Egalement, Nous pouvons utiliser le camembert présent sur la page de "
 "déploiement afin de créer des groupes sur lesquels nous allons pouvoir "
 "agir."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:96
+#: ../../usemedulla/audit/audit.rst:96
 msgid ""
 "Si l'on clique sur la partie verte du camembert ci-dessus, nous aurons un"
 " groupe de machines contenant les machines dont le déploiement est en "
 "succès."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:97
+#: ../../usemedulla/audit/audit.rst:97
 msgid "Ce filtre est très utile pour corriger les postes en erreur."
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:98
+#: ../../usemedulla/audit/audit.rst:98
 #, python-format
 msgid ""
 "Par exemple, si nous avons un déploiement de groupe avec un échec de 30% "
@@ -217,7 +217,7 @@ msgid ""
 "nous créerons automatiquement"
 msgstr ""
 
-#: ../../source/usemedulla/audit/index.rst:99
+#: ../../usemedulla/audit/audit.rst:99
 msgid ""
 "un groupe nous permettant de vérifier les erreurs et nous pourrons "
 "éventuellement relancer un processus de déploiement après avoir corrigé "

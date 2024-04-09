@@ -20,11 +20,7 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../installmedulla/installdocker.rst:3
-msgid "Installation de Medulla avec docker"
-msgstr ""
-
-#: ../../installmedulla/installdocker.rst:5
-msgid "Cette méthode n'est pas encore disponible."
+#: ../../usemedulla/technicaloperations/technicaloperations.rst:3
+msgid "En cours d'écriture"
 msgstr ""
 

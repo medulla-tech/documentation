@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,11 +20,11 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/firststep/index.rst:2
-msgid "Discover Medulla"
+#: ../../usemedulla/usemedulla.rst:3
+msgid "Manuel d'utilisation"
 msgstr ""
 
-#: ../../source/firststep/index.rst:4
-msgid "At logon, discover the main menu."
+#: ../../usemedulla/usemedulla.rst:25
+msgid "Manuel technique"
 msgstr ""
 

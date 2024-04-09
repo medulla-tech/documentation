@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,31 +20,31 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/index.rst:11
-msgid "Install Medulla"
+#: ../../index.rst:11
+msgid "Installer"
 msgstr ""
 
-#: ../../source/index.rst:16
-msgid "First step"
+#: ../../index.rst:19
+msgid "Découvrir"
 msgstr ""
 
-#: ../../source/index.rst:21
-msgid "Use Medulla"
+#: ../../index.rst:25
+msgid "Manuel utilisateur"
 msgstr ""
 
-#: ../../source/index.rst:26
-msgid "Contribute"
+#: ../../index.rst:31
+msgid "Contributer"
 msgstr ""
 
-#: ../../source/index.rst:7
-msgid "Welcome to Medulla RMM documentation's"
+#: ../../index.rst:7
+msgid "Documentation Medulla RMM"
 msgstr ""
 
-#: ../../source/index.rst:33
-msgid "Indices and tables"
+#: ../../index.rst:39
+msgid "Recherche"
 msgstr ""
 
-#: ../../source/index.rst:35
+#: ../../index.rst:41
 msgid ":ref:`search`"
 msgstr ""
 

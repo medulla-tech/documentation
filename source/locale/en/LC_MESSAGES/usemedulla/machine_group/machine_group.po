@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,123 +20,123 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/usemedulla/machine_group/index.rst:3
+#: ../../usemedulla/machine_group/machine_group.rst:3
 msgid "Groupe de machines"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:5
-msgid "Cette section concerne la partie Groupe de machines de l'outil Pulse."
+#: ../../usemedulla/machine_group/machine_group.rst:5
+msgid "Cette section concerne la partie Groupe de machines de l'outil Medulla."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:8
+#: ../../usemedulla/machine_group/machine_group.rst:8
 msgid ""
 "Les groupes de machines permettent de constituer un ensemble de machines."
 " Il existe trois types de groupes :"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:9
+#: ../../usemedulla/machine_group/machine_group.rst:9
 msgid "- Les groupes statiques ;"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:10
+#: ../../usemedulla/machine_group/machine_group.rst:10
 msgid "- Les groupes dynamiques ;"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:11
+#: ../../usemedulla/machine_group/machine_group.rst:11
 msgid "- Les groupes créés depuis un import."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:14
+#: ../../usemedulla/machine_group/machine_group.rst:14
 msgid "Groupe statique"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:16
+#: ../../usemedulla/machine_group/machine_group.rst:16
 msgid ""
 "Dans le groupe statique, la sélection des machines membres de ce groupe "
 "est manuelle."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:20
+#: ../../usemedulla/machine_group/machine_group.rst:20
 msgid ""
 "Il est possible d’éditer un groupe statique pour ajouter ou supprimer "
 "d’autres machines."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:21
+#: ../../usemedulla/machine_group/machine_group.rst:21
 msgid ""
 "Il suffit d'utiliser les flèches pour ajouter ou supprimer les machines "
 "du groupe."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:24
+#: ../../usemedulla/machine_group/machine_group.rst:24
 msgid "Groupe dynamique"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:26
+#: ../../usemedulla/machine_group/machine_group.rst:26
 msgid ""
 "Un groupe dynamique est un groupe basé sur une requête sur la base "
 "d'inventaire de machines en fonction de critère(s)."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:27
+#: ../../usemedulla/machine_group/machine_group.rst:27
 msgid ""
 "Il est possible de combiner plusieurs critères avec des opérateurs "
 "booléens."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:28
+#: ../../usemedulla/machine_group/machine_group.rst:28
 msgid ""
 "Le résultat est stocké sous forme de requête (dynamique) ou de résultat "
 "(figé à l'instant T)."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:32
+#: ../../usemedulla/machine_group/machine_group.rst:32
 msgid "Trois modules sont disponibles pour la création de groupe dynamique :"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:33
+#: ../../usemedulla/machine_group/machine_group.rst:33
 msgid ""
 "-     Module GLPI : permet d'utiliser les critères d'inventaire des "
 "machines ;"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:34
+#: ../../usemedulla/machine_group/machine_group.rst:34
 msgid "-     Module xmppmaster : permet d'utiliser l'Active Directory ou LDAP ;"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:35
+#: ../../usemedulla/machine_group/machine_group.rst:35
 msgid ""
 "-     Module dyngroup : permet d'utiliser des groupes dynamiques "
 "existants."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:37
+#: ../../usemedulla/machine_group/machine_group.rst:37
 msgid ""
 "Sauf cas particulier, il faut toujours choisir « GLPI ». En effet, la "
 "requête peut être effectuée sur différents champs, voir ci-dessous :"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:41
+#: ../../usemedulla/machine_group/machine_group.rst:41
 msgid "Par exemple, utiliser le champ \"Entité\" se présente comme ceci :"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:45
+#: ../../usemedulla/machine_group/machine_group.rst:45
 msgid ""
 "L'auto-complétion propose les valeurs existantes après avoir renseigné "
 "trois caractères."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:48
+#: ../../usemedulla/machine_group/machine_group.rst:48
 msgid "Exemple concret de groupe dynamique"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:50
+#: ../../usemedulla/machine_group/machine_group.rst:50
 msgid ""
 "Pour notre exemple, nous allons créer un groupe de machine sur lesquels "
 "une version obsolète de Firefox est présente."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:51
+#: ../../usemedulla/machine_group/machine_group.rst:51
 msgid ""
 "Pour commencer, il faut ajouter un critère « Logiciel » avec la valeur « "
 "Mozilla Firefox * » pour tester la présence de Firefox (le caractère "
@@ -144,93 +144,93 @@ msgid ""
 "caractère et donc trouver toutes les versions de Firefox);"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:52
+#: ../../usemedulla/machine_group/machine_group.rst:52
 msgid ""
 "Ensuite, il faut cliquer sur « glpi » à nouveau pour ajouter un second "
 "critère ;"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:53
+#: ../../usemedulla/machine_group/machine_group.rst:53
 msgid ""
 "Choisir « Version » puis renseigner « Mozilla Firefox * » puis « 47.0 » "
 "(ce critère sera inversé, plus d'informations juste après)"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:54
+#: ../../usemedulla/machine_group/machine_group.rst:54
 msgid ""
 "*(Le critère « Version » seul retournerait les machines avec Firefox "
 "obsolète OU n'ayant pas Firefox du tout)*"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:58
+#: ../../usemedulla/machine_group/machine_group.rst:58
 msgid ""
 "Il faut s'inspirer de la liste d'auto-complétions pour adapter au mieux "
 "le critère de recherche :"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:59
+#: ../../usemedulla/machine_group/machine_group.rst:59
 msgid ""
 "Par exemple, Firefox apparaît avec une entrée pour chaque version, d'où "
 "l'utilisation de « * »."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:63
+#: ../../usemedulla/machine_group/machine_group.rst:63
 msgid "Une fois la requête terminée, il faut la sauvegarder."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:64
+#: ../../usemedulla/machine_group/machine_group.rst:64
 msgid ""
 "Il est donc possible de sauvegarder en tant que « requête » (dynamique) "
 "ou en tant que « résultat » (requête à l'instant T)."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:65
+#: ../../usemedulla/machine_group/machine_group.rst:65
 msgid ""
 "Si on ajoute le groupe aux groupes favoris, on peut retrouver le groupe "
 "dans le menu de gauche, onglet \"Groupes favoris\"."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:68
+#: ../../usemedulla/machine_group/machine_group.rst:68
 msgid "Opérateur booléen :"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:70
+#: ../../usemedulla/machine_group/machine_group.rst:70
 msgid "Les opérateurs disponibles sont  AND, OR, NOT ainsi que les ( )."
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:71
+#: ../../usemedulla/machine_group/machine_group.rst:71
 msgid "AND : Permet d'associer les requêtes : AND(1,2)"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:72
+#: ../../usemedulla/machine_group/machine_group.rst:72
 msgid "NOT : Permet d'inverser le résultat de la seconde requête : NOT(2)"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:73
+#: ../../usemedulla/machine_group/machine_group.rst:73
 msgid "OR : Permet d'utiliser l'une ou l'autre requête : OR(1,2)"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:75
+#: ../../usemedulla/machine_group/machine_group.rst:75
 msgid ""
 "Pour notre requête, nous devons combiner les deux conditions AND et NOT :"
 " AND(1,NOT(2))"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:77
+#: ../../usemedulla/machine_group/machine_group.rst:77
 msgid ""
 "Cela revient à demander les machines ayant le logiciel « Mozilla Firefox "
 "* » installé ET dont la version de"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:78
+#: ../../usemedulla/machine_group/machine_group.rst:78
 msgid "« Mozilla Firefox * » N'EST PAS « 47.0 »"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:79
+#: ../../usemedulla/machine_group/machine_group.rst:79
 msgid "Vous pouvez vérifier vos opérateurs en cliquant sur le bouton « Vérifier »"
 msgstr ""
 
-#: ../../source/usemedulla/machine_group/index.rst:80
+#: ../../usemedulla/machine_group/machine_group.rst:80
 msgid ""
 "Il est aussi possible de visualiser le contenu du groupe avant de valider"
 " en cliquant sur le bouton « Voir le contenu »"

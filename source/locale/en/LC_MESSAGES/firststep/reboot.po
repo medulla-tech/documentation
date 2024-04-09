@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,23 +20,17 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/firststep/reboot.rst:2
-msgid "Reboot a computer"
+#: ../../firststep/reboot.rst:2
+msgid "Redémarrer un ordinateur"
 msgstr ""
 
-#: ../../source/firststep/reboot.rst:4
-msgid "Do a remote control, find your computer, click on \"Remote control\""
+#: ../../firststep/reboot.rst:4
+msgid ""
+"Pour redémarrer un ordinateur, depuis la vue \"ordinateur\" ouvrir les "
+"actions rapides"
 msgstr ""
 
-#: ../../source/firststep/reboot.rst:8
-msgid "Select the remote desktop type to use."
-msgstr ""
-
-#: ../../source/firststep/reboot.rst:12
-msgid "A new tab will be open with remote desktop."
-msgstr ""
-
-#: ../../source/firststep/reboot.rst:15
-msgid "Don't forget to accept popup on your browser"
+#: ../../firststep/reboot.rst:8
+msgid "Selectionner l'action \"reboot\"."
 msgstr ""
 

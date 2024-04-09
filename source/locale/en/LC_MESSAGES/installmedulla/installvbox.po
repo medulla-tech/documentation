@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,81 +20,69 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/installmedulla/installvbox.rst:3
-msgid "Install Medulla on VirtualBox"
+#: ../../installmedulla/installvbox.rst:3
+msgid "Installer Medulla sur VirtualBox"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:6
-msgid "Requirements"
+#: ../../installmedulla/installvbox.rst:6
+msgid "Pré-requis"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:8
+#: ../../installmedulla/installvbox.rst:8
+msgid "PowerShell Core Version 6 ou supérieur"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:9
+msgid "VirtualBox version 7 ou supérieure"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:11
+msgid "Si ces exigences ne sont pas remplies, elles seront installées."
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:13
 msgid ""
-"Medulla need to be installed on Debian linux server, Debian 12 (suggested"
-" Partitioning / 20Go ext4 and /var 400Go XFS."
+"NB: Pour installer PowerShell Core Version 6 ou supérieur, exécutez ce "
+"qui suit:"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:11
-msgid "Install Medulla server"
+#: ../../installmedulla/installvbox.rst:15
+msgid "PowerShell.exe -File. \\ Create_vbox_Vm.ps1"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:13
-msgid "Once downloaded, run the following script like:"
+#: ../../installmedulla/installvbox.rst:18
+msgid "Installation du serveur Medulla"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:15
-msgid "source install.sh"
-msgstr ""
-
-#: ../../source/installmedulla/installvbox.rst:17
+#: ../../installmedulla/installvbox.rst:20
 msgid ""
-"Wait until the installation process ends, a summarize will show all "
-"needed password (copy in safe place)."
+"Pour créer une machine virtuelle et installer Medulla, la commande "
+"suivante doit être exécutée:"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:19
-msgid "To access Medulla interface"
+#: ../../installmedulla/installvbox.rst:22
+msgid "pwsh.exe -File .\\create_vbox_vm.ps1"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:21
-msgid "http://dns-server/mmc"
+#: ../../installmedulla/installvbox.rst:24
+msgid "La machine virtuelle créée aura les caractéristiques suivantes:"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:23
-msgid "or"
+#: ../../installmedulla/installvbox.rst:26
+msgid "Debian 12 OS à jour;"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:25
-msgid "http://ip-server/mmc"
+#: ../../installmedulla/installvbox.rst:27
+msgid "8 Go de RAM;"
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:28
-msgid "Install Medulla agent"
+#: ../../installmedulla/installvbox.rst:28
+msgid "2 CPU."
 msgstr ""
 
-#: ../../source/installmedulla/installvbox.rst:30
-msgid "Medulla agent is downloadable from"
-msgstr ""
-
-#: ../../source/installmedulla/installvbox.rst:32
-msgid "http://dns-server/downloads/win"
-msgstr ""
-
-#: ../../source/installmedulla/installvbox.rst:34
-msgid "Medulla agent can be installed manually or silently"
-msgstr ""
-
-#: ../../source/installmedulla/installvbox.rst:36
-msgid "Medulla-Agent-windows-FULL-latest.exe /S"
-msgstr ""
-
-#: ../../source/installmedulla/installvbox.rst:38
+#: ../../installmedulla/installvbox.rst:30
 msgid ""
-"The installation process will continue after installation ends, it will "
-"install all dependencies."
-msgstr ""
-
-#: ../../source/installmedulla/installvbox.rst:40
-msgid "It ends when the computer appears in Medulla."
+"Attendez que le processus d'installation se termine, un résumé affichera "
+"tous les mots de passe nécessaires (copiez-les dans un endroit sûr)."
 msgstr ""
 

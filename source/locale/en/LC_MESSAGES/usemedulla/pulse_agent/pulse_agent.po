@@ -1,0 +1,289 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM
+# package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM \n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language: en\n"
+"Language-Team: en <LL@li.org>\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.10.3\n"
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:3
+msgid "Agent Medulla"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:5
+msgid "Cette section concerne la partie Agent de l'outil Medulla."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:8
+msgid "L'agent Medulla est composé de 5 services :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:9
+msgid "-     FusionInventory : agent d'inventaire compatible « OCS »"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:10
+msgid "-     OpenSSH : serveur d'accès à distance « SSH »"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:11
+msgid "-     TightVNC : bureau à distance « VNC »"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:12
+msgid "-     Pulseagent : le service de l’agent medulla."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:13
+msgid ""
+"-     Medulla Network Notify : Service qui permet de detecter des "
+"changements d’interfaces"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:14
+msgid "L’agent est décliné pour Windows, Mac et Linux."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:17
+msgid "Agent Windows"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:19
+msgid "Par défaut lors de son installation, Medulla génère un ensemble d’agents :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:21
+msgid ""
+"-     Medulla-Agent-windows-Minimal-Latest.exe        ← Dernière version "
+"de l'agent interactif contenant le strict minimum. Lors de l’installation"
+" sur le serveur, l'agent va télécharger les dépendances et les composants"
+" nécessaires."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:22
+msgid ""
+"-     Medulla-Agent-windows-Minimal-x.x.x.exe ← Agent interactif "
+"contenant le strict minimum tagué par version."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:23
+msgid ""
+"-     Medulla-Agent-windows-Full-Latest.exe   ← Dernière version de "
+"l'agent avec interaction et interface visible contenant l’ensemble des "
+"composants pour réaliser l’installation."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:24
+msgid ""
+"-     Medulla-Agent-windows-Full-x.x.x.exe    ← Agent avec interaction et"
+" interface visible tagué par version."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:26
+msgid "Les agents sont accessibles depuis l’url suivante :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:27
+msgid "http://ippulse/dowloads/clients/win/"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:30
+msgid "Génération des agents"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:32
+msgid "Depuis la console Medulla se rendre :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:33
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:89
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:105
+msgid "# cd /var/lib/pulse2/clients/"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:34
+msgid "# ./generate-medulla-agent.sh"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:36
+msgid "Usage:"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:37
+msgid ""
+"./generate-medulla-agent.sh [--conf-xmppserver=<ip du serveur de "
+"configuration XMPP>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:38
+msgid "[--conf-xmppport=<port du serveur de configuration XMPP>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:39
+msgid "[--conf-xmpppasswd=<Mot de passe du serveur de configuration XMPP>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:40
+msgid "[--aes-key=<32-character AES PSK>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:41
+msgid "[--xmpp-passwd=<Mot de passe du serveur XMPP>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:42
+msgid "[--chat-domain=<Domaine XMPP>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:43
+msgid "[--inventory-tag=<Tag ajouté lors de l’inventaire>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:44
+msgid ""
+"[--minimal [--base-url=<URL utilisée pour télécharger l’agent et ses "
+"dépendances>]]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:45
+msgid "[--disable-vnc (Désactiver le support vnc)]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:46
+msgid "[--vnc-port=<Port VNC, par défaut 5900>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:47
+msgid "[--ssh-port=<Port SSH, par défaut 22>]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:48
+msgid "[--disable-rdp (Désactiver le support RDP)]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:49
+msgid "[--disable-inventory (Désactiver le support de l’inventaire)]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:50
+msgid "[--linux-distros (Distributions linux utilisées)]"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:53
+msgid "Agent et TAG"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:55
+msgid ""
+"L’agent Medulla peut être tagué afin d’offrir un discriminant "
+"supplémentaire."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:57
+msgid "Il existe plusieurs façons de générer ce TAG :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:58
+msgid "-     Déployer un TAG sur un ordinateur possédant déjà un agent Medulla"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:59
+msgid "-     Générer un agent Medulla avec un TAG"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:62
+msgid "Déployer un TAG sur un ordinateur possédent déjà un agent Medulla"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:64
+msgid ""
+"Il suffit de créer la clé de base de registre adéquate et utiliser "
+"Medulla pour la déployer."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:68
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:86
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:101
+msgid "Générer un agent Medulla avec un TAG"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:70
+msgid "Il faut aller dans le dossier suivant :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:71
+msgid "# cd /var/lib/pulse2/clients"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:73
+msgid "Et générer l'agent Medulla avec le tag voulu (Exemple : bureau101)"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:74
+msgid "# ./generate-medulla-agent.sh --inventory-tag bureau101"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:77
+msgid "Agent Mac"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:79
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:97
+msgid "L’agent est accessible depuis l’url suivante :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:80
+msgid "http://ippulse/dowloads/clients/mac/Pulse2AgentsInstaller.tar"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:82
+msgid ""
+"Il faudra autoriser l’installeur à s’exécuter dans les paramètres de "
+"sécurité."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:83
+msgid ""
+"Par ailleurs, en pré-requis avant d’installer le package Medulla, il faut"
+" que Xcode correspondant à votre version soit installé."
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:88
+msgid "Similaire à Windows, il faut aller dans le dossier suivant :"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:91
+msgid "Puis lancer cette commande avec le TAG voulu (Exemple : bureau101)"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:92
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:106
+msgid "# ./generate-agent.sh --tag=bureau101"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:95
+msgid "Agent Linux"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:98
+msgid "http://ippulse/dowloads/linux/Medulla-Agent-linux-MINIMAL-latest.sh"
+msgstr ""
+
+#: ../../usemedulla/pulse_agent/pulse_agent.rst:103
+msgid "La manipulation est la même que pour Mac :"
+msgstr ""
+

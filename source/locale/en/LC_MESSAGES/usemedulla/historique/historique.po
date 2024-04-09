@@ -9,7 +9,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Medulla RMM \n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-08 11:48+0200\n"
+"POT-Creation-Date: 2024-04-09 15:11+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language: en\n"
@@ -20,21 +20,21 @@ msgstr ""
 "Content-Transfer-Encoding: 8bit\n"
 "Generated-By: Babel 2.10.3\n"
 
-#: ../../source/usemedulla/historique/index.rst:3
+#: ../../usemedulla/historique/historique.rst:3
 msgid "Historique des actions effectuées"
 msgstr ""
 
-#: ../../source/usemedulla/historique/index.rst:5
-msgid "Cette section concerne la partie Historique de l'outil Pulse."
+#: ../../usemedulla/historique/historique.rst:5
+msgid "Cette section concerne la partie Historique de l'outil Medulla."
 msgstr ""
 
-#: ../../source/usemedulla/historique/index.rst:8
+#: ../../usemedulla/historique/historique.rst:8
 msgid ""
 "Dans le menu historique, nous pouvons retrouver l’ensemble des actions "
-"effectuées dans l’interface de Pulse pour chaque fonction."
+"effectuées dans l’interface de Medulla pour chaque fonction."
 msgstr ""
 
-#: ../../source/usemedulla/historique/index.rst:12
+#: ../../usemedulla/historique/historique.rst:12
 msgid ""
 "Dans le menu de gauche, on retrouvera les différents logs de chaque "
 "fonction :"
