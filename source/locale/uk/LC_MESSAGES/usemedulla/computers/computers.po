@@ -1,0 +1,761 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Language-Team: Ukrainian (https://app.transifex.com/siveo/teams/72118/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ../../usemedulla/computers/computers.rst:3
+msgid "Menu Ordinateurs"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:5
+msgid ""
+"Cette section concerne les différentes parties du menu Ordinateurs de "
+"l'outil Medulla."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:11
+msgid "Sur l’écran principal sous le bandeau de menu,"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:12
+msgid ""
+"nous allons pouvoir filtrer la vue, par exemple si l'on souhaite voir tous "
+"les ordinateurs de la liste ou bien seulement les ordinateurs en ligne ou "
+"hors-ligne."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:17
+msgid ""
+"Lorsque nous arrivons sur le menu Ordinateurs sur l’écran principal, nous "
+"allons retrouver le bandeau avec les différents postes de travail qui sont "
+"listés."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:18
+msgid "Dans la copie d’écran ci-dessus, on retrouve un poste de travail."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:19
+msgid ""
+"Sur le côté gauche de l’écran, nous allons retrouver un menu comportant "
+"différents sous-menus qui composent le menu Ordinateurs."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:23
+msgid ""
+"**Tous les ordinateurs** : Affiche les machines présentes dans Medulla;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:24
+msgid ""
+"**Toutes les machines GLPI** : Affiche les machines présentes dans GLPI;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:25
+msgid "**Groupes favoris** : Affiche les groupes d’ordinateur favoris ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:26
+msgid "**Tous les groupes** : Affiche tous les groupes d’ordinateurs ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:27
+msgid "**Ajouter un groupe** : Permet d’ajouter un groupe d’ordinateurs ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:28
+msgid ""
+"**Liste des machines non-inventoriées** : Affiche les ordinateurs absents de"
+" l’inventaire ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:29
+msgid "**Alertes de monitoring** : Affiche les alertes de monitoring ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:30
+msgid ""
+"**Configuration du monitoring** : Configure les alertes de monitoring ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:31
+msgid ""
+"**Action Rapide personnalisée** : Liste les actions rapides personnalisées ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:32
+msgid ""
+"**Résultats d'Actions Rapides** : Affiche les résultats des actions rapides "
+";"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:33
+msgid "**Navigateur de fichiers** : Ouvre le navigateur de fichiers ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:34
+msgid "**Topologie machines** : Offre une vue par topologie de machines."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:36
+msgid ""
+"La vue Ordinateurs vous permet d'avoir la liste complète des machines avec "
+"la possibilité de voir ce que possède chaque machine en cliquant sur celle-"
+"ci."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:37
+msgid ""
+"C'est également depuis cette vue que des opérations pourront être effectuées"
+" sur les machines via le menu d'actions."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:39
+msgid ""
+"Si nous effectuons un clic sur le mode Expert, une fonction est alors "
+"ajoutée : \"Réveil réseau\""
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:44
+msgid ""
+"Réveil réseau permet d'allumer une machine en utilisant son adresse MAC."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:46
+msgid ""
+"Nous allons maintenant passer en revue les différentes actions disponibles "
+"dans la vue Ordinateurs pour chaque machine :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:52
+#: ../../usemedulla/computers/computers.rst:89
+msgid "Icône"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:53
+#: ../../usemedulla/computers/computers.rst:90
+msgid "Nom de l'action"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:54
+#: ../../usemedulla/computers/computers.rst:91
+msgid "Description de l'action"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:56
+#: ../../usemedulla/computers/computers.rst:103
+msgid "Inventaire"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:57
+#: ../../usemedulla/computers/computers.rst:63
+msgid "Visualiser l'inventaire de la machine"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:59
+#: ../../usemedulla/computers/computers.rst:155
+msgid "Monitoring"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:60
+msgid "Récupérer les graphiques de monitoring"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:62
+msgid "Sauvegarde"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:65
+#: ../../usemedulla/computers/computers.rst:171
+msgid "Prise en main à distance"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:66
+msgid "Prendre la main sur la machine de diverses manières (ssh, rdp,vnc,cmd)"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:68
+#: ../../usemedulla/computers/computers.rst:206
+msgid "Déploiement de logiciels"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:69
+msgid "Déployer un paquet"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:71
+msgid "Imaging"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:72
+msgid "Accéder au menu d'imaging"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:74
+msgid "Actions rapides"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:75
+msgid "Lancer une action rapide sur une machine"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:77
+#: ../../usemedulla/computers/computers.rst:271
+msgid "Explorateur de fichiers"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:78
+msgid "Explorer le dossier défini de l'ordinateur"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:80
+msgid "Supprimer"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:81
+msgid "Supprimer une machine de Medulla"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:83
+msgid ""
+"En mode Expert, on trouvera le menu avec trois fonctions supplémentaires "
+"listées ci-dessous :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:93
+msgid "Visualisation de fichiers"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:94
+msgid "Visualiser le fichier récupéré sur le serveur"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:96
+msgid "Console XMPP"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:97
+msgid ""
+"Permettre certaines commandes directement depuis le serveur ou un "
+"ordinateur."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:99
+msgid "Édition de la configuration des fichiers de l’agent"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:100
+msgid ""
+"Configurer des options des fichiers de configuration de l’agent de "
+"l’ordinateur."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:107
+msgid ""
+"L'objectif de l'inventaire est d'avoir une connaissance précise de son parc "
+"informatique. Dès lors que l'agent d'inventaire est installé sur les postes "
+"clients,"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:108
+msgid ""
+"Medulla dresse automatiquement et en fonction de la configuration de l’agent"
+" d’inventaire un état du parc."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:109
+msgid ""
+"Ces relevés sont ensuite utilisés pour afficher des statistiques sur le "
+"tableau de bord et signaler à l'administrateur système"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:110
+msgid ""
+"les postes qui ne sont pas à jour dans leur inventaire. Cet inventaire va "
+"directement être cherché dans la base GLPI."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:111
+msgid ""
+"On va retrouver sur l’inventaire plusieurs onglets départageant l’inventaire"
+" en fonction du type :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:112
+msgid ""
+"matériel, connections, stockage, réseau, logiciels, administratif, "
+"historique, antivirus, registre."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:113
+msgid "*Des scripts pour améliorer la cohérence sont fournis avec Medulla.*"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:116
+msgid "Garantie"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:118
+msgid ""
+"Pour les constructeurs qui offrent une API de gestion de garantie, un lien "
+"se forme et pointe directement vers la page du constructeur."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:122
+msgid ""
+"Lien exemple Dell : https://www.dell.com/support/home/fr-fr/product-"
+"support/servicetag/0-cksrVUVkKzlCZDF3QmhKRkhjb1RBZz090/overview"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:124
+msgid ""
+"Les API changent régulièrement, il est possible de personnaliser les liens"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:125
+msgid ""
+"dans le fichier de configuration du plugin GLPI (situé dans "
+"/etc/mmc/plugins/glpi.ini.local)"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:127
+msgid "# Manufacturer warranty infos"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:128
+msgid "# @@SERIAL@@ keyword will be replaced by computer's serial"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:129
+msgid "# When type = post, params will be posted, by default params are"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:130
+msgid "# get params for the url."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:131
+msgid "[manufacturer_dell]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:132
+msgid ""
+"url = http://www.dell.com/support/my-support/us/en/19/product-"
+"support/servicetag/@@SERIAL@@/warranty"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:133
+msgid "[manufacturer_dell_fr]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:134
+msgid ""
+"url = http://www.dell.com/support/my-support/fr/en/19/product-"
+"support/servicetag/@@SERIAL@@/warranty"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:135
+msgid "params = l=fr"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:136
+msgid "[manufacturer_lenovo]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:137
+msgid ""
+"url = "
+"http://support.lenovo.com/templatedata/Web%20Content/JSP/warrantyLookup.jsp"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:138
+msgid "type = post"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:139
+msgid "params = sysSerial=@@SERIAL@@"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:140
+msgid "#[manufacturer_hp]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:141
+msgid "#url = http://h20566.www2.hp.com/portal/site/hpsc/public/wc/home/"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:142
+msgid "#type = post"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:143
+msgid "#params = serialNumber0=@@SERIAL@@"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:144
+msgid "[manufacturer_fujitsu]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:145
+msgid "url = http://sali.uk.ts.fujitsu.com/ServiceEntitlement/service.asp"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:146
+msgid "params = command=search&snr=@@SERIAL@@"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:147
+msgid "[manufacturer_toshiba]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:148
+msgid "url = http://aps2.toshiba-tro.de/unit-details-php/unitdetails.aspx"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:149
+msgid "params = serialNumber=@@SERIAL@@"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:150
+msgid "[manufacturer_apple]"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:151
+msgid "url = https://expresslane.apple.com/GetSASO"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:152
+msgid "params = serialno=@@SERIAL@@"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:157
+msgid ""
+"La fonctionnalité de monitoring est basée sur l’outil de monitoring Grafana."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:158
+msgid ""
+"Si l'on clique sur l'action Monitoring, la liste des graphiques est affichée"
+" :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:162
+msgid "*Dans mon cas, je n'ai qu'un item de monitoring*"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:164
+msgid ""
+"L'affichage de la dernière valeur dépend du graphique. Cette valeur est "
+"affichée pour le graphique Online-Offline Status."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:165
+msgid ""
+"Ceci sera enrichi au fur et à mesure de la standardisation des graphiques."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:166
+msgid ""
+"Dans tous les cas, la dernière valeur de chaque item sera affichée en "
+"légende de chaque graphique:"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:175
+msgid ""
+"Lorsque l’on clique sur le bouton de prise en main à distance d’un poste sur"
+" Medulla,"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:176
+msgid ""
+"les différents protocoles accessibles sur la machine vont nous être "
+"proposés."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:177
+msgid ""
+"Dans l’exemple ci-dessus, on peut accéder au poste via VNC, via commande CMD"
+" ou via RDP (Remote Desktop Protocol)"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:179
+msgid ""
+"Une fois le choix du protocole de prise en main à distance sélectionné, "
+"Medulla va lancer la connexion"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:180
+msgid ""
+"avec l’application sélectionnée. Un nouvel onglet s’ouvrira alors dans votre"
+" navigateur."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:183
+msgid "VNC"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:187
+msgid ""
+"Lorsque l’on sélectionne l'outil VNC, Medulla va ouvrir un nouvel onglet "
+"avec l’accès à la console VNC."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:188
+msgid ""
+"Si le poste n'est pas utilisé, le prérequis est de lancer l'Action Rapide "
+"afin d'enlever la demande de validation coté utilisateur."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:191
+msgid "RDP"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:196
+msgid "CMD/SSH"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:200
+msgid ""
+"Lorsque l'on clique sur le bouton CMD et que la machine est sous Windows, "
+"alors on va automatiquement arriver sur une invite de commande DOS Windows."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:201
+msgid ""
+"Il suffira d'appuyer sur la touche \"Entrée\" pour charger le cmd.exe, et "
+"ensuite taper n’importe quelle commande *(par exemple ipconfig /all)*"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:210
+msgid ""
+"Lorsque l’on clique sur le bouton \"Déploiement de logiciels\", on arrive "
+"directement sur une vue des packages disponibles dans Medulla pour le poste"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:211
+msgid ""
+"avec la possibilité de programmer un déploiement ou bien de déployer "
+"immédiatement le package sur le poste."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:212
+msgid ""
+"Pour programmer le déploiement, il suffit de cliquer sur la roue dentée et "
+"pour déployer immédiatement, il faut cliquer sur le bouton Play."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:215
+msgid "Programmer le déploiement"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:219
+msgid ""
+"Dans le menu de programmation du déploiement, on a la possibilité de "
+"modifier le nom de la commande si on veut suivre le déploiement avec un nom "
+"facilement identifiable."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:220
+msgid ""
+"On peut également programmer un intervalle d’exécution du déploiement ou "
+"encore sélectionner une priorité dans la file d’attente."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:223
+msgid "Déployer"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:225
+msgid ""
+"En cliquant sur le bouton déployer, on exécute immédiatement le déploiement "
+"d’un package ou commande sur un poste et on visualise directement "
+"l’exécution de la commande."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:226
+msgid "Cette exécution va nous donner :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:228
+msgid ""
+"Les informations concernant le poste sur lequel on déploie la commande et "
+"celles concernant le package déployé"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:232
+msgid ""
+"Les informations concernant le serveur relais ainsi que le plan de "
+"déploiement qui a été sélectionné"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:236
+msgid "Le package et ses dépendances"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:240
+msgid "Un résumé des étapes du déploiement"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:244
+msgid "Le résultat du déploiement"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:248
+msgid ""
+"Si l'on clique sur les étapes 0 ou 1, les informations seront plus "
+"détaillées sur le retour de chaque étape du déploiement."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:253
+msgid "Déploiement avec profil Expert"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:257
+msgid ""
+"Avec le mode expert, des options se rajoutent lors de la programmation du "
+"déploiement, comme la notion de limitation de la bande passante,"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:258
+msgid ""
+"de phase de redémarrage, de paramètres dynamiques *(par exemple pour les "
+"commandes)* ou encore de retard d’installation."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:260
+msgid ""
+"Pour détailler le retard d'installation, il faut savoir que le retard de "
+"l’installation entrainera deux paramètres :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:261
+msgid ""
+"- Une contrainte de temps, qui va permettre de donner un temps nécessaire "
+"pour que l’ensemble des packages soit reçu par toutes les machines avant de "
+"déclencher l’installation, et ce en fonction d’une date définie ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:265
+msgid ""
+"- Une possibilité de pouvoir prioriser un déploiement, dans le cas où nous "
+"avons plusieurs déploiements en cours et que l’on veut en prioriser un."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:273
+msgid ""
+"L’explorateur de fichier permet d’aller sélectionner, sur la machine "
+"cliente, un ou plusieurs fichiers (ou dossiers) pour ensuite le ou les "
+"télécharger."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:277
+msgid ""
+"Lorsque l’on clique sur le bouton télécharger, une pop-up va nous demander "
+"confirmation du téléchargement en résumant les informations que l’on a "
+"sélectionné."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:281
+msgid ""
+"Une fois confirmé, la pop-up nous envoie le retour et nous donne les "
+"informations de stockage du fichier sur le serveur."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:285
+msgid ""
+"Lors d'un clic sur le bouton ok, on se retrouve sur le menu Ordinateurs. "
+"Dans le menu de gauche, il suffit de cliquer sur Navigateur de fichiers pour"
+" aller retrouver le fichier que l’on a téléchargé."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:286
+msgid ""
+"En cliquant sur Navigateur de fichiers, nous pouvons voir sur le côté gauche"
+" l’ensemble des postes sur lesquels nous avons téléchargé des fichiers."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:290
+msgid "On peut ensuite dérouler l'arborescence pour voir notre fichier."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:294
+msgid ""
+"En faisant un clic droit sur le fichier, on peut alors exécuter diverses "
+"actions :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:295
+msgid "- Voir le fichier ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:296
+msgid "- Télécharger le fichier sur son poste ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:297
+msgid "- Copier, couper, coller ;"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:298
+msgid "- Le renommer, l’éditer ou le supprimer."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:303
+msgid "Actions Rapides *(ou Quick Actions)*"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:305
+msgid ""
+"Lors d'un clic sur le menu Actions Rapides, nous allons trouver plusieurs "
+"actions rapides génériques comme : l'arrêt du poste, le redémarrage du "
+"poste, le lancement d’un inventaire,"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:306
+msgid ""
+"le changement des paramètres VNC pour demander ou non l’autorisation de "
+"l’utilisateur pour prendre la main sur le poste, l’installation de la clé "
+"publique du serveur relais auquel le poste est rattaché,"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:307
+msgid ""
+"mais aussi la possibilité de lancer des commandes personnalisées, par "
+"exemple pour voir les processus en activité sur la machine ou l’usage disque"
+" de la machine, et beaucoup d'autres."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:311
+msgid "Comme exemple, voici un retour de la QA \"Show process list\" :"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:317
+msgid "Supprimer un ordinateur"
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:319
+msgid ""
+"L'icône \"Croix\" est plutôt direct : en effet, un clic sur cette icône nous"
+" ouvre une pop-up afin de confirmer la suppression de la machine."
+msgstr ""
+
+#: ../../usemedulla/computers/computers.rst:320
+msgid ""
+"Lors de cette suppression, nous avons alors la possibilité de sauvegarder la"
+" machine et/ou de supprimer toutes les images associées au poste (si de "
+"l'imaging a été effectué à partir de cette machine)."
+msgstr ""

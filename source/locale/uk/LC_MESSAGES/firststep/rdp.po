@@ -1,0 +1,52 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Language-Team: Ukrainian (https://app.transifex.com/siveo/teams/72118/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ../../firststep/rdp.rst:2
+msgid "Prise en main à distance"
+msgstr ""
+
+#: ../../firststep/rdp.rst:4
+msgid ""
+"Pour accéder aux différents mode de prise en main à distance, cliquer sur "
+"\"Remote control\""
+msgstr ""
+
+#: ../../firststep/rdp.rst:8
+msgid "Selectionner le type de PMAD:"
+msgstr ""
+
+#: ../../firststep/rdp.rst:10
+msgid "VNC pour assister l'utilisateur"
+msgstr ""
+
+#: ../../firststep/rdp.rst:11
+msgid "RDP pour ouvrir session distante"
+msgstr ""
+
+#: ../../firststep/rdp.rst:12
+msgid "CMD pour ouvrir une console (batch ou powershell) distante"
+msgstr ""
+
+#: ../../firststep/rdp.rst:16
+msgid "Un onglet du navigateur s'ouvre avec la PMAD"
+msgstr ""
+
+#: ../../firststep/rdp.rst:18
+msgid "Ne pas oublier d'accepter l'ouverture de fenêtre venant de Medulla"
+msgstr ""

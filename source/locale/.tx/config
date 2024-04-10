@@ -1,0 +1,165 @@
+[main]
+host = https://www.transifex.com
+
+[o:siveo:p:medullas-documentation:r:index]
+file_filter = <lang>/LC_MESSAGES/index.po
+source_file = index.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:contribute]
+file_filter = <lang>/LC_MESSAGES/contributemedulla/contribute.po
+source_file = contribute.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:admin]
+file_filter = <lang>/LC_MESSAGES/usemedulla/admin.po
+source_file = admin.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:audit]
+file_filter = <lang>/LC_MESSAGES/usemedulla/audit.po
+source_file = audit.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:firststep]
+file_filter = <lang>/LC_MESSAGES/firststep/firststep.po
+source_file = firststep.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:rdp]
+file_filter = <lang>/LC_MESSAGES/firststep/rdp.po
+source_file = rdp.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:reboot]
+file_filter = <lang>/LC_MESSAGES/firststep/reboot.po
+source_file = reboot.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:update]
+file_filter = <lang>/LC_MESSAGES/firststep/update.po
+source_file = update.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:gui]
+file_filter = <lang>/LC_MESSAGES/installmedulla/gui.po
+source_file = gui.pot
+source_lang = fr
+type        = PO
+
+
+[o:siveo:p:medullas-documentation:r:installagent]
+file_filter = <lang>/LC_MESSAGES/installmedulla/installagent.po
+source_file = installagent.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:installdocker]
+file_filter = <lang>/LC_MESSAGES/installmedulla/installdocker.po
+source_file = installdocker.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:installlinux]
+file_filter = <lang>/LC_MESSAGES/installmedulla/installlinux.po
+source_file = installlinux.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:installmedulla]
+file_filter = <lang>/LC_MESSAGES/installmedulla/installmedulla.po
+source_file = installmedulla.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:installvbox]
+file_filter = <lang>/LC_MESSAGES/installmedulla/installvbox.po
+source_file = installvbox.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:machine_group]
+file_filter = <lang>/LC_MESSAGES/usemedulla/machine_group/machine_group.po
+source_file = machine_group.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:pulse_agent]
+file_filter = <lang>/LC_MESSAGES/usemedulla/pulse_agent/pulse_agent.po
+source_file = pulse_agent.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:technicaloperations]
+file_filter = <lang>/LC_MESSAGES/usemedulla/technicaloperations/technicaloperations.po
+source_file = technicaloperations.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:glpi]
+file_filter = <lang>/LC_MESSAGES/usemedulla/glpi/glpi.po
+source_file = glpi.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:deploy_agent]
+file_filter = <lang>/LC_MESSAGES/usemedulla/deploy_agent/deploy_agent.po
+source_file = deploy_agent.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:imaging]
+file_filter = <lang>/LC_MESSAGES/usemedulla/imaging/imaging.po
+source_file = imaging.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:historique]
+file_filter = <lang>/LC_MESSAGES/usemedulla/historique/historique.po
+source_file = historique.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:interface]
+file_filter = <lang>/LC_MESSAGES/usemedulla/interface/interface.po
+source_file = interface.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:packages]
+file_filter = <lang>/LC_MESSAGES/usemedulla/packages/packages.po
+source_file = packages.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:admin]
+file_filter = <lang>/LC_MESSAGES/usemedulla/admin/admin.po
+source_file = admin.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:introduction]
+file_filter = <lang>/LC_MESSAGES/usemedulla/introduction/introduction.po
+source_file = introduction.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:audit]
+file_filter = <lang>/LC_MESSAGES/usemedulla/audit/audit.po
+source_file = audit.pot
+source_lang = fr
+type        = PO
+
+[o:siveo:p:medullas-documentation:r:computers]
+file_filter = <lang>/LC_MESSAGES/usemedulla/computers/computers.po
+source_file = computers.pot
+source_lang = fr
+type        = PO

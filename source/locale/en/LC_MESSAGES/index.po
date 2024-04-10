@@ -1,50 +1,50 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Yvan Manon
-# This file is distributed under the same license as the Medulla RMM
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# tekmans <yvan.manon@siveo.net>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Medulla RMM \n"
+"Project-Id-Version: Medulla RMM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-09 15:11+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
-"Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Last-Translator: tekmans <yvan.manon@siveo.net>, 2024\n"
+"Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../index.rst:11
 msgid "Installer"
-msgstr ""
+msgstr "Install"
 
 #: ../../index.rst:19
 msgid "Découvrir"
-msgstr ""
+msgstr "Discover"
 
 #: ../../index.rst:25
 msgid "Manuel utilisateur"
-msgstr ""
+msgstr "User manual"
 
 #: ../../index.rst:31
 msgid "Contributer"
-msgstr ""
+msgstr "Contribute"
 
 #: ../../index.rst:7
 msgid "Documentation Medulla RMM"
-msgstr ""
+msgstr "Medulla RMM documentation"
 
 #: ../../index.rst:39
 msgid "Recherche"
-msgstr ""
+msgstr "Search"
 
 #: ../../index.rst:41
 msgid ":ref:`search`"
-msgstr ""
-
+msgstr ":ref:`search`"

@@ -1,0 +1,109 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Language-Team: French (France) (https://app.transifex.com/siveo/teams/72118/fr_FR/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: fr_FR\n"
+"Plural-Forms: nplurals=3; plural=(n == 0 || n == 1) ? 0 : n != 0 && n % 1000000 == 0 ? 1 : 2;\n"
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:3
+msgid "Déploiement de l'agent Medulla"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:5
+msgid ""
+"Cette section concerne la partie déploeiemnt de l'agent de l'outil Medulla."
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:8
+msgid "L'agent Medulla peut être installé via différentes méthodes :"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:10
+msgid "-     GPO"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:11
+msgid "-     PsExec"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:12
+msgid "-     PXE"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:15
+msgid "Déploiement par GPO"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:17
+msgid ""
+"Il est possible de créer une GPO contenant l'agent Medulla et de la "
+"configurer pour que l'installation se lance au démarrage du poste."
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:19
+msgid "Une vidéo explicative est disponible à cette adresse :"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:20
+msgid "https://vimeo.com/97123295"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:23
+msgid "Déploiement via PsExec"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:25
+msgid ""
+"Un déploiement via PsExec est possible. Pour se faire, il faut utiliser la "
+"commande suivante :"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:26
+msgid "psexec \\\\ordi-cible -c agent-medulla.exe -u Administrateur -p password"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:28
+msgid ""
+"Il est à noter que cette méthode nécessite que les postes aient la clé "
+"suivante :"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:29
+msgid ""
+"HKLM\\SOFTWARE\\Microsoft\\Windows\\CurrentVersion\\Policies\\system /v "
+"LocalAccountTokenFilterPolicy /t REG_DWORD /d 1 /f"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:32
+msgid "Déploiement via PXE"
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:34
+msgid "Il est également possible de déployer l'agent via PXE."
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:35
+msgid ""
+"Pour se faire, il faut transformer le script de post-imaging « Déployer les "
+"Agents Medulla » en un boot service et l'ajouter au menu par défaut de "
+"Medulla."
+msgstr ""
+
+#: ../../usemedulla/deploy_agent/deploy_agent.rst:37
+msgid ""
+"Il faut ensuite démarrer le poste en PXE, puis sélectionner « Déployer les "
+"Agents Medulla ». Lors du reboot du poste, l'agent Medulla s'installera "
+"automatiquement."
+msgstr ""

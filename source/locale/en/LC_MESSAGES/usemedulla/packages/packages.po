@@ -1,24 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Yvan Manon
-# This file is distributed under the same license as the Medulla RMM
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Medulla RMM \n"
+"Project-Id-Version: Medulla RMM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-09 15:11+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
-"Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../usemedulla/packages/packages.rst:3
 msgid "Packages"
@@ -46,14 +43,14 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:19
 msgid ""
-"Depuis l’icône principale « package », l’interface de création et un "
-"wizard sont disponibles pour assister à la création de package."
+"Depuis l’icône principale « package », l’interface de création et un wizard "
+"sont disponibles pour assister à la création de package."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:20
 msgid ""
-"Pour créer un package, il faut que son installation soit silencieuse ou "
-"sans interaction utilisateur."
+"Pour créer un package, il faut que son installation soit silencieuse ou sans"
+" interaction utilisateur."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:21
@@ -64,8 +61,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:23
 msgid ""
-"Pour créer un package, il faut fournir les fichiers constituant le "
-"package soit via :"
+"Pour créer un package, il faut fournir les fichiers constituant le package "
+"soit via :"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:24
@@ -131,13 +128,12 @@ msgid ""
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:55
-msgid ""
-"Il faut remplir les champs \"Nom\", \"Version\" et \"Description\" du "
-"package."
+msgid "Il faut remplir les champs \"Nom\", \"Version\" et \"Description\" du package."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:57
-msgid "Dans la partie requête, on peut voir la commande générée automatiquement."
+msgid ""
+"Dans la partie requête, on peut voir la commande générée automatiquement."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:58
@@ -166,8 +162,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:66
 msgid ""
-"Une fois le package synchronisé, il apparaît alors dans la liste des "
-"paquets disponibles."
+"Une fois le package synchronisé, il apparaît alors dans la liste des paquets"
+" disponibles."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:68
@@ -176,14 +172,14 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:70
 msgid ""
-"On constate, dans ce cas là, que PDFCreator a installé PDFArchitect et "
-"une Toolbar dans Internet Explorer."
+"On constate, dans ce cas là, que PDFCreator a installé PDFArchitect et une "
+"Toolbar dans Internet Explorer."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:72
 msgid ""
-"Il faut alors chercher sur Internet des solutions avec les mots clés "
-"types : « pdf creator silent installation toolbar »"
+"Il faut alors chercher sur Internet des solutions avec les mots clés types :"
+" « pdf creator silent installation toolbar »"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:73
@@ -225,7 +221,8 @@ msgid ""
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:84
-msgid "Il faut ensuite éditer le paquet pour ajouter les paramètres suivants :"
+msgid ""
+"Il faut ensuite éditer le paquet pour ajouter les paramètres suivants :"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:85
@@ -244,8 +241,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:91
 msgid ""
-"La plupart des installeurs offrent une aide, on peut la lancer depuis une"
-" console « CMD » :"
+"La plupart des installeurs offrent une aide, on peut la lancer depuis une "
+"console « CMD » :"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:92
@@ -258,22 +255,22 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:97
 msgid ""
-"Depuis la vue Packages, créer un nouveau package en remplissant les "
-"champs pour un déploiement classique :"
+"Depuis la vue Packages, créer un nouveau package en remplissant les champs "
+"pour un déploiement classique :"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:101
 msgid ""
 "Plus loin sur cette même page, déplacer l'action **Download File** "
-"*(Télécharger le fichier)* vers le Workflow et définir l'URL contenant le"
-" fichier à télécharger"
+"*(Télécharger le fichier)* vers le Workflow et définir l'URL contenant le "
+"fichier à télécharger"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:105
 msgid ""
-"Lors du déploiement du package, le fichier sera téléchargé dans le "
-"dossier du package sur la machine cliente. Il est possible de le traiter "
-"avec l'action qui conviendra."
+"Lors du déploiement du package, le fichier sera téléchargé dans le dossier "
+"du package sur la machine cliente. Il est possible de le traiter avec "
+"l'action qui conviendra."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:106
@@ -284,8 +281,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:107
 msgid ""
-"Il faut donc déplacer l'action **Run command** vers le Workflow et "
-"inscrire la commande qui permettra de traiter le fichier téléchargé :"
+"Il faut donc déplacer l'action **Run command** vers le Workflow et inscrire "
+"la commande qui permettra de traiter le fichier téléchargé :"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:111
@@ -295,34 +292,33 @@ msgstr ""
 #: ../../usemedulla/packages/packages.rst:113
 msgid ""
 "Une autre fonction importante est présente : la fonction **Executer le "
-"script**, qui permet de lancer un script dans le langage que l'on "
-"souhaite"
+"script**, qui permet de lancer un script dans le langage que l'on souhaite"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:117
 msgid ""
-"En cliquant sur le bouton \"Options\", nous pourrons alors avoir accès à "
-"un ensemble de paramètres permettant par exemple de choisir le suffixe du"
-" script ou le hashbang du script :"
+"En cliquant sur le bouton \"Options\", nous pourrons alors avoir accès à un "
+"ensemble de paramètres permettant par exemple de choisir le suffixe du "
+"script ou le hashbang du script :"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:121
 msgid ""
-"Il existe aussi la fonction **Dézipper un fichier**, qui permet de "
-"dézipper un fichier contenant plusieurs fichiers."
+"Il existe aussi la fonction **Dézipper un fichier**, qui permet de dézipper "
+"un fichier contenant plusieurs fichiers."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:122
 msgid ""
-"Pour cette fonction, il suffira de passer le nom du fichier et l’agent "
-"ira dézipper le fichier avant d’exécuter l’installation."
+"Pour cette fonction, il suffira de passer le nom du fichier et l’agent ira "
+"dézipper le fichier avant d’exécuter l’installation."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:123
 msgid ""
-"De même, dans les options de cette fonction, nous pourrons par exemple "
-"lui passer un chemin de dossier dans lequel dézipper le fichier, ainsi "
-"que d’autres options."
+"De même, dans les options de cette fonction, nous pourrons par exemple lui "
+"passer un chemin de dossier dans lequel dézipper le fichier, ainsi que "
+"d’autres options."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:128
@@ -341,8 +337,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:138
 msgid ""
-"Et dans la vue générale des déploiements, le statut est le suivant: "
-"**ABORT TRANSFER FAILED**"
+"Et dans la vue générale des déploiements, le statut est le suivant: **ABORT "
+"TRANSFER FAILED**"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:141
@@ -365,8 +361,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:149
 msgid ""
-"- La notion de plage de début et de fin, qui permet de figer une fenêtre "
-"de déploiement,"
+"- La notion de plage de début et de fin, qui permet de figer une fenêtre de "
+"déploiement,"
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:150
@@ -377,8 +373,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:151
 msgid ""
-"- La priorisation de déploiement, par exemple si plusieurs déploiements "
-"sont déjà en cours."
+"- La priorisation de déploiement, par exemple si plusieurs déploiements sont"
+" déjà en cours."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:154
@@ -387,9 +383,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:156
 msgid ""
-"Le déploiement sur groupe est identique au déploiement unitaire. "
-"Cependant, on va trouver en plus la convergence applicative, cf point "
-"suivant."
+"Le déploiement sur groupe est identique au déploiement unitaire. Cependant, "
+"on va trouver en plus la convergence applicative, cf point suivant."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:161
@@ -398,14 +393,14 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:163
 msgid ""
-"La convergence est un déploiement spécifique qui a comme particularité de"
-" ne pas avoir de fin."
+"La convergence est un déploiement spécifique qui a comme particularité de ne"
+" pas avoir de fin."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:164
 msgid ""
-"Elle va vérifier tous les jours que les postes sont conformes à ce qui a "
-"été défini, et va les rendre conforme si besoin."
+"Elle va vérifier tous les jours que les postes sont conformes à ce qui a été"
+" défini, et va les rendre conforme si besoin."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:165
@@ -416,8 +411,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:166
 msgid ""
-"Pour rendre disponible la convergence à un package, il faut l’associer à "
-"son empreinte d’inventaire."
+"Pour rendre disponible la convergence à un package, il faut l’associer à son"
+" empreinte d’inventaire."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:168
@@ -440,8 +435,8 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:175
 msgid ""
-"Sélectionner celle correspondante aux logiciels, et la convergence "
-"devient disponible lors d’un déploiement sur un groupe."
+"Sélectionner celle correspondante aux logiciels, et la convergence devient "
+"disponible lors d’un déploiement sur un groupe."
 msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:179
@@ -458,7 +453,6 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:185
 msgid ""
-"Par exemple, si nous souhaitons un intervalle de 15 heures à 17 heures "
-"tous les jours, il faut procéder comme ceci :"
+"Par exemple, si nous souhaitons un intervalle de 15 heures à 17 heures tous "
+"les jours, il faut procéder comme ceci :"
 msgstr ""
-

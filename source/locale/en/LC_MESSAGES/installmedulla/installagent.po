@@ -1,24 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Yvan Manon
-# This file is distributed under the same license as the Medulla RMM
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Medulla RMM \n"
+"Project-Id-Version: Medulla RMM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-09 15:11+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
-"Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../installmedulla/installagent.rst:2
 msgid "Medulla agent"
@@ -30,8 +27,7 @@ msgstr ""
 
 #: ../../installmedulla/installagent.rst:6
 msgid ""
-"http://dns-serveur/telechargements/win/Medulla-Agent-windows-FULL-"
-"latest.exe"
+"http://dns-serveur/telechargements/win/Medulla-Agent-windows-FULL-latest.exe"
 msgstr ""
 
 #: ../../installmedulla/installagent.rst:8
@@ -44,13 +40,11 @@ msgstr ""
 
 #: ../../installmedulla/installagent.rst:12
 msgid ""
-"Le processus d'installation continuera après la fin de l'installation, il"
-" installera toutes les dépendances."
+"Le processus d'installation continuera après la fin de l'installation, il "
+"installera toutes les dépendances."
 msgstr ""
 
 #: ../../installmedulla/installagent.rst:14
 msgid ""
-"Il se termine lorsque l'ordinateur apparaît dans Medulla en bleu (en "
-"ligne)."
+"Il se termine lorsque l'ordinateur apparaît dans Medulla en bleu (en ligne)."
 msgstr ""
-

@@ -1,24 +1,21 @@
 # SOME DESCRIPTIVE TITLE.
 # Copyright (C) 2024, Yvan Manon
-# This file is distributed under the same license as the Medulla RMM
-# package.
-# FIRST AUTHOR <EMAIL@ADDRESS>, 2024.
-#
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
 #, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: Medulla RMM \n"
+"Project-Id-Version: Medulla RMM\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2024-04-09 15:11+0200\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
-"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
-"Language: en\n"
-"Language-Team: en <LL@li.org>\n"
-"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
-"Content-Type: text/plain; charset=utf-8\n"
+"Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Generated-By: Babel 2.10.3\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
 #: ../../usemedulla/imaging/imaging.rst:3
 msgid "Imaging"
@@ -26,8 +23,8 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:5
 msgid ""
-"Cette section concerne la partie imaging de l'outil Medulla, avec "
-"notamment le boot en iPXE, la page d'accueil et les différentes options."
+"Cette section concerne la partie imaging de l'outil Medulla, avec notamment "
+"le boot en iPXE, la page d'accueil et les différentes options."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:9
@@ -36,15 +33,15 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:11
 msgid ""
-"Lorsque nous arrivons sur le menu Imaging sur l’écran principal, nous "
-"allons nous retrouver sur la page de statut du serveur d'imaging."
+"Lorsque nous arrivons sur le menu Imaging sur l’écran principal, nous allons"
+" nous retrouver sur la page de statut du serveur d'imaging."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:15
 msgid ""
-"Cette page permet de connaître l'état du serveur d'imaging, avec "
-"notamment l'espace disque disponible sur le serveur, la charge du serveur"
-" ou encore les statistiques entité."
+"Cette page permet de connaître l'état du serveur d'imaging, avec notamment "
+"l'espace disque disponible sur le serveur, la charge du serveur ou encore "
+"les statistiques entité."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:17
@@ -54,31 +51,32 @@ msgid ""
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:21
-msgid "**Statut du serveur d'imaging** : Affiche le statut du serveur d'imaging ;"
+msgid ""
+"**Statut du serveur d'imaging** : Affiche le statut du serveur d'imaging ;"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:22
 msgid ""
-"**Gérer les masters** : Permet de gérer les différents masters des "
-"machines ;"
+"**Gérer les masters** : Permet de gérer les différents masters des machines "
+";"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:23
 msgid ""
-"**Gérer les services de démarrage** : Permet de gérer les services "
-"présents dans \"Medulla Utilities\" lors du boot PXE ;"
+"**Gérer les services de démarrage** : Permet de gérer les services présents "
+"dans \"Medulla Utilities\" lors du boot PXE ;"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:24
 msgid ""
-"**Menu de démarrage par défaut** : Permet de configurer quel est le menu "
-"de démarrage par défaut ;"
+"**Menu de démarrage par défaut** : Permet de configurer quel est le menu de "
+"démarrage par défaut ;"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:25
 msgid ""
-"**Scripts de post-imaging** : Permet d’ajouter des scripts à exécuter "
-"après l'imaging ;"
+"**Scripts de post-imaging** : Permet d’ajouter des scripts à exécuter après "
+"l'imaging ;"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:26
@@ -95,14 +93,13 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:28
 msgid ""
-"**Tous les groupes d'imaging** : Affiche les différents groupes d'imaging"
-" ;"
+"**Tous les groupes d'imaging** : Affiche les différents groupes d'imaging ;"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:29
 msgid ""
-"**Ajouter un groupe d'imaging** : Permet de créer un groupe de "
-"différentes machines pour leur attribuer un imaging."
+"**Ajouter un groupe d'imaging** : Permet de créer un groupe de différentes "
+"machines pour leur attribuer un imaging."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:33
@@ -110,13 +107,14 @@ msgid "Gérer les masters"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:37
-msgid "Sur ce menu, nous pouvons gérer les masters grâce à différentes actions :"
+msgid ""
+"Sur ce menu, nous pouvons gérer les masters grâce à différentes actions :"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:39
 msgid ""
-"**Enlever du menu de démarrage** : Enlève le master du menu de démarrage "
-"des machines ;"
+"**Enlever du menu de démarrage** : Enlève le master du menu de démarrage des"
+" machines ;"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:40
@@ -151,8 +149,8 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:52
 msgid ""
-"Pour ajouter un service, il faut cliquer sur l'action \"Ajouter le "
-"service au menu de démarrage par défaut\""
+"Pour ajouter un service, il faut cliquer sur l'action \"Ajouter le service "
+"au menu de démarrage par défaut\""
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:54
@@ -167,8 +165,8 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:60
 msgid ""
-"Pour retirer un service, il faut cliquer sur l'action \"Enlever le "
-"service au menu de démarrage par défaut\""
+"Pour retirer un service, il faut cliquer sur l'action \"Enlever le service "
+"au menu de démarrage par défaut\""
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:63
@@ -177,8 +175,7 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:67
 msgid ""
-"Cette page contient les différentes options du menu de démarrage par "
-"défaut."
+"Cette page contient les différentes options du menu de démarrage par défaut."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:68
@@ -193,15 +190,15 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:76
 msgid ""
-"Les scripts de post-imaging sont les scripts qui seront lancés "
-"directement après l'imaging de la machine."
+"Les scripts de post-imaging sont les scripts qui seront lancés directement "
+"après l'imaging de la machine."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:77
 msgid ""
-"On peut par exemple mettre un script qui permet d'éteindre la machine une"
-" fois l'imaging effectué, ou encore un script permettant de copier le "
-"fichier de réponse Sysprep."
+"On peut par exemple mettre un script qui permet d'éteindre la machine une "
+"fois l'imaging effectué, ou encore un script permettant de copier le fichier"
+" de réponse Sysprep."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:80
@@ -221,9 +218,9 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:87
 msgid ""
-"**Attention !** Concernant les options Clonezilla, elles ne sont à "
-"modifier qu'en cas de réelle nécessité. Une mauvaise configuration "
-"rendrait l'imaging non fonctionnel."
+"**Attention !** Concernant les options Clonezilla, elles ne sont à modifier "
+"qu'en cas de réelle nécessité. Une mauvaise configuration rendrait l'imaging"
+" non fonctionnel."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:90
@@ -231,7 +228,8 @@ msgid "Gestionnaire de fichiers de réponse Sysprep"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:95
-msgid "Cette page permet de générer et modifier des fichiers de réponse Sysprep."
+msgid ""
+"Cette page permet de générer et modifier des fichiers de réponse Sysprep."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:96
@@ -247,15 +245,15 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:98
 msgid ""
-"Sur ce générateur, on peut notamment mettre une clé produit, effacer ou "
-"non le disque, étendre la partition de l'OS, régler les paramètres de "
-"sécurité, etc."
+"Sur ce générateur, on peut notamment mettre une clé produit, effacer ou non "
+"le disque, étendre la partition de l'OS, régler les paramètres de sécurité, "
+"etc."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:100
 msgid ""
-"Dans l'onglet \"Liste des Sysprep\", nous retrouvons les différents "
-"Sysprep que nous avons générés en amont."
+"Dans l'onglet \"Liste des Sysprep\", nous retrouvons les différents Sysprep "
+"que nous avons générés en amont."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:101
@@ -282,9 +280,9 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:118
 msgid ""
-"Créer un groupe d'imaging permet d'appliquer la même configuration "
-"d'imaging (donc le même menu PXE) sur plusieurs machines et de lancer un "
-"déploiement d'image en multicast sur un groupe de machines."
+"Créer un groupe d'imaging permet d'appliquer la même configuration d'imaging"
+" (donc le même menu PXE) sur plusieurs machines et de lancer un déploiement "
+"d'image en multicast sur un groupe de machines."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:122
@@ -293,34 +291,34 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:124
 msgid ""
-"Lors du lancement d'une machine en amorçage PXE (sigle de Pre-boot "
-"eXecution Environment, qui permet à une station de travail de démarrer "
-"depuis le réseau en récupérant une image de système d'exploitation qui se"
-" trouve sur un serveur) nous avons plusieurs choix qui s'offrent à nous."
+"Lors du lancement d'une machine en amorçage PXE (sigle de Pre-boot eXecution"
+" Environment, qui permet à une station de travail de démarrer depuis le "
+"réseau en récupérant une image de système d'exploitation qui se trouve sur "
+"un serveur) nous avons plusieurs choix qui s'offrent à nous."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:126
 msgid ""
-"Tout d'abord, quand la machine n'est pas enregistrée (*Reconnaissable "
-"grâce au message \"Host is NOT registered\"*) :"
+"Tout d'abord, quand la machine n'est pas enregistrée (*Reconnaissable grâce "
+"au message \"Host is NOT registered\"*) :"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:128
 msgid ""
-"- L'option par défaut est \"Continue Usual Startup\", qui permet de "
-"booter la machine normalement. Cette option par défaut sera "
-"automatiquement"
+"- L'option par défaut est \"Continue Usual Startup\", qui permet de booter "
+"la machine normalement. Cette option par défaut sera automatiquement"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:129
-msgid "sélectionnée après un certain temps, sauf si l'on appuie sur une touche."
+msgid ""
+"sélectionnée après un certain temps, sauf si l'on appuie sur une touche."
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:134
 msgid ""
-"- La seconde option, \"Register as Medulla client\", permet d'enregistrer"
-" la machine en tant que client Medulla. Un inventaire de la machine va "
-"être fait et celle-ci"
+"- La seconde option, \"Register as Medulla client\", permet d'enregistrer la"
+" machine en tant que client Medulla. Un inventaire de la machine va être "
+"fait et celle-ci"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:135
@@ -329,15 +327,14 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:140
 msgid ""
-"Une fois cette option sélectionnée, il est alors demandé d'entrer le nom "
-"de la machine :"
+"Une fois cette option sélectionnée, il est alors demandé d'entrer le nom de "
+"la machine :"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:145
 msgid ""
 "S'en suit un message demandant si le nom est correct, afin d'éviter une "
-"quelconque erreur (taper \"Y\" pour continuer ou \"N\" pour corriger le "
-"nom)"
+"quelconque erreur (taper \"Y\" pour continuer ou \"N\" pour corriger le nom)"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:150
@@ -352,8 +349,8 @@ msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:154
 msgid ""
-"- Booter la machine normalement, avec l'option \"Continue Usual Startup\""
-" (similaire à l'option du boot initial)"
+"- Booter la machine normalement, avec l'option \"Continue Usual Startup\" "
+"(similaire à l'option du boot initial)"
 msgstr ""
 
 #: ../../usemedulla/imaging/imaging.rst:159
@@ -365,4 +362,3 @@ msgid ""
 "- Ou encore de restaurer une image créée en amont sur la machine "
 "nouvellement créée. Dans notre exemple, le master s'appelle \"master\""
 msgstr ""
-

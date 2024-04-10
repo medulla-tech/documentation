@@ -1,0 +1,84 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Language-Team: Ukrainian (https://app.transifex.com/siveo/teams/72118/uk/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: uk\n"
+"Plural-Forms: nplurals=4; plural=(n % 1 == 0 && n % 10 == 1 && n % 100 != 11 ? 0 : n % 1 == 0 && n % 10 >= 2 && n % 10 <= 4 && (n % 100 < 12 || n % 100 > 14) ? 1 : n % 1 == 0 && (n % 10 ==0 || (n % 10 >=5 && n % 10 <=9) || (n % 100 >=11 && n % 100 <=14 )) ? 2: 3);\n"
+
+#: ../../installmedulla/installvbox.rst:3
+msgid "Installer Medulla sur VirtualBox"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:6
+msgid "Pré-requis"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:8
+msgid "PowerShell Core Version 6 ou supérieur"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:9
+msgid "VirtualBox version 7 ou supérieure"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:11
+msgid "Si ces exigences ne sont pas remplies, elles seront installées."
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:13
+msgid ""
+"NB: Pour installer PowerShell Core Version 6 ou supérieur, exécutez ce qui "
+"suit:"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:15
+msgid "PowerShell.exe -File. \\ Create_vbox_Vm.ps1"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:18
+msgid "Installation du serveur Medulla"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:20
+msgid ""
+"Pour créer une machine virtuelle et installer Medulla, la commande suivante "
+"doit être exécutée:"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:22
+msgid "pwsh.exe -File .\\create_vbox_vm.ps1"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:24
+msgid "La machine virtuelle créée aura les caractéristiques suivantes:"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:26
+msgid "Debian 12 OS à jour;"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:27
+msgid "8 Go de RAM;"
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:28
+msgid "2 CPU."
+msgstr ""
+
+#: ../../installmedulla/installvbox.rst:30
+msgid ""
+"Attendez que le processus d'installation se termine, un résumé affichera "
+"tous les mots de passe nécessaires (copiez-les dans un endroit sûr)."
+msgstr ""

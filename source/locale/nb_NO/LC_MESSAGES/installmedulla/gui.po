@@ -1,0 +1,40 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Language-Team: Norwegian Bokmål (Norway) (https://app.transifex.com/siveo/teams/72118/nb_NO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nb_NO\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../installmedulla/gui.rst:2
+msgid "Medulla interface"
+msgstr ""
+
+#: ../../installmedulla/gui.rst:4
+msgid ""
+"Pour accéder à la console Medulla, ouvrir un navigateur web avec l'adresse "
+"suivante"
+msgstr ""
+
+#: ../../installmedulla/gui.rst:6
+msgid "http://dns-serveur/mmc"
+msgstr ""
+
+#: ../../installmedulla/gui.rst:8
+msgid "ou"
+msgstr ""
+
+#: ../../installmedulla/gui.rst:10
+msgid "http://ip-serveur/mmc"
+msgstr ""

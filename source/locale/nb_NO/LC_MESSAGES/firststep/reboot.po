@@ -1,0 +1,32 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Language-Team: Norwegian Bokmål (Norway) (https://app.transifex.com/siveo/teams/72118/nb_NO/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: nb_NO\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../firststep/reboot.rst:2
+msgid "Redémarrer un ordinateur"
+msgstr ""
+
+#: ../../firststep/reboot.rst:4
+msgid ""
+"Pour redémarrer un ordinateur, depuis la vue \"ordinateur\" ouvrir les "
+"actions rapides"
+msgstr ""
+
+#: ../../firststep/reboot.rst:8
+msgid "Selectionner l'action \"reboot\"."
+msgstr ""
