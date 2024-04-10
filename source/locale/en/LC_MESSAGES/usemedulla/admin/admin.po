@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Nicolas Lécureuil <neoclust@mageia.org>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Last-Translator: Nicolas Lécureuil <neoclust@mageia.org>, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,142 +23,153 @@ msgstr ""
 
 #: ../../usemedulla/admin/admin.rst:3
 msgid "Admin"
-msgstr ""
+msgstr "Admin"
 
 #: ../../usemedulla/admin/admin.rst:5
 msgid "Cette section concerne la partie Admin de l'outil Medulla."
-msgstr ""
+msgstr "This section concerns the Admin part of the Medulla tool."
 
 #: ../../usemedulla/admin/admin.rst:6
 msgid "Le menu Admin regroupe les informations sur la liste des relais."
-msgstr ""
+msgstr "The Admin menu contains information on the relay list."
 
 #: ../../usemedulla/admin/admin.rst:12
 msgid ""
 "Lorsqu'on clique sur le menu Admin, on retrouve directement la liste de nos "
 "différents relais."
 msgstr ""
+"Clicking on the Admin menu takes you directly to the list of our various "
+"relays."
 
 #: ../../usemedulla/admin/admin.rst:13
 msgid "La page par défaut est \"List of relays\", soit la liste des relais."
-msgstr ""
+msgstr "The default page is \"List of relays\"."
 
 #: ../../usemedulla/admin/admin.rst:16
 msgid "Liste des relais"
-msgstr ""
+msgstr "List of relays"
 
 #: ../../usemedulla/admin/admin.rst:18
 msgid "Sur cette page, on peut retrouver toutes les infos des relais :"
-msgstr ""
+msgstr "On this page, you can find all the relay information:"
 
 #: ../../usemedulla/admin/admin.rst:19
 msgid "- le nom du relais,"
-msgstr ""
+msgstr "- the relay name,"
 
 #: ../../usemedulla/admin/admin.rst:20
 msgid "- son JabberID,"
-msgstr ""
+msgstr "- its JabberID,"
 
 #: ../../usemedulla/admin/admin.rst:21
 msgid "- le nom du cluster dans lequel est contenu le relais,"
-msgstr ""
+msgstr "- the name of the cluster in which the relay is contained,"
 
 #: ../../usemedulla/admin/admin.rst:22
 msgid "- la description du cluster,"
-msgstr ""
+msgstr "- cluster description,"
 
 #: ../../usemedulla/admin/admin.rst:23
 msgid "- le nombre de machines sur le relais,"
-msgstr ""
+msgstr " - the number of machines on the relay,"
 
 #: ../../usemedulla/admin/admin.rst:24
 msgid "- les machines non-inventoriées en ligne présentes sur le relais,"
-msgstr ""
+msgstr " - non-inventorized machines on the relay,"
 
 #: ../../usemedulla/admin/admin.rst:25
 msgid "- sa classe,"
-msgstr ""
+msgstr " - his class,"
 
 #: ../../usemedulla/admin/admin.rst:26
 msgid "- l'adresse MAC du relais,"
-msgstr ""
+msgstr "- the relay MAC address,"
 
 #: ../../usemedulla/admin/admin.rst:27
 msgid "- son adresse IP,"
-msgstr ""
+msgstr " - its IP address,"
 
 #: ../../usemedulla/admin/admin.rst:28
 msgid "- les actions possibles à lancer sur le relais."
-msgstr ""
+msgstr " - possible actions to launch on the relay."
 
 #: ../../usemedulla/admin/admin.rst:30
 msgid ""
 "Concernant le dernier point, les différentes actions sont les suivantes :"
-msgstr ""
+msgstr " With regard to the last point, the various actions are as follows:"
 
 #: ../../usemedulla/admin/admin.rst:32
 msgid ""
 "**Liste de packages** : Affiche la liste des paquets présents sur le relais,"
 msgstr ""
+" **Package list**: Displays the list of packages present on the relay,"
 
 #: ../../usemedulla/admin/admin.rst:33
 msgid ""
 "**Reconfigurer les machines** : Permet de lancer la Quick Action de "
 "reconfiguration des machine sur toutes les machines présentes sur le relais,"
 msgstr ""
+" **Reconfigure machines**: Launches the machine reconfiguration Quick Action"
+" on all machines on the relay,"
 
 #: ../../usemedulla/admin/admin.rst:34
 msgid "**Switch** : Permet d'éteindre le relais,"
-msgstr ""
+msgstr " **Switch**: Switches the relay off,"
 
 #: ../../usemedulla/admin/admin.rst:35
 msgid ""
 "**Editer les fichiers de configuration** : Permet d'éditer les fichiers de "
 "configuration du relais,"
 msgstr ""
+" **Edit configuration files**: Allows you to edit relay configuration files,"
 
 #: ../../usemedulla/admin/admin.rst:36
 msgid "**QA lancées** : Affiche la liste des Quick Actions lancées,"
-msgstr ""
+msgstr " **QA launched**: Displays the list of Quick Actions launched,"
 
 #: ../../usemedulla/admin/admin.rst:37
 msgid ""
 "**Actions** : Permet de lancer une action sur le relais (Reboot, Process, "
 "Disk Usage...),"
 msgstr ""
+" **Actions**: Allows you to launch an action on the relay (Reboot, Process, "
+"Disk Usage...),"
 
 #: ../../usemedulla/admin/admin.rst:38
 msgid ""
 "**Bannir** : Banni le relais. Celui-ci sera considéré comme hors-ligne,"
-msgstr ""
+msgstr " **Ban the relay. It will be considered offline,"
 
 #: ../../usemedulla/admin/admin.rst:39
 msgid "**Débannir** : Débanni le relais. Il pourra à nouveau être utilisé,"
-msgstr ""
+msgstr " **Unban**: Unban the relay. It can be used again,"
 
 #: ../../usemedulla/admin/admin.rst:40
 msgid ""
 "**Prise en main à distance** : Permet de prendre en main à distance le "
 "relais au travers VNC, RDP ou SSH,"
 msgstr ""
+" **Remote control**: Allows remote control of the relay via VNC, RDP or SSH,"
 
 #: ../../usemedulla/admin/admin.rst:41
 msgid ""
 "**Règles des relais** : Affiche la liste des règles sur le relais et permet "
 "également d'en ajouter."
 msgstr ""
+" **Relay rules**: Displays a list of relay rules and allows you to add new "
+"ones."
 
 #: ../../usemedulla/admin/admin.rst:44
 msgid "Liste des clusters"
-msgstr ""
+msgstr " List of clusters"
 
 #: ../../usemedulla/admin/admin.rst:49
 msgid "La liste des clusters correspond à une liste de groupements de relais."
-msgstr ""
+msgstr " The list of clusters corresponds to a list of relay groupings."
 
 #: ../../usemedulla/admin/admin.rst:50
 msgid "Un cluster peut donc contenir un ou plusieurs relais."
-msgstr ""
+msgstr " A cluster can therefore contain one or more relays."
 
 #: ../../usemedulla/admin/admin.rst:51
 msgid ""
@@ -162,12 +177,16 @@ msgid ""
 "sorte que les machines qui se connectent à ce cluster puissent choisir "
 "n'importe quel relais présent dans le cluster."
 msgstr ""
+" For example, we can create a cluster of several relays, so that machines "
+"connecting to the cluster can choose any relay in the cluster."
 
 #: ../../usemedulla/admin/admin.rst:52
 msgid ""
 "Cela permet notamment de désengorger un relais et d'avoir un load balancing "
 "sur les relais."
 msgstr ""
+" In particular, this can be used to relieve congestion on a relay and to "
+"load-balance relays."
 
 #: ../../usemedulla/admin/admin.rst:54
 msgid ""
@@ -175,46 +194,55 @@ msgid ""
 " de changer le nom et/ou la description du cluster, ou encore d'ajouter "
 "et/ou retirer des relais au cluster."
 msgstr ""
+" A cluster can be modified by clicking on the appropriate button. This "
+"allows you to change the name and/or description of the cluster, or to add "
+"and/or remove relays from the cluster."
 
 #: ../../usemedulla/admin/admin.rst:57
 msgid "Nouveau cluster"
-msgstr ""
+msgstr " New cluster"
 
 #: ../../usemedulla/admin/admin.rst:59
 msgid "Cette page permet de créer un nouveau cluster."
-msgstr ""
+msgstr " This page is used to create a new cluster."
 
 #: ../../usemedulla/admin/admin.rst:60
 msgid ""
 "Nous pouvons notamment y définir un nom, une description et d'ajouter des "
 "relais dans le cluster."
 msgstr ""
+" In particular, we can define a name, a description and add relays to the "
+"cluster."
 
 #: ../../usemedulla/admin/admin.rst:61
 msgid ""
 "La modification de clusters se fait sur la page \"Liste des clusters\", "
 "comme vu précédemment."
 msgstr ""
+"Cluster modification is carried out on the \"Cluster list\" page, as "
+"described above."
 
 #: ../../usemedulla/admin/admin.rst:64
 msgid "Règles"
-msgstr ""
+msgstr "Rules"
 
 #: ../../usemedulla/admin/admin.rst:68
 msgid "Cette page contient la liste des différentes règles pour les relais."
-msgstr ""
+msgstr "This page lists the different rules for relays."
 
 #: ../../usemedulla/admin/admin.rst:69
 msgid ""
 "Ces règles permettent de déterminer sur quel relais la machine doit se "
 "connecter."
-msgstr ""
+msgstr "These rules determine which relay the machine should connect to."
 
 #: ../../usemedulla/admin/admin.rst:70
 msgid ""
 "Chaque règle a son niveau, qui permet de donner l'ordre dans lequel les "
 "règles doivent être appliquées :"
 msgstr ""
+" Each rule has its own level, which indicates the order in which the rules "
+"are to be applied:"
 
 #: ../../usemedulla/admin/admin.rst:71
 msgid ""
@@ -222,15 +250,22 @@ msgid ""
 " règle est \"hostname\", alors nous allons vérifier le hostname de la "
 "machine pour le lier au relais."
 msgstr ""
+" For example, when assigning a relay to a workstation, if at level 1 the "
+"rule is \"hostname\", then we'll check the hostname of the machine to link "
+"it to the relay."
 
 #: ../../usemedulla/admin/admin.rst:72
 msgid ""
 "Si ça ne match pas, on passe au niveau 2 (par exemple \"subnet\"), qui quant"
 " à lui va vérifier le subnet de la machine pour la lier au bon relais."
 msgstr ""
+"If this doesn't work, we go to level 2 (e.g. \"subnet\"), which checks the "
+"machine's subnet to link it to the right relay."
 
 #: ../../usemedulla/admin/admin.rst:73
 msgid ""
 "Et ainsi de suite jusqu'à ce qu'une règle match. Si rien ne match, la "
 "machine utilisera le relais par défaut (la règle \"default\")."
 msgstr ""
+"And so on until a rule matches. If nothing matches, the machine will use the"
+" default relay (the \"default\" rule)."
