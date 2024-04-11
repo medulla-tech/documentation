@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# tekmans <yvan.manon@siveo.net>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Last-Translator: tekmans <yvan.manon@siveo.net>, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,82 +23,84 @@ msgstr ""
 
 #: ../../firststep/update.rst:2
 msgid "Gestion mise à jour Windows"
-msgstr ""
+msgstr "Windows Update Management"
 
 #: ../../firststep/update.rst:4
 msgid ""
 "Le module de mise à jours Windows permet de superviser la sécurité et la "
 "conformité des postes Windows."
 msgstr ""
+"The Windows Update module allows security and compliance monitoring of "
+"Windows workstations."
 
 #: ../../firststep/update.rst:6
 msgid "La vue principale montre la conformité du parc par entité"
-msgstr ""
+msgstr "The main view shows the asset compliance by entity."
 
 #: ../../firststep/update.rst:10
 msgid "Il existe plsuieurs vues de conformité"
-msgstr ""
+msgstr "There are several compliance views."
 
 #: ../../firststep/update.rst:12
 msgid "par entité"
-msgstr ""
+msgstr "by entity"
 
 #: ../../firststep/update.rst:13
 msgid "par mise à jour"
-msgstr ""
+msgstr "by update"
 
 #: ../../firststep/update.rst:14
 msgid "par machine"
-msgstr ""
+msgstr "by computer"
 
 #: ../../firststep/update.rst:16
 msgid "Exemple de la vue pour une entité spécifique"
-msgstr ""
+msgstr "Example of the view for a specific entity"
 
 #: ../../firststep/update.rst:20
 msgid ""
 "Depuis le menu de gauche, on accède à la gestion et qualification des mises "
 "à jours."
-msgstr ""
+msgstr "From the menu on the left the updates can be managed and validated."
 
 #: ../../firststep/update.rst:24
 msgid "La gestion des mises à jours est divisée en trois listes :"
-msgstr ""
+msgstr "The update management is divided into three lists:"
 
 #: ../../firststep/update.rst:26
 msgid ""
 "Grises : Les mises à jours demandées par les postes qui nécessitent une "
 "qualification"
-msgstr ""
+msgstr "Gray: Updates requested by workstations that require validation"
 
 #: ../../firststep/update.rst:27
 msgid ""
 "Blanches : Liste des mises à jour qualifiées pour un déploiement "
 "automatiques"
-msgstr ""
+msgstr "White: List of updates qualified for automatic deployment"
 
 #: ../../firststep/update.rst:28
 msgid ""
 "Grises : Liste des mises à jours bannies qui ne seront jamais déployées"
-msgstr ""
+msgstr "Gray: List of banned updates that will never be deployed"
 
 #: ../../firststep/update.rst:32
 msgid ""
 "Pour chacune des mises à jours, il est possible de mener plusieurs actions"
-msgstr ""
+msgstr "For each update, it is possible to take several actions"
 
 #: ../../firststep/update.rst:36
 msgid "Activer pour mise à jour manuelle"
-msgstr ""
+msgstr "Enable for manual update"
 
 #: ../../firststep/update.rst:37
 msgid "Désactiver pour mise à jour manuelle"
-msgstr ""
+msgstr "Disable for manual update"
 
 #: ../../firststep/update.rst:38
 msgid "Approuver pour mise à jour automatique"
-msgstr ""
+msgstr "Approve for automatic update"
 
 #: ../../firststep/update.rst:39
 msgid "Bannir la mise à jour"
-msgstr ""
+msgstr "Ban the update"

@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# tekmans <yvan.manon@siveo.net>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Last-Translator: tekmans <yvan.manon@siveo.net>, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,34 +23,34 @@ msgstr ""
 
 #: ../../firststep/rdp.rst:2
 msgid "Prise en main à distance"
-msgstr ""
+msgstr "Remote control"
 
 #: ../../firststep/rdp.rst:4
 msgid ""
 "Pour accéder aux différents mode de prise en main à distance, cliquer sur "
 "\"Remote control\""
-msgstr ""
+msgstr "To access the various remote control modes, click on \"Remote control\"."
 
 #: ../../firststep/rdp.rst:8
 msgid "Selectionner le type de PMAD:"
-msgstr ""
+msgstr "Select the type of remote control:"
 
 #: ../../firststep/rdp.rst:10
 msgid "VNC pour assister l'utilisateur"
-msgstr ""
+msgstr "VNC to assist the user"
 
 #: ../../firststep/rdp.rst:11
 msgid "RDP pour ouvrir session distante"
-msgstr ""
+msgstr "RDP to open a remote session"
 
 #: ../../firststep/rdp.rst:12
 msgid "CMD pour ouvrir une console (batch ou powershell) distante"
-msgstr ""
+msgstr "CMD to open a remote console (batch or PowerShell)"
 
 #: ../../firststep/rdp.rst:16
 msgid "Un onglet du navigateur s'ouvre avec la PMAD"
-msgstr ""
+msgstr "A browser tab opens with the remote console"
 
 #: ../../firststep/rdp.rst:18
 msgid "Ne pas oublier d'accepter l'ouverture de fenêtre venant de Medulla"
-msgstr ""
+msgstr "Don't forget to accept the opening of windows from Medulla."
