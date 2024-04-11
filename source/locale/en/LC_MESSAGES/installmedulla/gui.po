@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# tekmans <yvan.manon@siveo.net>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Last-Translator: tekmans <yvan.manon@siveo.net>, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,22 +23,23 @@ msgstr ""
 
 #: ../../installmedulla/gui.rst:2
 msgid "Medulla interface"
-msgstr ""
+msgstr "Medulla Interface "
 
 #: ../../installmedulla/gui.rst:4
 msgid ""
 "Pour accéder à la console Medulla, ouvrir un navigateur web avec l'adresse "
 "suivante"
 msgstr ""
+"To access the Medulla console, open a web browser with the following address"
 
 #: ../../installmedulla/gui.rst:6
 msgid "http://dns-serveur/mmc"
-msgstr ""
+msgstr "http://dns-server/mmc"
 
 #: ../../installmedulla/gui.rst:8
 msgid "ou"
-msgstr ""
+msgstr "or"
 
 #: ../../installmedulla/gui.rst:10
 msgid "http://ip-serveur/mmc"
-msgstr ""
+msgstr "http://ip-server/mmc"

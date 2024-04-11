@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# tekmans <yvan.manon@siveo.net>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Last-Translator: tekmans <yvan.manon@siveo.net>, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,32 +23,34 @@ msgstr ""
 
 #: ../../installmedulla/installagent.rst:2
 msgid "Medulla agent"
-msgstr ""
+msgstr "Medulla agent"
 
 #: ../../installmedulla/installagent.rst:4
 msgid "L'agent Medulla est téléchargeable depuis"
-msgstr ""
+msgstr "The Medulla agent has been downloadable from"
 
 #: ../../installmedulla/installagent.rst:6
 msgid ""
 "http://dns-serveur/telechargements/win/Medulla-Agent-windows-FULL-latest.exe"
-msgstr ""
+msgstr "http://dns-server/downloads/win/Medulla-Agent-windows-FULL-latest.exe"
 
 #: ../../installmedulla/installagent.rst:8
 msgid "L'agent Medulla peut être installé manuellement ou en silencieux."
-msgstr ""
+msgstr "The Medulla agent can be installed manually or silently."
 
 #: ../../installmedulla/installagent.rst:10
 msgid "Medulla-Agent-windows-FULL-latest.exe /S"
-msgstr ""
+msgstr "Medulla-Agent-windows-FULL-latest.exe /S"
 
 #: ../../installmedulla/installagent.rst:12
 msgid ""
 "Le processus d'installation continuera après la fin de l'installation, il "
 "installera toutes les dépendances."
 msgstr ""
+"The installation process will continue after the end of the installation, it"
+" will install all dependencies."
 
 #: ../../installmedulla/installagent.rst:14
 msgid ""
 "Il se termine lorsque l'ordinateur apparaît dans Medulla en bleu (en ligne)."
-msgstr ""
+msgstr "It ends when the computer appears in Medulla in blue (online)."

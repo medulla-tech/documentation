@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# tekmans <yvan.manon@siveo.net>, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Last-Translator: tekmans <yvan.manon@siveo.net>, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,36 +23,40 @@ msgstr ""
 
 #: ../../installmedulla/installlinux.rst:3
 msgid "Installer Medulla sur linux"
-msgstr ""
+msgstr "Medulla installation on linux"
 
 #: ../../installmedulla/installlinux.rst:6
 msgid "Pré-requis"
-msgstr ""
+msgstr "Requirements"
 
 #: ../../installmedulla/installlinux.rst:8
 msgid ""
 "Medulla supporte les disctribution Redhat (RHEL 8), CentOS (8) et Debian "
 "(Bookworm)."
 msgstr ""
+"Medulla supports the Distribution Redhat (RHEL 8), Centos (8) and Debian "
+"(Bookworm)."
 
 #: ../../installmedulla/installlinux.rst:10
 msgid "Le Partitionnement suggéré est / 20Go ext4 et /var 400Go XFS."
-msgstr ""
+msgstr "The suggested partitioning is / 20GB EXT4 and / VAR 400GO XFS."
 
 #: ../../installmedulla/installlinux.rst:13
 msgid "Installation du serveur Medulla"
-msgstr ""
+msgstr "Medulla server installation"
 
 #: ../../installmedulla/installlinux.rst:15
 msgid "Exécuter le script d'installation suivant :"
-msgstr ""
+msgstr "Execute the following installation script:"
 
 #: ../../installmedulla/installlinux.rst:17
 msgid "source install_from_ansible.sh"
-msgstr ""
+msgstr "source install_from_ansible.sh"
 
 #: ../../installmedulla/installlinux.rst:19
 msgid ""
 "Attendez que le processus d'installation se termine, un résumé affichera "
 "tous les mots de passe nécessaires (copiez-les dans un endroit sûr)."
 msgstr ""
+"Wait until the installation process ends, a summary will display all the "
+"necessary passwords (copy them in a safe place)."
