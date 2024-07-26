@@ -3,6 +3,9 @@
 # This file is distributed under the same license as the Medulla RMM package.
 # FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
 # 
+# Translators:
+# Calvin Hyacinth, 2024
+# 
 #, fuzzy
 msgid ""
 msgstr ""
@@ -10,6 +13,7 @@ msgstr ""
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: 2024-04-09 15:37+0200\n"
 "PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Last-Translator: Calvin Hyacinth, 2024\n"
 "Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
@@ -19,245 +23,274 @@ msgstr ""
 
 #: ../../usemedulla/packages/packages.rst:3
 msgid "Packages"
-msgstr ""
+msgstr "Packages"
 
 #: ../../usemedulla/packages/packages.rst:5
 msgid "Cette section concerne la partie Packages de l'outil Medulla."
-msgstr ""
+msgstr "This section is about the Packages part of the Medulla tool."
 
 #: ../../usemedulla/packages/packages.rst:8
 msgid ""
 "En cliquant sur le menu Packages, on arrive directement sur les packages "
 "accessibles par l’utilisateur en fonction de ses droits :"
 msgstr ""
+"By clicking on the Packages menu, you arrive directly at the packages "
+"accessible by the user depending on their rights:"
 
 #: ../../usemedulla/packages/packages.rst:12
 msgid ""
 "Dans le menu de gauche, nous aurons divers sous-menus concernant les "
 "packages :"
-msgstr ""
+msgstr "In the left menu we will have various submenus regarding packages:"
 
 #: ../../usemedulla/packages/packages.rst:17
 msgid "Ajouter un package"
-msgstr ""
+msgstr "Add a package"
 
 #: ../../usemedulla/packages/packages.rst:19
 msgid ""
 "Depuis l’icône principale « package », l’interface de création et un wizard "
 "sont disponibles pour assister à la création de package."
 msgstr ""
+"From the main “package” icon, the creation interface and a wizard are "
+"available to assist in package creation."
 
 #: ../../usemedulla/packages/packages.rst:20
 msgid ""
 "Pour créer un package, il faut que son installation soit silencieuse ou sans"
 " interaction utilisateur."
 msgstr ""
+"To create a package, its installation must be silent or without user "
+"interaction."
 
 #: ../../usemedulla/packages/packages.rst:21
 msgid ""
 "Il faut privilégier les versions msi des applications, car elles sont "
 "développées pour être déployées en masse silencieusement."
 msgstr ""
+"MSI versions of applications should be preferred, as they are developed to "
+"be deployed silently en masse."
 
 #: ../../usemedulla/packages/packages.rst:23
 msgid ""
 "Pour créer un package, il faut fournir les fichiers constituant le package "
 "soit via :"
 msgstr ""
+"To create a package, you must provide the files constituting the package "
+"either via:"
 
 #: ../../usemedulla/packages/packages.rst:24
 msgid "-     Le partage Samba « package » ;"
-msgstr ""
+msgstr "- The Samba “package” share;"
 
 #: ../../usemedulla/packages/packages.rst:25
 msgid "-     L’interface MMC."
-msgstr ""
+msgstr "- The MMC interface."
 
 #: ../../usemedulla/packages/packages.rst:28
 msgid "Le partage Samba \"Package\""
-msgstr ""
+msgstr "The Samba \"Package\" share"
 
 #: ../../usemedulla/packages/packages.rst:30
 msgid "Il permet de gérer plus simplement les fichiers de grandes tailles."
-msgstr ""
+msgstr "It makes it easier to manage large files."
 
 #: ../../usemedulla/packages/packages.rst:31
 msgid "Il faut impérativement créer un dossier contenant les fichiers."
-msgstr ""
+msgstr "It is imperative to create a folder containing the files."
 
 #: ../../usemedulla/packages/packages.rst:32
 msgid "Si votre package contient un sous-dossier, il faut alors le zipper."
-msgstr ""
+msgstr "If your package contains a subfolder, then you need to zip it."
 
 #: ../../usemedulla/packages/packages.rst:35
 msgid "L'interface MMC"
-msgstr ""
+msgstr "The MMC interface"
 
 #: ../../usemedulla/packages/packages.rst:37
 msgid "Via l’interface, il suffit de charger les fichiers nécessaires."
-msgstr ""
+msgstr "Via the interface, you just need to load the necessary files."
 
 #: ../../usemedulla/packages/packages.rst:42
 msgid "Assistant à la création"
-msgstr ""
+msgstr "Assistant to the creation"
 
 #: ../../usemedulla/packages/packages.rst:44
 msgid "Exemple de création de package contenant PDFCreator"
-msgstr ""
+msgstr "Example of creating a package containing PDFCreator"
 
 #: ../../usemedulla/packages/packages.rst:46
 msgid "On clique sur le menu \"Ajouter un package\""
-msgstr ""
+msgstr "Click on the \"Add a package\" menu"
 
 #: ../../usemedulla/packages/packages.rst:47
 msgid "Puis il faut choisir \"Envoyer depuis cette page\""
-msgstr ""
+msgstr "Then you have to choose \"Send from this page\""
 
 #: ../../usemedulla/packages/packages.rst:48
 msgid "Sélectionner le fichier .msi ou .exe de PDFCreator puis"
-msgstr ""
+msgstr "Select the PDFCreator .msi or .exe file and then"
 
 #: ../../usemedulla/packages/packages.rst:49
 msgid "Cliquer sur transmettre les fichiers"
-msgstr ""
+msgstr "Click on transmit files"
 
 #: ../../usemedulla/packages/packages.rst:53
 msgid ""
 "Le fichier va alors être transmis à Medulla, qui va tenter de détecter "
 "automatiquement la commande d'installation."
 msgstr ""
+"The file will then be transmitted to Medulla, which will attempt to "
+"automatically detect the installation command."
 
 #: ../../usemedulla/packages/packages.rst:55
 msgid "Il faut remplir les champs \"Nom\", \"Version\" et \"Description\" du package."
 msgstr ""
+"You must fill in the \"Name\", \"Version\" and \"Description\" fields of the"
+" package."
 
 #: ../../usemedulla/packages/packages.rst:57
 msgid ""
 "Dans la partie requête, on peut voir la commande générée automatiquement."
-msgstr ""
+msgstr "In the query part, we can see the automatically generated command."
 
 #: ../../usemedulla/packages/packages.rst:58
 msgid "La commande d'installation est en général du type \"nom du fichier\" -ms"
-msgstr ""
+msgstr "The installation command is usually of the type \"file name\" -ms"
 
 #: ../../usemedulla/packages/packages.rst:59
 msgid ""
 "On peut ajouter les paramètres d'installation silencieuse suivant pour "
 "InnoSetup :"
 msgstr ""
+"The following silent installation parameters can be added to InnoSetup:"
 
 #: ../../usemedulla/packages/packages.rst:60
 msgid "/SP /VERYSILENT /NORESTART"
-msgstr ""
+msgstr "/SP /VERYSILENT /NORESTART"
 
 #: ../../usemedulla/packages/packages.rst:64
 msgid "Il ne reste plus qu'à cliquer sur \"Valider\" en bas de page."
-msgstr ""
+msgstr "All that remains is to click on “Validate” at the bottom of the page."
 
 #: ../../usemedulla/packages/packages.rst:65
 msgid ""
 "Le package est alors en attente d'intégration au système et de "
 "synchronisation avec les différents sites."
 msgstr ""
+"The package is then waiting to be integrated into the system and "
+"synchronized with the different sites."
 
 #: ../../usemedulla/packages/packages.rst:66
 msgid ""
 "Une fois le package synchronisé, il apparaît alors dans la liste des paquets"
 " disponibles."
 msgstr ""
+"Once the package is synchronized, it then appears in the list of available "
+"packages."
 
 #: ../../usemedulla/packages/packages.rst:68
 msgid "On peut tester le déploiement sur une machine de test."
-msgstr ""
+msgstr "The deployment can be tested on a test machine."
 
 #: ../../usemedulla/packages/packages.rst:70
 msgid ""
 "On constate, dans ce cas là, que PDFCreator a installé PDFArchitect et une "
 "Toolbar dans Internet Explorer."
 msgstr ""
+"In this case, we see that PDFCreator has installed PDFArchitect and a "
+"Toolbar in Internet Explorer."
 
 #: ../../usemedulla/packages/packages.rst:72
 msgid ""
 "Il faut alors chercher sur Internet des solutions avec les mots clés types :"
 " « pdf creator silent installation toolbar »"
 msgstr ""
+"You should then search the Internet for solutions with keywords such as: "
+"“pdf creator silent installation toolbar”"
 
 #: ../../usemedulla/packages/packages.rst:73
 msgid "Le site « wpkg » donne des informations intéressantes :"
-msgstr ""
+msgstr "The “wpkg” site gives some interesting information:"
 
 #: ../../usemedulla/packages/packages.rst:74
 msgid "http://wpkg.org/PDFCreator"
-msgstr ""
+msgstr "http://wpkg.org/PDFCreator"
 
 #: ../../usemedulla/packages/packages.rst:75
 msgid "Components=program,ghostscript,images2pdf,pdfarchitect..."
-msgstr ""
+msgstr "Components=program,ghostscript,images2pdf,pdfarchitect..."
 
 #: ../../usemedulla/packages/packages.rst:76
 msgid "Tasks=desktopicon,desktopicon\\common,winexplorer"
-msgstr ""
+msgstr "Tasks=desktopicon,desktopicon\\common,winexplorer"
 
 #: ../../usemedulla/packages/packages.rst:78
 msgid "Le site officiel donne, quant à lui, des paramètres supplémentaires."
-msgstr ""
+msgstr "The official website provides additional parameters."
 
 #: ../../usemedulla/packages/packages.rst:79
 msgid "http://www.pdfforge.org/content/setup-command-line-parameters"
-msgstr ""
+msgstr "http://www.pdfforge.org/content/setup-command-line-parameters"
 
 #: ../../usemedulla/packages/packages.rst:80
 msgid "/COMPONENTS=\"comma separated list of component names\""
-msgstr ""
+msgstr "/COMPONENTS=\"comma separated list of component names\""
 
 #: ../../usemedulla/packages/packages.rst:81
 msgid "Overrides the default components settings."
-msgstr ""
+msgstr "Overrides the default components settings."
 
 #: ../../usemedulla/packages/packages.rst:82
 msgid ""
 "Sample: "
 "/COMPONENTS=”program,ghostscript,comsamples,helpfiles\\english,languages\\english”"
 msgstr ""
+"Sample: "
+"/COMPONENTS=”program,ghostscript,comsamples,helpfiles\\english,languages\\english”"
 
 #: ../../usemedulla/packages/packages.rst:84
 msgid ""
 "Il faut ensuite éditer le paquet pour ajouter les paramètres suivants :"
-msgstr ""
+msgstr "Then you need to edit the package to add the following parameters:"
 
 #: ../../usemedulla/packages/packages.rst:85
 msgid ""
 "/COMPONENTS= "
 "\"program,ghostscript,images2pdf,helpfiles,helpfiles\\french,languages,languages\\french\""
 msgstr ""
+"/COMPONENTS= "
+"\"program,ghostscript,images2pdf,helpfiles,helpfiles\\english,languages,languages\\english\""
 
 #: ../../usemedulla/packages/packages.rst:86
 msgid "/MERGETASKS=\"!desktopicon\" /ForceInstall"
-msgstr ""
+msgstr "/MERGETASKS=\"!desktopicon\" /ForceInstall"
 
 #: ../../usemedulla/packages/packages.rst:89
 msgid "Commande d'assistance"
-msgstr ""
+msgstr "Support Order"
 
 #: ../../usemedulla/packages/packages.rst:91
 msgid ""
 "La plupart des installeurs offrent une aide, on peut la lancer depuis une "
 "console « CMD » :"
-msgstr ""
+msgstr "Most installers offer help, which can be launched from a \"CMD\" console:"
 
 #: ../../usemedulla/packages/packages.rst:92
 msgid "c:\\ moninstaller.exe / ?"
-msgstr ""
+msgstr "c:\\ myinstaller.exe / ?"
 
 #: ../../usemedulla/packages/packages.rst:95
 msgid "Création de package avancée"
-msgstr ""
+msgstr "Advanced Package Creation"
 
 #: ../../usemedulla/packages/packages.rst:97
 msgid ""
 "Depuis la vue Packages, créer un nouveau package en remplissant les champs "
 "pour un déploiement classique :"
 msgstr ""
+"From the Packages view, create a new package by filling in the fields for a "
+"classic deployment:"
 
 #: ../../usemedulla/packages/packages.rst:101
 msgid ""
@@ -265,6 +298,8 @@ msgid ""
 "*(Télécharger le fichier)* vers le Workflow et définir l'URL contenant le "
 "fichier à télécharger"
 msgstr ""
+"Further, on this same page, move the action **Download File** to the "
+"Workflow and define the URL containing the file to download"
 
 #: ../../usemedulla/packages/packages.rst:105
 msgid ""
@@ -272,28 +307,37 @@ msgid ""
 "du package sur la machine cliente. Il est possible de le traiter avec "
 "l'action qui conviendra."
 msgstr ""
+"When deploying the package, the file will be downloaded to the package "
+"folder on the client machine. It is possible to process it with the "
+"appropriate action."
 
 #: ../../usemedulla/packages/packages.rst:106
 msgid ""
 "Ici, nous avons pris le cas de l'action **Run Command** *(Executer la "
 "commande)*."
 msgstr ""
+"Here we have taken the case of the action **Run Command** *(Run the "
+"command)*."
 
 #: ../../usemedulla/packages/packages.rst:107
 msgid ""
 "Il faut donc déplacer l'action **Run command** vers le Workflow et inscrire "
 "la commande qui permettra de traiter le fichier téléchargé :"
 msgstr ""
+"You must therefore move the **Run command** action to the Workflow and enter"
+" the command that will process the downloaded file:"
 
 #: ../../usemedulla/packages/packages.rst:111
 msgid "Cliquer sur **Confirm** *(Valider)* pour créer le package."
-msgstr ""
+msgstr "Click on  **Confirm** *(Validate)* to create the package."
 
 #: ../../usemedulla/packages/packages.rst:113
 msgid ""
 "Une autre fonction importante est présente : la fonction **Executer le "
 "script**, qui permet de lancer un script dans le langage que l'on souhaite"
 msgstr ""
+"Another important function is present: the **Run Script** function, which "
+"allows you to launch a script in the language you want."
 
 #: ../../usemedulla/packages/packages.rst:117
 msgid ""
@@ -301,18 +345,25 @@ msgid ""
 "ensemble de paramètres permettant par exemple de choisir le suffixe du "
 "script ou le hashbang du script :"
 msgstr ""
+"By clicking on the \"Options\" button, we can then access a set of "
+"parameters allowing us, for example, to choose the script suffix or the "
+"script hashbang:"
 
 #: ../../usemedulla/packages/packages.rst:121
 msgid ""
 "Il existe aussi la fonction **Dézipper un fichier**, qui permet de dézipper "
 "un fichier contenant plusieurs fichiers."
 msgstr ""
+"There is also the **Unzip a file** function, which allows you to unzip a "
+"file containing multiple files."
 
 #: ../../usemedulla/packages/packages.rst:122
 msgid ""
 "Pour cette fonction, il suffira de passer le nom du fichier et l’agent ira "
 "dézipper le fichier avant d’exécuter l’installation."
 msgstr ""
+"For this function, you need to pass the name of the file and the agent will "
+"unzip the file before running the installation."
 
 #: ../../usemedulla/packages/packages.rst:123
 msgid ""
@@ -320,139 +371,169 @@ msgid ""
 "passer un chemin de dossier dans lequel dézipper le fichier, ainsi que "
 "d’autres options."
 msgstr ""
+"Similarly, in the options of this function, we can for example pass it a "
+"folder path in which to unzip the file, as well as other options."
 
 #: ../../usemedulla/packages/packages.rst:128
 msgid "Déploiement du package"
-msgstr ""
+msgstr "Package Deployment"
 
 #: ../../usemedulla/packages/packages.rst:130
 msgid ""
 "Lors du déploiement, le déroulement des étapes est affiché. Les lignes "
 "suivantes montrent qu'un téléchargement a lieu et qu'il est réussi :"
 msgstr ""
+"During deployment, the sequence of steps is displayed. The following lines "
+"show that a download takes place and is successful:"
 
 #: ../../usemedulla/packages/packages.rst:134
 msgid "En cas d'erreur, les lignes suivantes sont affichées :"
-msgstr ""
+msgstr "If an error occurs, the following lines are displayed:"
 
 #: ../../usemedulla/packages/packages.rst:138
 msgid ""
 "Et dans la vue générale des déploiements, le statut est le suivant: **ABORT "
 "TRANSFER FAILED**"
 msgstr ""
+"And in the deployment overview, the status is: **ABORT TRANSFER FAILED**"
 
 #: ../../usemedulla/packages/packages.rst:141
 msgid "Déploiement programmé"
-msgstr ""
+msgstr "Scheduled deployment"
 
 #: ../../usemedulla/packages/packages.rst:143
 msgid ""
 "Ce type de déploiement permet de planifier quand le déploiement va avoir "
 "lieu mais également plusieurs options :"
 msgstr ""
+"This type of deployment allows you to plan when the deployment will take "
+"place but also several options:"
 
 #: ../../usemedulla/packages/packages.rst:147
 msgid "Les différents champs à renseigner sont les suivants :"
-msgstr ""
+msgstr "The different fields to be completed are as follows:"
 
 #: ../../usemedulla/packages/packages.rst:148
 msgid "- Le nom de la commande,"
-msgstr ""
+msgstr "- The name of the command,"
 
 #: ../../usemedulla/packages/packages.rst:149
 msgid ""
 "- La notion de plage de début et de fin, qui permet de figer une fenêtre de "
 "déploiement,"
 msgstr ""
+"- The concept of start and end range, which allows you to freeze a "
+"deployment window,"
 
 #: ../../usemedulla/packages/packages.rst:150
 msgid ""
 "- L’intervalle de déploiement, qui permet de définir une plage horaire "
 "durant laquelle le déploiement doit être effectué,"
 msgstr ""
+"- The deployment interval, which allows you to define a time slot during "
+"which the deployment must be carried out,"
 
 #: ../../usemedulla/packages/packages.rst:151
 msgid ""
 "- La priorisation de déploiement, par exemple si plusieurs déploiements sont"
 " déjà en cours."
 msgstr ""
+"- Deployment prioritization, for example, if multiple deployments are "
+"already in progress."
 
 #: ../../usemedulla/packages/packages.rst:154
 msgid "Déploiement sur groupe"
-msgstr ""
+msgstr "Group deployment"
 
 #: ../../usemedulla/packages/packages.rst:156
 msgid ""
 "Le déploiement sur groupe est identique au déploiement unitaire. Cependant, "
 "on va trouver en plus la convergence applicative, cf point suivant."
 msgstr ""
+"Group deployment is identical to unit deployment. However, we will also find"
+" application convergence, see next point."
 
 #: ../../usemedulla/packages/packages.rst:161
 msgid "Convergence"
-msgstr ""
+msgstr "Convergence"
 
 #: ../../usemedulla/packages/packages.rst:163
 msgid ""
 "La convergence est un déploiement spécifique qui a comme particularité de ne"
 " pas avoir de fin."
 msgstr ""
+"Convergence is a specific deployment which has the particularity of having "
+"no end."
 
 #: ../../usemedulla/packages/packages.rst:164
 msgid ""
 "Elle va vérifier tous les jours que les postes sont conformes à ce qui a été"
 " défini, et va les rendre conforme si besoin."
 msgstr ""
+"It will check daily that the positions comply with what has been defined, "
+"and make them compliant if necessary."
 
 #: ../../usemedulla/packages/packages.rst:165
 msgid ""
 "Au préalable, il faut que vos packages soient prêts à la convergence. "
 "Egalement, une convergence ne s’applique que sur des groupes."
 msgstr ""
+"First, your packages must be ready for convergence. Also, convergence only "
+"applies to groups."
 
 #: ../../usemedulla/packages/packages.rst:166
 msgid ""
 "Pour rendre disponible la convergence à un package, il faut l’associer à son"
 " empreinte d’inventaire."
 msgstr ""
+"To make convergence available to a package, it must be associated with its "
+"inventory footprint."
 
 #: ../../usemedulla/packages/packages.rst:168
 msgid "Exemple avec le package 7-ZIP :"
-msgstr ""
+msgstr "Example with 7-ZIP package:"
 
 #: ../../usemedulla/packages/packages.rst:169
 msgid "Le package a été créé et installé une première fois."
-msgstr ""
+msgstr "The package has been created and installed for the first time."
 
 #: ../../usemedulla/packages/packages.rst:170
 msgid "On associe le package à son inventaire."
-msgstr ""
+msgstr "The package is associated with its inventory."
 
 #: ../../usemedulla/packages/packages.rst:174
 msgid ""
 "À partir de trois caractères la complétion propose une liste d’entrée "
 "d’inventaire correspondante."
 msgstr ""
+"From three characters the completion offers a list of corresponding "
+"inventory entries."
 
 #: ../../usemedulla/packages/packages.rst:175
 msgid ""
 "Sélectionner celle correspondante aux logiciels, et la convergence devient "
 "disponible lors d’un déploiement sur un groupe."
 msgstr ""
+"Select the one corresponding to the software, and convergence becomes "
+"available when deploying to a group."
 
 #: ../../usemedulla/packages/packages.rst:179
 msgid ""
 "Afin d'activer la convergence, il faut sélectionner l'icône \"infini\" "
 "orange."
-msgstr ""
+msgstr "To activate convergence, you must select the orange \"infinity\" icon."
 
 #: ../../usemedulla/packages/packages.rst:183
 msgid ""
 "La convergence n’a pas de fin, sa programmation est définie par un "
 "intervalle de déploiement."
 msgstr ""
+"Convergence has no end, its programming is defined by a deployment interval."
 
 #: ../../usemedulla/packages/packages.rst:185
 msgid ""
 "Par exemple, si nous souhaitons un intervalle de 15 heures à 17 heures tous "
 "les jours, il faut procéder comme ceci :"
 msgstr ""
+"For example, if we want an interval from 3 pm to 5 pm every day, we would do"
+" this:"
