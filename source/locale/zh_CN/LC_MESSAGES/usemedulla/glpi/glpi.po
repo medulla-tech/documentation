@@ -1,0 +1,508 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:49+0000\n"
+"Language-Team: Chinese (China) (https://app.transifex.com/siveo/teams/72118/zh_CN/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: zh_CN\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+
+#: ../../usemedulla/glpi/glpi.rst:3
+msgid "Corrélation avec l'outil de gestion de parc"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:5
+msgid ""
+"Cette section concerne la partie configuration GLPI de l'outil Medulla."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:9
+msgid "GLPI local"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:11
+msgid ""
+"Par défaut, Medulla comporte une configuration existante pour utiliser le "
+"GLPI local"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:12
+msgid "Il suffit de se connecter à l'adresse suivante : http://ippulse/glpi"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:14
+msgid "Pour s’identifier :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:15
+msgid "-     Login : root"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:16
+msgid "-     Mot de passe : celui de l’installation de Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:19
+msgid "GLPI existant"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:21
+msgid ""
+"Afin de connecter Medulla à un GLPI existant, il faut le configurer dans le "
+"fichier suivant :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:23
+msgid "# vi /etc/mmc/plugins/glpi.ini.local"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:25
+msgid "Les éléments principaux sont :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:27 ../../usemedulla/glpi/glpi.rst:47
+msgid "[main]"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:28
+msgid "dbhost =              ← IP de base SQL de GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:29
+msgid "dbname =              ← nom de la bdd de GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:30
+msgid "dbuser =              ← utilisateur de la bdd de GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:31
+msgid "dbpasswd =            ← mot de passe bdd de GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:32
+msgid "glpi_computer_uri =   ← URL lien entre Medulla et GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:34
+msgid "[webservices]"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:35
+msgid "purge_machine =       ← suppression depuis Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:36
+msgid "glpi_base_url =       ← URL de base de GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:37
+msgid "glpi_username =       ← utilisateur admin de GL"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:38
+msgid "glpi_password =       ← mot de passe admin"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:40
+msgid "[authentication_glpi]"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:41
+msgid "baseurl =             ← URL pour l'identification"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:43
+msgid ""
+"Egalement, il faut faire en sorte que le serveur d'inventaire soit relayé au"
+" bon serveur GLPI. La configuration se fait dans le fichier suivant:"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:45
+msgid "# vi /etc/mmc/pulse2/inventory-server/inventory-server.ini.local"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:48
+msgid "url_to_forward ="
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:49
+msgid ""
+"http://serverglpi/glpi/plugins/fusioninventory/front/plugin_fusioninventory"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:50
+msgid ".communication.php"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:53
+msgid "Affichage des machines"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:55
+msgid ""
+"Medulla permet un affichage sélectif des ordinateurs de GLPI suivant les "
+"filtres suivants :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:56
+msgid "-     state"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:57
+msgid "-     type"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:58
+msgid "-     entity"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:60
+msgid "Convention pour l'utilisation des filtres :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:61
+msgid "i.e. state=1 type=2|3|7 entity=2|5"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:62
+msgid "filter_on = state=3"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:65
+msgid "Entités et lieux"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:67
+msgid ""
+"Les entités de premier niveau sont réservées aux sites physiques où est "
+"installé Medulla, ou un Medulla multi-site."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:69
+msgid ""
+"GLPI permet d'assigner les ordinateurs à des entités et lieux en fonction de"
+" critères discriminants (adresse IP, masque de sous-réseau...). Il peut "
+"aussi utiliser le TAG de l'agent d'inventaire."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:70
+msgid ""
+"Ces différentes règles fonctionnent sous forme de pile. L’ordre de ces piles"
+" va du haut vers le bas et s’arrête dès qu’un critère correspond à une de "
+"ces règles."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:71
+msgid "Les règles se composent d’un ensemble de nom, critère(s) et action(s)."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:74
+msgid "Règle sur l'entité"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:76
+msgid "Les critères discriminants possibles sont les suivants :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:78
+msgid "-     Adresse IP"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:79
+msgid "- Domaine"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:80
+msgid "-     Nom de l’ordinateur"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:81
+msgid "-     Serial Number"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:82
+msgid "-     Sous-réseau"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:83
+msgid "-     Système d’exploitation / Comment"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:84
+msgid "-     Étiquette Fusioninventory"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:87 ../../usemedulla/glpi/glpi.rst:109
+msgid "Exemple :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:91
+msgid "Les actions possibles sont les suivantes :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:92
+msgid "-     Entité"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:93
+msgid "-     Lieu"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:94
+msgid "-     Entité depuis TAG"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:95
+msgid "-     Ignorer lors de l’import"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:100
+msgid "Règles de lieu"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:102
+msgid ""
+"Identique aux entités, cette section permet de séparer des entités pour plus"
+" de détails."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:105
+msgid "Gestion des groupes"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:107
+msgid ""
+"La gestion des groupes permet de faire coïncider les groupes GLPI aux "
+"groupes Medulla."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:111
+msgid "-     Groupe GLPI-Hotliner minimum pour accès à Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:112
+msgid "- Assigne des droits dans GLPI en fonction du groupe."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:113
+msgid "- GLPI-Hotliner => accès au Bureau à distance"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:114
+msgid "- GLPI-Supervisor & GLPI-Technician => accès à Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:115
+msgid ""
+"- GLPI-Admin & GLPI-Super-Admin => accès à Medulla avec gestion des "
+"utilisateurs"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:118
+msgid "Création d'un groupe Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:120
+msgid "Il faut créer les groupes nécessaires à l'utilisation de Medulla."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:124
+msgid ""
+"Le groupe doit commencer par « GLPI- ». Il est conseillé de respecter la "
+"nomenclature de l'exemple."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:127
+msgid "Synchroniser les groupes GLPI"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:129
+msgid ""
+"Pour synchroniser les groupes GLPI, il faut aller dans l'onglet "
+"\"Administration\", \"Groupes\" puis \"Liaison annuaire LDAP\" pour enfin "
+"cliquer sur le bouton \"Importation de nouveaux groupes\"."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:130
+msgid "Il faut alors importer les nouveaux groupes."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:133
+msgid "Gestion des utilisateurs"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:136
+msgid "Règles d'affectation et profils"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:138
+msgid ""
+"Depuis GLPI, Administration >> Règles >> Règles d'affectation "
+"d'habilitations à un utilisateur, ajouter une nouvelle règle :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:142
+msgid "Puis ajouter un critère d'appartenance au nouveau groupe :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:146
+msgid ""
+"Et enfin ajouter une action qui assigne les utilisateurs à l'entité voulue "
+"ainsi qu'une action attribuant un profil de droits à ces utilisateurs :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:151
+msgid "Ajouter l'utilisateur au groupe dans Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:153
+msgid ""
+"Pour ajouter un utilisateur à un groupe dans Medulla, il faut éditer un "
+"utilisateur et ajouter son groupe :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:157
+msgid ""
+"Les groupes définis par défaut donnent un accès complet à l'ensemble des "
+"entités."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:159
+msgid ""
+"Lors de la connexion dans Medulla, cet utilisateur sera cantonné à l’entité "
+"correspondante, la même restriction s'applique dans GLPI."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:161
+msgid ""
+"Il est évidemment possible de réitérer l'opération avec un second groupe et "
+"une seconde entité."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:164
+msgid "Dictionnaire applicatif Medulla"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:166
+msgid ""
+"Dans le répertoire suivant, un ensemble de filtre permet le renommage et la "
+"standardisation de valeurs d’inventaire. Ces règles sont appliquées à la "
+"volée sur les inventaires."
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:168
+msgid "# cd etc/mmc/pulse2/inventory-server/xml-fix"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:169
+msgid "# ls"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:170
+msgid "00_Replace_bad_characters.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:171
+msgid "01_Dell_consistency.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:172
+msgid "02_ATI_consistency.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:173
+msgid "03_ASUS_consistency.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:174
+msgid "04_Adobe_consistency.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:175
+msgid "05_HP_consistency.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:176
+msgid "06_Laptop_type.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:177
+msgid "07_Virtual_machine_type.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:178
+msgid "08_Microsoft_consistency.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:179
+msgid "99_Strip_leading_trailing_spaces.py"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:181
+msgid "Exemple de standardisation du constructeur DELL :"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:183
+msgid "def xml_fix(xml):"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:184
+msgid "import xml.etree.cElementTree as ET"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:185
+msgid "xml = ET.fromstring(xml)"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:186
+msgid "tree = ET.ElementTree(xml)"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:187
+msgid "root = tree.getroot()"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:188
+msgid "for subelem1 in root:"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:189
+msgid "if subelem1.tag == 'CONTENT':"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:190
+msgid "for subelem2 in subelem1:"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:191
+msgid "for subelem3 in subelem2:"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:193
+msgid "# DELL vendor name should always be the same"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:194
+msgid ""
+"if subelem3.text in ['DELL', 'Dell Corp.', 'Dell Computer Corp.', 'Dell', "
+"'Dell Computer Corporation']:"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:195
+msgid "subelem3.text = 'Dell Inc.'"
+msgstr ""
+
+#: ../../usemedulla/glpi/glpi.rst:197
+msgid "return ET.tostring(root)"
+msgstr ""

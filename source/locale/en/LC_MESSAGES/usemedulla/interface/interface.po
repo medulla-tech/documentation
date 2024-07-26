@@ -1,0 +1,371 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) 2024, Yvan Manon
+# This file is distributed under the same license as the Medulla RMM package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+# 
+# Translators:
+# Calvin Hyacinth, 2024
+# 
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: Medulla RMM\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2024-04-09 15:37+0200\n"
+"PO-Revision-Date: 2024-04-09 13:50+0000\n"
+"Last-Translator: Calvin Hyacinth, 2024\n"
+"Language-Team: English (https://app.transifex.com/siveo/teams/72118/en/)\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: ../../usemedulla/interface/interface.rst:3
+msgid "Interface de Medulla"
+msgstr "Medulla Interface"
+
+#: ../../usemedulla/interface/interface.rst:5
+msgid ""
+"Cette section concerne la partie interface de l'outil Medulla, avec "
+"notamment l'accès à l'interface, la page d'accueil,"
+msgstr ""
+"This section concerns the interface part of the Medulla tool, including "
+"access to the interface, the home page,"
+
+#: ../../usemedulla/interface/interface.rst:9
+msgid "Navigateur web"
+msgstr "Web browser"
+
+#: ../../usemedulla/interface/interface.rst:11
+msgid "L'interface utilisateur de Medulla est une interface web."
+msgstr "The Medulla user interface is a web interface."
+
+#: ../../usemedulla/interface/interface.rst:12
+msgid "Les navigateurs suivants sont compatibles :"
+msgstr "The following browsers are compatible:"
+
+#: ../../usemedulla/interface/interface.rst:13
+msgid "-     Microsoft Internet Explorer version 10 minimum"
+msgstr "- Microsoft Internet Explorer version 10 minimum"
+
+#: ../../usemedulla/interface/interface.rst:14
+msgid "-     Safari version 6.2 minimum"
+msgstr "-     Safari version 6.2 minimum"
+
+#: ../../usemedulla/interface/interface.rst:15
+msgid "-     Mozilla Firefox version 31 minimum"
+msgstr "-     Mozilla Firefox version 31 minimum"
+
+#: ../../usemedulla/interface/interface.rst:16
+msgid "-     Google Chrome version 32.0 minimum"
+msgstr "-     Google Chrome version 32.0 minimum"
+
+#: ../../usemedulla/interface/interface.rst:19
+msgid "Accès à l'interface"
+msgstr "Access to the interface"
+
+#: ../../usemedulla/interface/interface.rst:21
+msgid ""
+"Pour accéder à l'interface, l’utilisateur doit saisir dans la barre "
+"d’adresse du navigateur : http://serveurpulse/mmc/"
+msgstr ""
+"To access the interface, the user must enter in the browser address bar: "
+"http://serveurpulse/mmc/"
+
+#: ../../usemedulla/interface/interface.rst:23
+msgid ""
+"Une fois l'utilisateur arrivé sur l’interface graphique de Medulla, un "
+"formulaire de saisie d'identifiant/mot de passe lui est accessible, ainsi "
+"qu'une une liste déroulante pour choisir la langue utilisée."
+msgstr ""
+"Once the user arrives at the Medulla graphical interface, a "
+"username/password entry form is available to them, as well as a drop-down "
+"list to choose the language used."
+
+#: ../../usemedulla/interface/interface.rst:29
+msgid "Page d'accueil"
+msgstr "Home page"
+
+#: ../../usemedulla/interface/interface.rst:31
+msgid ""
+"Une fois connecté sur l'interface, vous aurez accès à la page d’accueil de "
+"Medulla."
+msgstr ""
+"Once connected to the interface, you will have access to the Medulla home "
+"page."
+
+#: ../../usemedulla/interface/interface.rst:32
+msgid "Cette page d’accueil est composée de 3 zones."
+msgstr "This home page is made up of 3 areas."
+
+#: ../../usemedulla/interface/interface.rst:35
+msgid "Bandeau de menu"
+msgstr "Menu banner"
+
+#: ../../usemedulla/interface/interface.rst:37
+msgid "La première zone est celle sur le haut des pages : le menu principal."
+msgstr "The first area is the one at the top of the pages: the main menu."
+
+#: ../../usemedulla/interface/interface.rst:38
+msgid "Il assure la navigation entre tous les modules de Medulla."
+msgstr "It ensures navigation between all Medulla modules."
+
+#: ../../usemedulla/interface/interface.rst:39
+msgid ""
+"Les menus s'adaptent suivant le profil et les droits du profil utilisateur "
+"(cf ACL)."
+msgstr ""
+"The menus adapt according to the profile and the rights of the user profile "
+"(see ACL)."
+
+#: ../../usemedulla/interface/interface.rst:44
+msgid ""
+"Dans le cas de ce menu (sur la capture d'écran ci-dessus), l'utilisateur a "
+"accès à toutes les fonctionnalités."
+msgstr ""
+"In the case of this menu (in the screenshot above), the user has access to "
+"all the features."
+
+#: ../../usemedulla/interface/interface.rst:45
+msgid "Sur cette capture d'écran, le profil est celui d'un d'administrateur."
+msgstr "In this screenshot, the profile is that of an administrator."
+
+#: ../../usemedulla/interface/interface.rst:47
+msgid ""
+"Dans ce menu, on retrouve les boutons pour accéder aux fonctions suivantes :"
+msgstr "In this menu, we find the buttons to access the following functions:"
+
+#: ../../usemedulla/interface/interface.rst:49
+msgid "Dashboard"
+msgstr "Dashboard"
+
+#: ../../usemedulla/interface/interface.rst:50
+msgid "Utilisateurs"
+msgstr "Users"
+
+#: ../../usemedulla/interface/interface.rst:51
+msgid "Groupes"
+msgstr "Groups"
+
+#: ../../usemedulla/interface/interface.rst:52
+msgid "Ordinateurs"
+msgstr "Computers"
+
+#: ../../usemedulla/interface/interface.rst:53
+msgid "Sauvegarde"
+msgstr "Backup"
+
+#: ../../usemedulla/interface/interface.rst:54
+msgid "Imaging"
+msgstr "Imaging"
+
+#: ../../usemedulla/interface/interface.rst:55
+msgid "Packages"
+msgstr "Packages"
+
+#: ../../usemedulla/interface/interface.rst:56
+msgid "Audit"
+msgstr "Audit"
+
+#: ../../usemedulla/interface/interface.rst:57
+msgid "Services"
+msgstr "Services"
+
+#: ../../usemedulla/interface/interface.rst:58
+msgid "Historique"
+msgstr "History"
+
+#: ../../usemedulla/interface/interface.rst:59
+msgid "Admin"
+msgstr "Admin"
+
+#: ../../usemedulla/interface/interface.rst:62
+msgid "Widget d'information"
+msgstr "Information widget"
+
+#: ../../usemedulla/interface/interface.rst:64
+msgid ""
+"Sur la page d’accueil, vous retrouverez un certain nombre de widgets qui "
+"vont permettre d’obtenir des informations facilement."
+msgstr ""
+"On the home page, you will find a number of widgets that will allow you to "
+"obtain information easily."
+
+#: ../../usemedulla/interface/interface.rst:68
+msgid "On peut décomposer ces widgets en 2 catégories :"
+msgstr "These widgets can be broken down into 2 categories:"
+
+#: ../../usemedulla/interface/interface.rst:71
+msgid "Informations du serveur Medulla en lui-même :"
+msgstr "Information about the Medulla server itself:"
+
+#: ../../usemedulla/interface/interface.rst:73
+msgid "Taux d’utilisation des disques ;"
+msgstr "Disk usage rate;"
+
+#: ../../usemedulla/interface/interface.rst:74
+msgid ""
+"Informations générales du serveur : uptime (depuis combien de temps le "
+"serveur est en ligne), utilisation de la RAM du server ;"
+msgstr ""
+"General server information: uptime (how long the server has been online), "
+"server RAM usage;"
+
+#: ../../usemedulla/interface/interface.rst:75
+msgid "Les mises à jour disponibles ;"
+msgstr "Available updates;"
+
+#: ../../usemedulla/interface/interface.rst:76
+msgid ""
+"L’extraction des journaux et logs, et les fichiers de configuration du "
+"logiciel ;"
+msgstr "Extracting logs and software configuration files;"
+
+#: ../../usemedulla/interface/interface.rst:77
+msgid "La possibilité de redémarrer/arrêter directement le serveur Medulla."
+msgstr "The ability to directly restart/stop the Medulla server."
+
+#: ../../usemedulla/interface/interface.rst:79
+msgid "Informations sur votre parc :"
+msgstr "Information about your group of workstations:"
+
+#: ../../usemedulla/interface/interface.rst:81
+msgid "Les postes avec antivirus ;"
+msgstr "Workstations with antivirus;"
+
+#: ../../usemedulla/interface/interface.rst:82
+msgid "Le nombre de machines en ligne et hors ligne ;"
+msgstr "The number of machines online and offline;"
+
+#: ../../usemedulla/interface/interface.rst:83
+msgid ""
+"Le nombre de machines dont la configuration de la fonction \"Sauvegarde\" "
+"est active ;"
+msgstr "The number of machines with active \"Backup\" function configuration;"
+
+#: ../../usemedulla/interface/interface.rst:84
+msgid ""
+"Le nombre de postes qui sont à jour de l’inventaire, qui ne sont pas "
+"inventoriés ou hors inventaire ;"
+msgstr ""
+"The number of positions that are up to date in inventory, not inventoried or"
+" out of inventory;"
+
+#: ../../usemedulla/interface/interface.rst:85
+msgid ""
+"Les divers systèmes d’exploitation utilisés sur votre parc informatique."
+msgstr "The various operating systems used on your computer system."
+
+#: ../../usemedulla/interface/interface.rst:87
+msgid ""
+"Les widgets concernant votre parc sont sous formes de camemberts. En "
+"cliquant sur les zones des camemberts, on peut créer des groupes de machines"
+" correspondantes aux zones."
+msgstr ""
+"The widgets concerning your fleet are in the form of pie charts. By clicking"
+" on the areas of the pie charts, you can create groups of machines "
+"corresponding to the areas."
+
+#: ../../usemedulla/interface/interface.rst:88
+msgid ""
+"Par exemple, si l'on clique sur la zone \"Windows 10 (2009)\" dans Systèmes "
+"d'exploitation, nous aurons les machines ayant comme système d'exploitation "
+"Windows 10 version 2009."
+msgstr ""
+"For example, if we click on the \"Windows 10 (2009)\" area in Operating "
+"Systems, we will have the machines with Windows 10 version 2009 as operating"
+" system."
+
+#: ../../usemedulla/interface/interface.rst:91
+msgid "Bandeau de localisation et options"
+msgstr "Location banner and options"
+
+#: ../../usemedulla/interface/interface.rst:93
+msgid ""
+"Sous le bandeau contenant le menu des fonctions de Medulla, vous trouverez "
+"un bandeau qui permet de connaître"
+msgstr ""
+"Below the banner containing the Medulla functions menu, you will find a "
+"banner that allows you to know"
+
+#: ../../usemedulla/interface/interface.rst:94
+msgid ""
+"la localisation des pages du logiciel, de pouvoir se déconnecter ou bien de "
+"passer en mode expert (plus d'informations sur ce mode dans les chapitres "
+"suivants)."
+msgstr ""
+"the location of the software pages, to be able to log out or to switch to "
+"expert mode (more information on this mode in the following chapters)."
+
+#: ../../usemedulla/interface/interface.rst:99
+msgid "Organisation de l'interface par zone"
+msgstr "Interface organization by zone"
+
+#: ../../usemedulla/interface/interface.rst:103
+msgid "L'interface est organisée par zone :"
+msgstr "The interface is organized by zone:"
+
+#: ../../usemedulla/interface/interface.rst:104
+msgid "Pour chaque module, on distingue une zone « Menu » située à gauche."
+msgstr "For each module, there is a “Menu” area located on the left."
+
+#: ../../usemedulla/interface/interface.rst:105
+msgid ""
+"Suivant le choix du menu de gauche, on a dans la zone « Présentation » soit "
+"une liste de résultats, soit un formulaire de saisie."
+msgstr ""
+"Depending on the choice in the left menu, in the “Presentation” area we have"
+" either a list of results or an entry form."
+
+#: ../../usemedulla/interface/interface.rst:106
+msgid ""
+"Pour le type résultat, on retrouve différentes zones dans le panel "
+"présentation :"
+msgstr ""
+"For the result type, we find different areas in the presentation panel:"
+
+#: ../../usemedulla/interface/interface.rst:108
+msgid ""
+"La zone « Filtre » permet de réduire la liste de résultats présentés suivant"
+" un critère."
+msgstr ""
+"The “Filter” area allows you to reduce the list of results presented "
+"according to a criteria."
+
+#: ../../usemedulla/interface/interface.rst:109
+msgid ""
+"La zone « Action » permet, pour l'élément de la ligne, de lancer une action."
+msgstr ""
+"The “Action” area allows you to launch an action for the line element."
+
+#: ../../usemedulla/interface/interface.rst:112
+msgid "Les actions sur les éléments"
+msgstr "Actions on elements"
+
+#: ../../usemedulla/interface/interface.rst:117
+msgid "Dans notre exemple, Liste des machines depuis le module \"Ordinateurs\","
+msgstr "In our example, List of machines from the \"Computers\" module,"
+
+#: ../../usemedulla/interface/interface.rst:118
+msgid ""
+"nous retrouverons les actions suivantes réalisable pour chaque machine :"
+msgstr "we will find the following actions feasible for each machine:"
+
+#: ../../usemedulla/interface/interface.rst:123
+msgid "Les actions sont représentées par des icônes."
+msgstr "Actions are represented by icons."
+
+#: ../../usemedulla/interface/interface.rst:124
+msgid ""
+"*L'accès à ces différentes actions est configurable par profil "
+"d'utilisateur.*"
+msgstr "*Access to these different actions is configurable by user profile.*"
+
+#: ../../usemedulla/interface/interface.rst:125
+msgid ""
+"Vous retrouverez une explication des différentes icônes dans les chapitres "
+"correspondants."
+msgstr ""
+"You will find an explanation of the different icons in the corresponding "
+"chapters."
