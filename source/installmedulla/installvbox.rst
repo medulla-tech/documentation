@@ -9,10 +9,14 @@ Pré-requis
 * VirtualBox version 7 ou supérieure
 
 Si ces exigences ne sont pas remplies, elles seront installées.
+ouvrir une invite de commande powershell ou cmd en administrateur
 
-NB: Pour installer PowerShell Core Version 6 ou supérieur, exécutez ce qui suit:
+NB: Pour installer en PowerShell Core Version 6, exécutez ce qui suit:
 
  PowerShell.exe -File. \ Create_vbox_Vm.ps1
+
+Pour installer en powershell version 7 exécutez ce qui suit:
+pwsh -file "path\Create_vbox_Vm.ps1"
 
 Installation du serveur Medulla
 -------------------------------
