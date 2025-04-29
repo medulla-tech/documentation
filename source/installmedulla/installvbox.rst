@@ -13,18 +13,18 @@ ouvrir une invite de commande powershell ou cmd en administrateur
 
 NB: Pour installer en PowerShell Core Version 6, exécutez ce qui suit:
 
- PowerShell.exe -File. \ Create_vbox_Vm.ps1
+ PowerShell.exe -File\\Create_vbox_Vm.ps1
 
 Pour installer en powershell version 7 exécutez ce qui suit:
 
-pwsh -file "path. \\Create_vbox_Vm.ps1"
+pwsh -file "path\\Create_vbox_Vm.ps1"
 
 Installation du serveur Medulla
 -------------------------------
 
 Pour créer une machine virtuelle et installer Medulla, la commande suivante doit être exécutée:
 
- pwsh.exe -File .\create_vbox_vm.ps1
+ pwsh.exe -file "path\\create_vbox_vm.ps1
 
 La machine virtuelle créée aura les caractéristiques suivantes:
 
