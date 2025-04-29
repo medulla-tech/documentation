@@ -17,7 +17,7 @@ NB: Pour installer en PowerShell Core Version 6, exécutez ce qui suit:
 
 Pour installer en powershell version 7 exécutez ce qui suit:
 
-pwsh -file "path\Create_vbox_Vm.ps1"
+pwsh -file "path \ Create_vbox_Vm.ps1"
 
 Installation du serveur Medulla
 -------------------------------
