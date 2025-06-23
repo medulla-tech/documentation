@@ -7,8 +7,8 @@
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
 project = 'Medulla RMM'
-copyright = '2024, Yvan Manon'
-author = 'Yvan Manon'
+copyright = ''
+author = ''
 release = '5.0'
 
 # -- General configuration ---------------------------------------------------
